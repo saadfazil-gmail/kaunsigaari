@@ -40,22 +40,8 @@ const pct = x => (x >= 0 ? '+' : '') + Math.round(x * 100) + '%';
 const priceText = ([a, b]) => `Rs ${lakh(a)} – ${lakh(b)}`;
 function lakh(n) { return n >= 100 ? (n / 100).toFixed(2).replace(/\.?0+$/, '') + ' crore' : n + ' lakh'; }
 
-// Simple car drawing: different roof shape per body type, tinted per card
-const tints = ['#FFE3D6', '#DCE7FB', '#E2F2E5', '#F3E5FA', '#FFF1C9', '#E0F2F1'];
-function carSvg(body) {
-  const shapes = {
-    Hatchback: { body: 'M18,46 Q18,38 28,37 L132,37 Q142,38 142,48 L142,60 L18,60 Z', cabin: 'M38,38 L54,20 L108,20 L126,38 Z' },
-    Sedan:     { body: 'M8,46 Q8,38 18,38 L142,38 Q152,39 152,48 L152,60 L8,60 Z',     cabin: 'M40,39 L56,21 L104,21 L122,39 Z' },
-    SUV:       { body: 'M12,40 Q12,32 22,32 L138,32 Q148,33 148,42 L148,60 L12,60 Z', cabin: 'M28,33 L40,14 L118,14 L132,33 Z' },
-  }[body];
-  return `<svg viewBox="0 0 160 72" aria-hidden="true">
-    <path d="${shapes.cabin}" fill="#0F1B2D" opacity=".85"/>
-    <path d="${shapes.cabin}" fill="#BFD3F2" transform="translate(80 40) scale(.86) translate(-80 -40)"/>
-    <path d="${shapes.body}" fill="#0F1B2D"/>
-    <circle cx="44" cy="60" r="10" fill="#0F1B2D" stroke="#fff" stroke-width="3"/>
-    <circle cx="116" cy="60" r="10" fill="#0F1B2D" stroke="#fff" stroke-width="3"/>
-  </svg>`;
-}
+// Photo for a car (from photos.js, Wikimedia Commons), or empty if none
+const photoOf = c => (photos[`${c.brand} ${c.name}`] || {}).url || '';
 
 // ===== What's hot list (responds to filters and search) =====
 const state = { budget: 'all', body: 'all', fuel: 'all', q: '' };
@@ -75,19 +61,21 @@ function renderHot() {
   const list = cars.filter(matches).sort((a, b) => b.score - a.score).slice(0, 9);
   document.getElementById('hot-list').innerHTML = list.map((c, i) => `
     <li class="car ${i === 0 ? 'car--top' : ''}">
-      <span class="car__rank">${i + 1}</span>
-      <span class="score" title="Hot Score out of 100">🔥 <b>${c.score}</b></span>
-      <div class="car__pic" style="background:${tints[cars.indexOf(c) % tints.length]}">${carSvg(c.body)}</div>
-      <div>
+      <div class="car__photo">
+        <img src="${photoOf(c)}" alt="${c.brand} ${c.name}" loading="lazy">
+        <span class="car__rank">${i + 1}</span>
+        <span class="score" title="Hot Score out of 100">Hot score <b>${c.score}</b></span>
+      </div>
+      <div class="car__body">
         <span class="car__brand">${c.brand}</span>
         <h3 class="car__name">${c.name}</h3>
         <p class="car__price">${priceText(c.price)}</p>
         <p class="car__meta">${c.body} · ${c.fuel}</p>
-      </div>
-      <div class="car__signals">
-        <span class="signal"><b>${fmt(c.sales)}</b>sold</span>
-        <span class="signal"><b class="${c.change >= 0 ? 'up' : 'dn'}">${c.change >= 0 ? '▲' : '▼'} ${pct(c.change)}</b>vs last month</span>
-        <span class="signal"><b>${c.search}/100</b>search interest</span>
+        <div class="car__signals">
+          <span class="signal"><b>${fmt(c.sales)}</b>sold</span>
+          <span class="signal"><b class="${c.change >= 0 ? 'up' : 'dn'}">${c.change >= 0 ? '▲' : '▼'} ${pct(c.change)}</b>vs last month</span>
+          <span class="signal"><b>${c.search}</b>search /100</span>
+        </div>
       </div>
     </li>`).join('');
   const total = cars.filter(matches).length;
@@ -114,7 +102,20 @@ const totalSales = cars.reduce((s, c) => s + c.sales, 0);
 const best = [...cars].sort((a, b) => b.sales - a.sales)[0];
 const riser = [...cars].sort((a, b) => b.change - a.change)[0];
 document.getElementById('stat-total').textContent = fmt(totalSales);
-document.getElementById('stat-top').textContent = `${best.brand} ${best.name}`;
+document.getElementById('stat-models').textContent = cars.length;
+
+// Hero: the No. 1 car on the Hot List
+const no1 = [...cars].sort((a, b) => b.score - a.score)[0];
+const heroImg = document.getElementById('hero-img');
+// Ask Wikimedia for a bigger copy; if that size isn't available, use the normal one
+heroImg.onerror = () => { heroImg.onerror = null; heroImg.src = photoOf(no1); };
+heroImg.src = photoOf(no1).replace(/\/\d+px-/, '/1280px-');
+heroImg.alt = `${no1.brand} ${no1.name}`;
+document.getElementById('hero-brand').textContent = no1.brand;
+document.getElementById('hero-name').textContent = no1.name;
+document.getElementById('hero-sales').textContent = fmt(no1.sales);
+document.getElementById('hero-change').textContent = (no1.change >= 0 ? '▲ ' : '▼ ') + pct(no1.change);
+document.getElementById('hero-price').textContent = `Rs ${lakh(no1.price[0])}`;
 document.getElementById('stat-riser').textContent = `${riser.name} ${pct(riser.change)}`;
 
 // ===== Top 10 sales chart (one colour, hover tooltip, table view) =====
@@ -161,6 +162,7 @@ document.getElementById('price-grid').innerHTML = cars
   .map(c => {
     const up = c.priceChange > 0;
     return `<div class="price-card">
+      <img src="${photoOf(c)}" alt="" loading="lazy">
       <div><h3>${c.brand} ${c.name}</h3><p>Now from Rs ${lakh(c.price[0])}</p></div>
       <span class="delta ${up ? 'delta--up' : 'delta--down'}">${up ? '▲ Up' : '▼ Down'} ${Math.abs(c.priceChange)} lakh</span>
     </div>`;
@@ -179,5 +181,9 @@ document.getElementById('brands').addEventListener('click', e => {
   input.value = a.dataset.brand;
   input.dispatchEvent(new Event('input'));
 });
+
+// ===== Photo credits (required by the photos' free licences) =====
+document.getElementById('credits').innerHTML = Object.entries(photos).map(([car, p]) =>
+  `<li>${car}: <a href="${p.source}" target="_blank" rel="noopener">photo</a> by ${p.author}, ${p.license}</li>`).join('');
 
 renderHot();

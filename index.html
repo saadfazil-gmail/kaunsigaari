@@ -7,90 +7,54 @@
   <meta name="description" content="Every new car sold in Pakistan, ranked by what's hot: monthly sales, momentum and search interest.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,800&family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 
   <!-- Mockup notice: remove once real data is plugged in -->
-  <div class="mock-note">Design mockup. Car names are real, but every number on this page is made up.</div>
+  <div class="mock-note">Design mockup. Car names and photos are real, but every number on this page is made up.</div>
 
   <!-- Top bar -->
   <header class="topbar">
     <div class="container topbar__inner">
-      <a href="#" class="logo">kaunsi<span>gaari</span>?</a>
+      <a href="#" class="logo">KAUNSI<span>GAARI</span>?</a>
       <nav class="nav">
         <a href="#hot">What's hot</a>
-        <a href="#sales">Sales chart</a>
-        <a href="#prices">Price changes</a>
-        <a href="#browse">Browse</a>
+        <a href="#sales">Sales</a>
+        <a href="#prices">Prices</a>
+        <a href="#browse">Brands</a>
       </nav>
       <label class="search">
         <span class="sr-only">Search cars</span>
-        <input type="search" id="search" placeholder="Search a car, e.g. Corolla">
+        <input type="search" id="search" placeholder="Search a car">
       </label>
     </div>
   </header>
 
   <main>
-    <!-- Hero: the question + quick filters -->
-    <section class="hero">
-      <div class="container hero__grid">
-        <div>
-          <p class="kicker">Every new car in Pakistan, in one place</p>
-          <h1>Which new car should you buy?</h1>
-          <p class="hero__lead">See what Pakistan is actually buying this month, what it costs today, and which prices just moved.</p>
-
-          <div class="filters" aria-label="Filter cars">
-            <div class="filter-row">
-              <span class="filter-label">Budget</span>
-              <div class="chips" data-filter="budget">
-                <button class="chip is-on" data-value="all">Any</button>
-                <button class="chip" data-value="0-40">Under 40 lakh</button>
-                <button class="chip" data-value="40-70">40–70 lakh</button>
-                <button class="chip" data-value="70-120">70 lakh–1.2 crore</button>
-                <button class="chip" data-value="120-999">1.2 crore+</button>
-              </div>
-            </div>
-            <div class="filter-row">
-              <span class="filter-label">Type</span>
-              <div class="chips" data-filter="body">
-                <button class="chip is-on" data-value="all">All</button>
-                <button class="chip" data-value="Hatchback">Hatchback</button>
-                <button class="chip" data-value="Sedan">Sedan</button>
-                <button class="chip" data-value="SUV">SUV</button>
-              </div>
-            </div>
-            <div class="filter-row">
-              <span class="filter-label">Fuel</span>
-              <div class="chips" data-filter="fuel">
-                <button class="chip is-on" data-value="all">All</button>
-                <button class="chip" data-value="Petrol">Petrol</button>
-                <button class="chip" data-value="Hybrid">Hybrid</button>
-                <button class="chip" data-value="Electric">Electric</button>
-                <button class="chip" data-value="Diesel">Diesel</button>
-              </div>
-            </div>
-          </div>
+    <!-- Hero: this month's #1 car, full width -->
+    <section class="hero" id="hero">
+      <img class="hero__img" id="hero-img" alt="">
+      <div class="hero__shade"></div>
+      <div class="container hero__content">
+        <p class="kicker">No. 1 this month</p>
+        <h1 class="hero__title"><span id="hero-brand"></span> <em id="hero-name"></em></h1>
+        <div class="hero__stats">
+          <div><b id="hero-sales">-</b><span>sold in October</span></div>
+          <div><b id="hero-change">-</b><span>vs September</span></div>
+          <div><b id="hero-price">-</b><span>starting price</span></div>
         </div>
+        <a href="#hot" class="btn">See the full ranking</a>
+      </div>
+    </section>
 
-        <!-- Headline numbers for the month -->
-        <aside class="month-card" aria-label="This month at a glance">
-          <p class="month-card__label">October 2026 at a glance</p>
-          <div class="stat">
-            <span class="stat__num" id="stat-total">0</span>
-            <span class="stat__text">new cars sold</span>
-          </div>
-          <div class="stat">
-            <span class="stat__num" id="stat-top">-</span>
-            <span class="stat__text">best seller</span>
-          </div>
-          <div class="stat">
-            <span class="stat__num" id="stat-riser">-</span>
-            <span class="stat__text" id="stat-riser-text">biggest riser</span>
-          </div>
-          <p class="month-card__src">Source when live: PAMA monthly sales report</p>
-        </aside>
+    <!-- Month strip -->
+    <section class="strip">
+      <div class="container strip__inner">
+        <div><b id="stat-total">0</b><span>new cars sold, Oct 2026</span></div>
+        <div><b id="stat-riser">-</b><span>biggest riser</span></div>
+        <div><b id="stat-models">0</b><span>models tracked</span></div>
       </div>
     </section>
 
@@ -99,11 +63,36 @@
       <div class="container">
         <div class="section__head">
           <div>
-            <h2>What's hot this month</h2>
-            <p class="section__sub">Ranked by our Hot Score: sales (45%), month-on-month momentum (30%) and Google search interest (25%).</p>
+            <p class="kicker">The Hot List</p>
+            <h2>What Pakistan wants right now</h2>
+            <p class="section__sub">Hot Score = sales (45%) + growth vs last month (30%) + Google search interest (25%).</p>
           </div>
-          <p class="result-count" id="result-count"></p>
         </div>
+
+        <div class="filters" aria-label="Filter cars">
+          <div class="chips" data-filter="budget" aria-label="Budget">
+            <button class="chip is-on" data-value="all">Any budget</button>
+            <button class="chip" data-value="0-40">Under 40 lakh</button>
+            <button class="chip" data-value="40-70">40–70 lakh</button>
+            <button class="chip" data-value="70-120">70 lakh–1.2 crore</button>
+            <button class="chip" data-value="120-999">1.2 crore+</button>
+          </div>
+          <div class="chips" data-filter="body" aria-label="Body type">
+            <button class="chip is-on" data-value="all">All types</button>
+            <button class="chip" data-value="Hatchback">Hatchback</button>
+            <button class="chip" data-value="Sedan">Sedan</button>
+            <button class="chip" data-value="SUV">SUV</button>
+          </div>
+          <div class="chips" data-filter="fuel" aria-label="Fuel">
+            <button class="chip is-on" data-value="all">All fuels</button>
+            <button class="chip" data-value="Petrol">Petrol</button>
+            <button class="chip" data-value="Hybrid">Hybrid</button>
+            <button class="chip" data-value="Electric">Electric</button>
+            <button class="chip" data-value="Diesel">Diesel</button>
+          </div>
+        </div>
+
+        <p class="result-count" id="result-count"></p>
         <ol class="hot-list" id="hot-list"></ol>
         <p class="empty" id="empty" hidden>No cars match those filters. Try a wider budget.</p>
       </div>
@@ -114,8 +103,9 @@
       <div class="container">
         <div class="section__head">
           <div>
-            <h2>Top 10 by sales, October 2026</h2>
-            <p class="section__sub">Units sold in the month. Hover a bar for last month's number.</p>
+            <p class="kicker">Sales</p>
+            <h2>Top 10, October 2026</h2>
+            <p class="section__sub">Units sold in the month. Hover a bar for September's number.</p>
           </div>
           <button class="link-btn" id="table-toggle" aria-expanded="false">Show as table</button>
         </div>
@@ -131,7 +121,8 @@
     <!-- Price changes -->
     <section class="section" id="prices">
       <div class="container">
-        <h2>Price changes this month</h2>
+        <p class="kicker">Prices</p>
+        <h2>Who changed prices this month</h2>
         <p class="section__sub">Official ex-factory prices, compared with last month.</p>
         <div class="price-grid" id="price-grid"></div>
       </div>
@@ -140,6 +131,7 @@
     <!-- Browse -->
     <section class="section section--alt" id="browse">
       <div class="container">
+        <p class="kicker">Brands</p>
         <h2>Browse by brand</h2>
         <div class="brands" id="brands"></div>
       </div>
@@ -148,12 +140,18 @@
 
   <footer class="footer">
     <div class="container footer__inner">
-      <a href="#" class="logo logo--light">kaunsi<span>gaari</span>?</a>
+      <a href="#" class="logo">KAUNSI<span>GAARI</span>?</a>
       <p>Where the numbers will come from: PAMA (Pakistan Automotive Manufacturers Association) monthly sales, official brand price lists, and Google Trends.</p>
+      <details class="credits">
+        <summary>Photo credits</summary>
+        <p>Photos from Wikimedia Commons. Some show versions sold outside Pakistan.</p>
+        <ul id="credits"></ul>
+      </details>
       <p class="footer__small">New, locally sold cars only. Starter mockup built with Claude Code.</p>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="photos.js"></script>
+  <script src="script.js?v=3"></script>
 </body>
 </html>
