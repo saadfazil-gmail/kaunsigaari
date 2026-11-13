@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KaunsiGaari | Which new car should you buy?</title>
+  <meta name="description" content="Every new car sold in Pakistan, ranked by what's hot: monthly sales, momentum and search interest.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Mockup notice: remove once real data is plugged in -->
+  <div class="mock-note">Design mockup. Car names are real, but every number on this page is made up.</div>
+
+  <!-- Top bar -->
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a href="#" class="logo">kaunsi<span>gaari</span>?</a>
+      <nav class="nav">
+        <a href="#hot">What's hot</a>
+        <a href="#sales">Sales chart</a>
+        <a href="#prices">Price changes</a>
+        <a href="#browse">Browse</a>
+      </nav>
+      <label class="search">
+        <span class="sr-only">Search cars</span>
+        <input type="search" id="search" placeholder="Search a car, e.g. Corolla">
+      </label>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero: the question + quick filters -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div>
+          <p class="kicker">Every new car in Pakistan, in one place</p>
+          <h1>Which new car should you buy?</h1>
+          <p class="hero__lead">See what Pakistan is actually buying this month, what it costs today, and which prices just moved.</p>
+
+          <div class="filters" aria-label="Filter cars">
+            <div class="filter-row">
+              <span class="filter-label">Budget</span>
+              <div class="chips" data-filter="budget">
+                <button class="chip is-on" data-value="all">Any</button>
+                <button class="chip" data-value="0-40">Under 40 lakh</button>
+                <button class="chip" data-value="40-70">40–70 lakh</button>
+                <button class="chip" data-value="70-120">70 lakh–1.2 crore</button>
+                <button class="chip" data-value="120-999">1.2 crore+</button>
+              </div>
+            </div>
+            <div class="filter-row">
+              <span class="filter-label">Type</span>
+              <div class="chips" data-filter="body">
+                <button class="chip is-on" data-value="all">All</button>
+                <button class="chip" data-value="Hatchback">Hatchback</button>
+                <button class="chip" data-value="Sedan">Sedan</button>
+                <button class="chip" data-value="SUV">SUV</button>
+              </div>
+            </div>
+            <div class="filter-row">
+              <span class="filter-label">Fuel</span>
+              <div class="chips" data-filter="fuel">
+                <button class="chip is-on" data-value="all">All</button>
+                <button class="chip" data-value="Petrol">Petrol</button>
+                <button class="chip" data-value="Hybrid">Hybrid</button>
+                <button class="chip" data-value="Electric">Electric</button>
+                <button class="chip" data-value="Diesel">Diesel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Headline numbers for the month -->
+        <aside class="month-card" aria-label="This month at a glance">
+          <p class="month-card__label">October 2026 at a glance</p>
+          <div class="stat">
+            <span class="stat__num" id="stat-total">0</span>
+            <span class="stat__text">new cars sold</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" id="stat-top">-</span>
+            <span class="stat__text">best seller</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" id="stat-riser">-</span>
+            <span class="stat__text" id="stat-riser-text">biggest riser</span>
+          </div>
+          <p class="month-card__src">Source when live: PAMA monthly sales report</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- What's hot -->
+    <section class="section" id="hot">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>What's hot this month</h2>
+            <p class="section__sub">Ranked by our Hot Score: sales (45%), month-on-month momentum (30%) and Google search interest (25%).</p>
+          </div>
+          <p class="result-count" id="result-count"></p>
+        </div>
+        <ol class="hot-list" id="hot-list"></ol>
+        <p class="empty" id="empty" hidden>No cars match those filters. Try a wider budget.</p>
+      </div>
+    </section>
+
+    <!-- Sales chart -->
+    <section class="section section--alt" id="sales">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>Top 10 by sales, October 2026</h2>
+            <p class="section__sub">Units sold in the month. Hover a bar for last month's number.</p>
+          </div>
+          <button class="link-btn" id="table-toggle" aria-expanded="false">Show as table</button>
+        </div>
+        <div class="chart" id="chart" role="img" aria-label="Bar chart of the top 10 cars by units sold"></div>
+        <table class="data-table" id="data-table" hidden>
+          <thead><tr><th>Car</th><th>October</th><th>September</th><th>Change</th></tr></thead>
+          <tbody></tbody>
+        </table>
+        <div class="tooltip" id="tooltip" role="status" hidden></div>
+      </div>
+    </section>
+
+    <!-- Price changes -->
+    <section class="section" id="prices">
+      <div class="container">
+        <h2>Price changes this month</h2>
+        <p class="section__sub">Official ex-factory prices, compared with last month.</p>
+        <div class="price-grid" id="price-grid"></div>
+      </div>
+    </section>
+
+    <!-- Browse -->
+    <section class="section section--alt" id="browse">
+      <div class="container">
+        <h2>Browse by brand</h2>
+        <div class="brands" id="brands"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#" class="logo logo--light">kaunsi<span>gaari</span>?</a>
+      <p>Where the numbers will come from: PAMA (Pakistan Automotive Manufacturers Association) monthly sales, official brand price lists, and Google Trends.</p>
+      <p class="footer__small">New, locally sold cars only. Starter mockup built with Claude Code.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
