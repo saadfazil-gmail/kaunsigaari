@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Car details | KaunsiGaari</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,800&family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="style.css?v=4">
+</head>
+<body>
+
+  <div class="mock-note">Design mockup. Car names and photos are real, but every number on this page is made up.</div>
+
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a href="index.html" class="logo">KAUNSI<span>GAARI</span>?</a>
+      <nav class="nav">
+        <a href="index.html#hot">What's hot</a>
+        <a href="index.html#sales">Sales</a>
+        <a href="index.html#prices">Prices</a>
+        <a href="index.html#browse">Brands</a>
+      </nav>
+      <a href="index.html#hot" class="back-link">← All cars</a>
+    </div>
+  </header>
+
+  <main id="detail">
+    <!-- Hero -->
+    <section class="hero hero--detail">
+      <img class="hero__img" id="d-img" alt="">
+      <div class="hero__shade"></div>
+      <div class="container hero__content">
+        <p class="kicker" id="d-rank"></p>
+        <h1 class="hero__title"><span id="d-brand"></span> <em id="d-name"></em></h1>
+        <p class="d-price" id="d-price"></p>
+        <div class="tags" id="d-tags"></div>
+      </div>
+    </section>
+
+    <!-- Quick numbers -->
+    <section class="strip">
+      <div class="container strip__inner strip__inner--4">
+        <div><b id="d-sales">-</b><span>sold in October</span></div>
+        <div><b id="d-change">-</b><span>vs September</span></div>
+        <div><b id="d-search">-</b><span>search interest /100</span></div>
+        <div><b id="d-pricechange">-</b><span>price this month</span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container detail-grid">
+        <!-- Sales trend -->
+        <div class="panel">
+          <p class="kicker">Sales</p>
+          <h2 class="panel__title">Last 6 months</h2>
+          <div class="cols" id="d-chart" role="img"></div>
+          <div class="tooltip" id="tooltip" role="status" hidden></div>
+        </div>
+
+        <!-- Hot Score breakdown -->
+        <div class="panel">
+          <p class="kicker">Hot Score</p>
+          <div class="score-big"><b id="d-score">0</b><span>/ 100</span></div>
+          <div class="meters" id="d-meters"></div>
+          <p class="panel__note">Sales compare against the month's best seller. Growth counts from −30% (zero points) to +50% (full points).</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container detail-grid">
+        <!-- Variants -->
+        <div class="panel">
+          <p class="kicker">Prices</p>
+          <h2 class="panel__title">Variants</h2>
+          <table class="data-table variants" id="d-variants"></table>
+          <p class="panel__note">Official ex-factory prices. Real variant names will come from the brand's price list.</p>
+        </div>
+
+        <!-- Specs -->
+        <div class="panel">
+          <p class="kicker">Specs</p>
+          <h2 class="panel__title">Key specs</h2>
+          <dl class="specs" id="d-specs"></dl>
+          <p class="panel__note">Engine and economy figures will come from the brand's official website.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Similar cars -->
+    <section class="section">
+      <div class="container">
+        <p class="kicker">Also consider</p>
+        <h2>Similar cars</h2>
+        <p class="section__sub" id="d-similar-sub"></p>
+        <ol class="hot-list" id="d-similar"></ol>
+      </div>
+    </section>
+  </main>
+
+  <section class="section" id="notfound" hidden>
+    <div class="container">
+      <h1>Car not found</h1>
+      <p class="section__sub">We couldn't find that car. <a href="index.html#hot">See all cars</a>.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="index.html" class="logo">KAUNSI<span>GAARI</span>?</a>
+      <p id="d-credit"></p>
+      <p class="footer__small">New, locally sold cars only. Starter mockup built with Claude Code.</p>
+    </div>
+  </footer>
+
+  <script src="photos.js"></script>
+  <script src="data.js?v=4"></script>
+  <script src="car.js?v=4"></script>
+</body>
+</html>
