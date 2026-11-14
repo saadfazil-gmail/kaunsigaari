@@ -6,24 +6,28 @@ them by what's hot, using real numbers. "Kaunsi gaari?" means "which car?".
 The owner is learning Claude Code with this project. Explain things in plain words, keep steps small,
 and suggest the next step at the end of each piece of work.
 
-**Status (Nov 2026):** design mockup. Car names and photos are real. **Every number is made up**,
-and a yellow strip at the top of each page says so. Keep that strip until real data is in.
+**Status (14 Nov 2026):** real data, early version. Sales are PAMA's October 2026 report; prices come
+from official brand websites (news reports where a site was unreachable, and the page says so). Search
+interest (Google Trends) is not in yet. The strip at the top of each page says where the numbers come from.
 
 ---
 
 ## Scope
 
 - New, locally sold cars only. **No used or second-hand imports** (maybe later).
-- About 16 models from Suzuki, Toyota, Honda, Kia, Hyundai, Changan, Haval, MG and BYD so far. The
-  goal is every locally available model and variant.
+- 57 models from 17 brands (Nov 2026). Pickups and vans are left out. The goal is every locally
+  available model and variant.
 
 ## Files
 
 | File | What |
 |---|---|
-| `index.html` / `script.js` | Homepage: hero (No. 1 car), Hot List with filters, top-10 sales chart, price changes, brands |
-| `car.html` / `car.js` | Detail page, `car.html?car=<slug>`: 6-month sales, Hot Score breakdown, variants, specs, similar cars |
-| `data.js` | **All car data and numbers.** Shared by both pages. Swap this for real data, not the pages |
+| `index.html` / `script.js` | Homepage: hero (No. 1), Hot List with filters, top-10 sales chart, cheapest cars, brands |
+| `car.html` / `car.js` | Detail page, `car.html?car=<slug>`: sales by month, Hot Score breakdown, variants with sources, specs, similar cars |
+| `data/raw/*.json` | **The real data, as researched**: `pama-YYYY-MM.json` (sales) and `prices-*.json` (variant prices, each with its source URL) |
+| `tools/build_data.py` | Turns `data/raw/` into `data/cars.js`. Holds the PAMA-row-to-model mapping (`GROUPS`) and the list of official domains |
+| `data/cars.js` | Generated. Don't edit by hand: edit the raw files and run `/usr/bin/python3 tools/build_data.py` |
+| `data.js` | Shared logic for both pages: price ranges, sales entries, Hot Score, formatting helpers |
 | `photos.js` | Photo URLs and credits. Generated, don't edit by hand |
 | `tools/fetch_photos.py` | Finds free photos on Wikimedia Commons and writes `photos.js` |
 | `style.css` | All styling, mobile first (breakpoints at 640px and 960px) |
@@ -40,6 +44,18 @@ Then open http://localhost:8813. The browser-pane tools need the page served ove
 a file. After CSS or JS changes, bump the `?v=` number on the `<link>`/`<script>` tags (or reload with
 a new query string) to beat the browser cache.
 
+## Monthly update
+
+1. Get the new PAMA PDF from pama.org.pk; save its numbers as `data/raw/pama-YYYY-MM.json` (same shape
+   as the last one: both months, `null` for "Awaited", `0` for "-").
+2. Re-check prices on the official sites; update or add `data/raw/prices-*.json`.
+3. Run `/usr/bin/python3 tools/build_data.py`, preview, check the numbers against the sources, commit.
+
+**PAMA quirks:** some rows are combined (Toyota Corolla/Yaris/Corolla Cross, Honda City/Civic, Honda
+HR-V/BR-V, Toyota Fortuner/Hilux, Haval/Tank, Jetour). Sales and the Hot Score belong to the PAMA row
+("sales entry"); the site shows combined rows as one entry and never splits them. Kia, MG, BYD,
+Changan, Deepal, Proton, Chery, Peugeot don't report to PAMA: they're listed but not ranked.
+
 ## Hot Score
 
 `score = 45% sales + 30% growth + 25% search interest`, out of 100.
@@ -48,6 +64,8 @@ a new query string) to beat the browser cache.
 - **Search:** Google Trends interest, 0–100.
 
 The weights live in `data.js`. If they change, also update the text on both pages that explains them.
+Missing signals (search, for now) are left out and the rest scaled up to 100. Growth only counts when
+last month had 50+ units. Entries with no published sales get no score and aren't ranked.
 
 ## Where real data will come from
 

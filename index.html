@@ -8,12 +8,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=DM+Sans:opsz,wght@9..40,400..700&display=swap">
-  <link rel="stylesheet" href="style.css?v=6">
+  <link rel="stylesheet" href="style.css?v=7">
 </head>
 <body>
 
   <!-- Mockup notice: remove once real data is plugged in -->
-  <div class="mock-note">Design mockup. Car names and photos are real, but every number on this page is made up.</div>
+  <div class="mock-note" id="data-note">Early version.</div>
   <div class="zigzag" aria-hidden="true"></div>
 
   <!-- Top bar -->
@@ -47,7 +47,7 @@
             <a href="#sales" class="btn btn--ghost">Sales chart</a>
           </div>
           <div class="hero__stats">
-            <div><b id="stat-total">0</b><span>new cars sold in Oct</span></div>
+            <div><b id="stat-total">0</b><span>sold in <span data-month></span>, models we track</span></div>
             <div><b id="stat-riser">-</b><span>biggest riser</span></div>
             <div><b id="stat-models">0</b><span>models tracked</span></div>
           </div>
@@ -65,7 +65,7 @@
           <div class="hero__facts">
             <div><span id="hero-brand"></span><b id="hero-name"></b></div>
             <div><b id="hero-sales">-</b><span>sold</span></div>
-            <div><b id="hero-change">-</b><span>vs Sep</span></div>
+            <div><b id="hero-change">-</b><span id="hero-change-label">vs last month</span></div>
             <div><b id="hero-price">-</b><span>from</span></div>
           </div>
         </div>
@@ -101,6 +101,7 @@
             <button class="chip is-on" data-value="all">All fuels</button>
             <button class="chip" data-value="Petrol">Petrol</button>
             <button class="chip" data-value="Hybrid">Hybrid</button>
+            <button class="chip" data-value="Plug-in hybrid">Plug-in hybrid</button>
             <button class="chip" data-value="Electric">Electric</button>
             <button class="chip" data-value="Diesel">Diesel</button>
           </div>
@@ -119,6 +120,7 @@
           <p class="kicker">Our signature · hot score</p>
           <h2>What’s hot, in <span class="hl-y">one number.</span></h2>
           <p class="section__sub">Every car gets a score out of 100, mixed from three real signals. Each car page shows its own breakdown, so you can see why it ranks where it does.</p>
+          <p class="section__sub" style="font-size:.88rem">Search interest is coming soon. Until then the score uses sales and growth only, scaled up to 100. Cars with no published sales aren’t ranked.</p>
         </div>
         <div class="mix">
           <div class="mix__row"><span class="mix__label">Sales this month</span><span class="mix__bar" style="--w:100%; --c:var(--yellow)"></span><b>45%</b></div>
@@ -134,15 +136,15 @@
         <div class="section__head">
           <div>
             <p class="kicker">Sales · kitni biki</p>
-            <h2>Top 10, October 2026</h2>
+            <h2>Top 10, <span data-month></span></h2>
             <p class="section__sub">Units sold in the month. Hover a bar for September's number.</p>
-            <p class="source">Source: PAMA monthly report (sample numbers for now)</p>
+            <p class="source" data-src="sales"></p>
           </div>
           <button class="link-btn" id="table-toggle" aria-expanded="false">Show as table</button>
         </div>
         <div class="chart" id="chart" role="img" aria-label="Bar chart of the top 10 cars by units sold"></div>
         <table class="data-table" id="data-table" hidden>
-          <thead><tr><th>Car</th><th>October</th><th>September</th><th>Change</th></tr></thead>
+          <thead><tr><th>Car</th><th id="th-month"></th><th id="th-prev"></th><th>Change</th></tr></thead>
           <tbody></tbody>
         </table>
         <div class="tooltip" id="tooltip" role="status" hidden></div>
@@ -153,9 +155,9 @@
     <section class="section" id="prices">
       <div class="container">
         <p class="kicker">Prices · kya mehnga, kya sasta</p>
-        <h2>Who changed prices this month</h2>
-        <p class="section__sub">Official ex-factory prices, compared with last month.</p>
-        <p class="source">Source: brand price lists (sample numbers for now)</p>
+        <h2>Cheapest new cars right now</h2>
+        <p class="section__sub">Lowest starting price of each model. Price changes will show here once we’ve tracked prices for a second month.</p>
+        <p class="source" data-src="prices"></p>
         <div class="price-grid" id="price-grid"></div>
       </div>
     </section>
@@ -208,7 +210,8 @@
   </footer>
 
   <script src="photos.js"></script>
-  <script src="data.js?v=5"></script>
-  <script src="script.js?v=5"></script>
+  <script src="data/cars.js?v=7"></script>
+  <script src="data.js?v=7"></script>
+  <script src="script.js?v=7"></script>
 </body>
 </html>

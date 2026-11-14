@@ -1,10 +1,22 @@
+// ===== Notice strip and source lines: say exactly where today's numbers come from =====
+document.getElementById('data-note').textContent =
+  `Early version. Sales: PAMA, ${monthLabel(SALES_MONTH)}. Prices: official brand websites, checked ${DATA.pricesCheckedLabel}. Search interest coming soon.`;
+document.querySelectorAll('[data-src="sales"]').forEach(el => {
+  el.innerHTML = `Source: <a href="${DATA.salesSource}" target="_blank" rel="noopener">PAMA monthly sales, ${monthLabel(SALES_MONTH)}</a>. Brands that don’t report to PAMA aren’t in this chart.`;
+});
+document.querySelectorAll('[data-src="prices"]').forEach(el => {
+  el.textContent = `Source: each brand’s official price list, checked ${DATA.pricesCheckedLabel}. Ex-factory prices; freight and registration are extra.`;
+});
+document.querySelectorAll('[data-month]').forEach(el => (el.textContent = monthLabel(SALES_MONTH)));
+
 // ===== What's hot list (responds to filters and search) =====
 const state = { budget: 'all', body: 'all', fuel: 'all', q: '' };
 
 function matches(c) {
   if (state.body !== 'all' && c.body !== state.body) return false;
-  if (state.fuel !== 'all' && c.fuel !== state.fuel) return false;
+  if (state.fuel !== 'all' && !c.fuels.includes(state.fuel)) return false;
   if (state.budget !== 'all') {
+    if (!c.price) return false;
     const [lo, hi] = state.budget.split('-').map(Number);
     if (c.price[0] < lo || c.price[0] >= hi) return false;   // judged by starting price
   }
@@ -12,31 +24,72 @@ function matches(c) {
   return true;
 }
 
-function renderHot() {
-  const list = cars.filter(matches).sort((a, b) => b.score - a.score).slice(0, 9);
-  document.getElementById('hot-list').innerHTML = list.map((c, i) => `
-    <li class="car ${i === 0 ? 'car--top' : ''}">
+const changeHtml = x => x.change == null
+  ? `<b>–</b>vs last month`
+  : `<b class="${x.change >= 0 ? 'up' : 'dn'}">${x.change >= 0 ? '▲' : '▼'} ${pct(x.change)}</b>vs ${monthShort(PREV_MONTH)}`;
+const titleOf = e => e.combined ? e.label : e.lead.name;
+
+// A card for a ranked sales entry (one PAMA row; may cover several models)
+function entryCard(e) {
+  const c = e.lead;
+  return `
+    <li class="car ${e.rank === 1 ? 'car--top' : ''}">
+      <a class="car__link" href="${linkOf(c)}" aria-label="${e.brand} ${titleOf(e)} details"></a>
+      <div class="car__photo">
+        ${photoTag(c)}
+        <span class="car__rank">${e.rank}</span>
+        <span class="score" title="Hot Score out of 100">Hot score <b>${e.score}</b></span>
+      </div>
+      <div class="car__body">
+        <span class="car__brand">${e.brand}</span>
+        <h3 class="car__name">${titleOf(e)}</h3>
+        <p class="car__price">${e.price ? priceText(e.price) : 'Price not published'}</p>
+        <p class="car__meta">${e.combined ? `${e.cars.length} models, counted together by PAMA` : `${c.body} · ${c.fuel}`}</p>
+        ${e.combined ? `<div class="group-links">${e.cars.map(x => `<a href="${linkOf(x)}">${x.name}</a>`).join('')}</div>` : ''}
+        <div class="car__signals">
+          <span class="signal"><b>${fmt(e.sales)}</b>sold in ${monthShort(SALES_MONTH)}</span>
+          <span class="signal">${changeHtml(e)}</span>
+          <span class="signal"><b>Soon</b>search interest</span>
+        </div>
+      </div>
+    </li>`;
+}
+
+// A card for a car that isn't ranked (no published sales this month)
+function plainCard(c) {
+  const why = c.entry && c.entry.sales == null ? `${monthShort(SALES_MONTH)} sales awaited`
+    : c.entry && c.entry.sales === 0 ? `none sold in ${monthShort(SALES_MONTH)}` : 'sales not published';
+  return `
+    <li class="car">
       <a class="car__link" href="${linkOf(c)}" aria-label="${c.brand} ${c.name} details"></a>
       <div class="car__photo">
-        <img src="${photoOf(c)}" alt="${c.brand} ${c.name}" loading="lazy">
-        <span class="car__rank">${i + 1}</span>
-        <span class="score" title="Hot Score out of 100">Hot score <b>${c.score}</b></span>
+        ${photoTag(c)}
+        <span class="score">Not ranked</span>
       </div>
       <div class="car__body">
         <span class="car__brand">${c.brand}</span>
         <h3 class="car__name">${c.name}</h3>
-        <p class="car__price">${priceText(c.price)}</p>
+        <p class="car__price">${c.price ? priceText(c.price) : 'Price not published'}</p>
         <p class="car__meta">${c.body} · ${c.fuel}</p>
         <div class="car__signals">
-          <span class="signal"><b>${fmt(c.sales)}</b>sold</span>
-          <span class="signal"><b class="${c.change >= 0 ? 'up' : 'dn'}">${c.change >= 0 ? '▲' : '▼'} ${pct(c.change)}</b>vs last month</span>
-          <span class="signal"><b>${c.search}</b>search /100</span>
+          <span class="signal"><b>–</b>${why}</span>
+          <span class="signal"><b>–</b>vs last month</span>
+          <span class="signal"><b>Soon</b>search interest</span>
         </div>
       </div>
-    </li>`).join('');
-  const total = cars.filter(matches).length;
-  document.getElementById('result-count').textContent = `Showing ${list.length} of ${total} matching cars`;
-  document.getElementById('empty').hidden = total > 0;
+    </li>`;
+}
+
+function renderHot() {
+  const okCars = cars.filter(matches);
+  // Ranked entries with at least one matching car, by Hot Score; then unranked matching cars, cheapest first
+  const top = ranked.filter(e => e.cars.some(c => okCars.includes(c)));
+  const rest = okCars.filter(c => c.rank == null).sort((a, b) => (a.price?.[0] ?? 1e9) - (b.price?.[0] ?? 1e9));
+  const items = [...top.map(entryCard), ...rest.map(plainCard)].slice(0, 9);
+  document.getElementById('hot-list').innerHTML = items.join('');
+  document.getElementById('result-count').textContent =
+    `${okCars.length} matching model${okCars.length === 1 ? '' : 's'} · ranked ones first`;
+  document.getElementById('empty').hidden = okCars.length > 0;
 }
 
 document.querySelectorAll('.chips').forEach(group => {
@@ -54,56 +107,67 @@ document.getElementById('search').addEventListener('input', e => {
 });
 
 // ===== Month at a glance =====
-const totalSales = cars.reduce((s, c) => s + c.sales, 0);
-const best = [...cars].sort((a, b) => b.sales - a.sales)[0];
-const riser = [...cars].sort((a, b) => b.change - a.change)[0];
+const withSales = entries.filter(e => e.sales != null && e.sales > 0);
+const totalSales = withSales.reduce((s, e) => s + e.sales, 0);
+const riser = withSales.filter(e => e.change != null && e.prev >= 50).sort((a, b) => b.change - a.change)[0];
 document.getElementById('stat-total').textContent = fmt(totalSales);
 document.getElementById('stat-models').textContent = cars.length;
+document.getElementById('stat-riser').textContent = riser ? `${riser.combined ? riser.brand : riser.lead.name} ${pct(riser.change)}` : '–';
 
-// Hero: the No. 1 car on the Hot List
-const no1 = [...cars].sort((a, b) => b.score - a.score)[0];
-const heroImg = document.getElementById('hero-img');
-// Ask Wikimedia for a bigger copy; if that size isn't available, use the normal one
-heroImg.onerror = () => { heroImg.onerror = null; heroImg.src = photoOf(no1); };
-heroImg.src = photoOf(no1).replace(/\/\d+px-/, '/1280px-');
-heroImg.alt = `${no1.brand} ${no1.name}`;
+// Hero: the No. 1 entry on the Hot List
+const no1 = ranked[0];
+const heroCar = no1.lead;
+if (photoOf(heroCar)) {
+  const heroImg = document.getElementById('hero-img');
+  // Ask Wikimedia for a bigger copy; if that size isn't available, use the normal one
+  heroImg.onerror = () => { heroImg.onerror = null; heroImg.src = photoOf(heroCar); };
+  heroImg.src = photoOf(heroCar).replace(/\/\d+px-/, '/1280px-');
+  heroImg.alt = `${heroCar.brand} ${heroCar.name}`;
+} else {
+  document.querySelector('.hero__photo').insertAdjacentHTML('afterbegin', photoTag(heroCar));
+  document.getElementById('hero-img').remove();
+}
 document.getElementById('hero-brand').textContent = no1.brand;
-document.getElementById('hero-name').textContent = no1.name;
+document.getElementById('hero-name').textContent = titleOf(no1);
 document.getElementById('hero-sales').textContent = fmt(no1.sales);
-document.getElementById('hero-change').textContent = (no1.change >= 0 ? '▲ ' : '▼ ') + pct(no1.change);
-document.getElementById('hero-price').textContent = `Rs ${lakh(no1.price[0])}`;
+document.getElementById('hero-change').textContent = no1.change == null ? '–' : (no1.change >= 0 ? '▲ ' : '▼ ') + pct(no1.change);
+document.getElementById('hero-change-label').textContent = `vs ${monthShort(PREV_MONTH)}`;
+document.getElementById('hero-price').textContent = no1.price ? `Rs ${lakh(no1.price[0])}` : '–';
 document.getElementById('hero-chat').textContent =
-  `${no1.brand} ${no1.name}! ${fmt(no1.sales)} biki, pichle mahine se ${pct(no1.change)}. Hot score ${no1.score} 🔥`;
-document.getElementById('stat-riser').textContent = `${riser.name} ${pct(riser.change)}`;
+  `${no1.brand} ${titleOf(no1)}! ${monthLabel(SALES_MONTH)} mein ${fmt(no1.sales)} biki` +
+  (no1.change != null ? `, pichle mahine se ${pct(no1.change)}` : '') + `. Hot score ${no1.score} 🔥`;
 
 // ===== Top 10 sales chart (one colour, hover tooltip, table view) =====
-const top10 = [...cars].sort((a, b) => b.sales - a.sales).slice(0, 10);
+const top10 = [...withSales].sort((a, b) => b.sales - a.sales).slice(0, 10);
+const chartLabel = e => `${e.brand} ${titleOf(e)}`;
 const chart = document.getElementById('chart');
-chart.innerHTML = top10.map((c, i) => `
-  <a class="bar-row" href="${linkOf(c)}" data-i="${i}">
-    <span class="bar-row__label">${c.brand} ${c.name}</span>
+chart.innerHTML = top10.map((e, i) => `
+  <a class="bar-row" href="${linkOf(e.lead)}" data-i="${i}" title="${chartLabel(e)}">
+    <span class="bar-row__label">${chartLabel(e)}</span>
     <span class="bar-row__track">
-      <span class="bar" style="width:0" data-w="${(c.sales / top10[0].sales) * 88}%"></span>
-      <span class="bar-row__val">${fmt(c.sales)}</span>
+      <span class="bar" style="width:0" data-w="${(e.sales / top10[0].sales) * 88}%"></span>
+      <span class="bar-row__val">${fmt(e.sales)}</span>
     </span>
   </a>`).join('');
-// Grow the bars in once the page has drawn
 requestAnimationFrame(() => chart.querySelectorAll('.bar').forEach(b => (b.style.width = b.dataset.w)));
 
 const tip = document.getElementById('tooltip');
-chart.addEventListener('mousemove', e => {
-  const row = e.target.closest('.bar-row');
+chart.addEventListener('mousemove', ev => {
+  const row = ev.target.closest('.bar-row');
   if (!row) { tip.hidden = true; return; }
-  const c = top10[row.dataset.i];
-  tip.innerHTML = `<b>${c.brand} ${c.name}</b>October: ${fmt(c.sales)}<br>September: ${fmt(c.prev)} (${pct(c.change)})`;
+  const e = top10[row.dataset.i];
+  tip.innerHTML = `<b>${chartLabel(e)}</b>${monthLabel(SALES_MONTH)}: ${fmt(e.sales)}` +
+    (e.prev != null ? `<br>${monthLabel(PREV_MONTH)}: ${fmt(e.prev)}${e.change != null ? ` (${pct(e.change)})` : ''}` : '');
   tip.hidden = false;
-  tip.style.left = Math.min(e.clientX + 14, innerWidth - 200) + 'px';
-  tip.style.top = e.clientY + 14 + 'px';
+  tip.style.left = Math.min(ev.clientX + 14, innerWidth - 220) + 'px';
+  tip.style.top = ev.clientY + 14 + 'px';
 });
 chart.addEventListener('mouseleave', () => (tip.hidden = true));
 
-const tbody = document.querySelector('#data-table tbody');
-tbody.innerHTML = top10.map(c => `<tr><td>${c.brand} ${c.name}</td><td>${fmt(c.sales)}</td><td>${fmt(c.prev)}</td><td>${pct(c.change)}</td></tr>`).join('');
+document.getElementById('th-month').textContent = monthLabel(SALES_MONTH);
+document.getElementById('th-prev').textContent = monthLabel(PREV_MONTH);
+document.querySelector('#data-table tbody').innerHTML = top10.map(e =>
+  `<tr><td>${chartLabel(e)}</td><td>${fmt(e.sales)}</td><td>${e.prev != null ? fmt(e.prev) : '–'}</td><td>${e.change != null ? pct(e.change) : '–'}</td></tr>`).join('');
 const toggle = document.getElementById('table-toggle');
 toggle.addEventListener('click', () => {
   const showTable = toggle.getAttribute('aria-expanded') !== 'true';
@@ -113,24 +177,22 @@ toggle.addEventListener('click', () => {
   chart.hidden = showTable;
 });
 
-// ===== Price changes =====
+// ===== Cheapest new cars right now (price changes need a second month of tracking) =====
 document.getElementById('price-grid').innerHTML = cars
-  .filter(c => c.priceChange !== 0)
-  .sort((a, b) => Math.abs(b.priceChange) - Math.abs(a.priceChange))
-  .map(c => {
-    const up = c.priceChange > 0;
-    return `<a class="price-card" href="${linkOf(c)}">
-      <img src="${photoOf(c)}" alt="" loading="lazy">
-      <div><h3>${c.brand} ${c.name}</h3><p>Now from Rs ${lakh(c.price[0])}</p></div>
-      <span class="delta ${up ? 'delta--up' : 'delta--down'}">${up ? '▲ Up' : '▼ Down'} ${Math.abs(c.priceChange)} lakh</span>
-    </a>`;
-  }).join('');
+  .filter(c => c.price)
+  .sort((a, b) => a.price[0] - b.price[0])
+  .slice(0, 6)
+  .map(c => `<a class="price-card" href="${linkOf(c)}">
+      ${photoTag(c, 'price-card__img')}
+      <div><h3>${c.brand} ${c.name}</h3><p>${c.variants.length} variant${c.variants.length > 1 ? 's' : ''} · ${c.body}</p></div>
+      <span class="delta delta--price">from Rs ${lakh(c.price[0])}</span>
+    </a>`).join('');
 
 // ===== Brands =====
 const brandCounts = {};
 cars.forEach(c => (brandCounts[c.brand] = (brandCounts[c.brand] || 0) + 1));
 document.getElementById('brands').innerHTML = Object.entries(brandCounts)
-  .sort((a, b) => b[1] - a[1])
+  .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
   .map(([b, n]) => `<a href="#hot" class="brand" data-brand="${b}">${b}<small>${n} model${n > 1 ? 's' : ''}</small></a>`).join('');
 document.getElementById('brands').addEventListener('click', e => {
   const a = e.target.closest('.brand');

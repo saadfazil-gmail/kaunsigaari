@@ -1,0 +1,49 @@
+{
+  "month": "2026-10",
+  "prevMonth": "2026-09",
+  "source": "https://pama.org.pk/wp-content/uploads/2026/11/Production-Sales-October-2026.pdf",
+  "sourceTitle": "PAMA - Production & Sale Data of Vehicles, October 2026",
+  "notes": [
+    "Read from the official PAMA PDF (both months are in the one document).",
+    "'-' in the table recorded as 0; 'Awaited' recorded as null.",
+    "Several rows are combined groups of models; PAMA gives no per-model split."
+  ],
+  "rows": [
+    {"pamaName": "Suzuki Alto", "sales": 11363, "prevSales": 3354},
+    {"pamaName": "Suzuki Swift", "sales": 3214, "prevSales": 852},
+    {"pamaName": "Suzuki Cultus", "sales": 653, "prevSales": 138},
+    {"pamaName": "Suzuki WagonR", "sales": 0, "prevSales": 0},
+    {"pamaName": "SUZUKI FRONX", "sales": 169, "prevSales": 60},
+    {"pamaName": "Suzuki Every", "sales": 522, "prevSales": 458},
+    {"pamaName": "Toyota (Corolla, Yaris & Corolla Cross)", "sales": 3496, "prevSales": 3563},
+    {"pamaName": "TOYOTA (Fortuner & IMVs)", "sales": 577, "prevSales": 579},
+    {"pamaName": "Honda Cars (Civic & City)", "sales": 1933, "prevSales": 2021},
+    {"pamaName": "HONDA BR-V & HR-V", "sales": 168, "prevSales": 107},
+    {"pamaName": "Hyundai Elantra", "sales": 401, "prevSales": 494},
+    {"pamaName": "Hyundai Sonata", "sales": 17, "prevSales": 17},
+    {"pamaName": "HYUNDAI TUCSON", "sales": 67, "prevSales": 51},
+    {"pamaName": "HYUNDAI SANTA FE", "sales": 19, "prevSales": 12},
+    {"pamaName": "HYUNDAI PALISADE", "sales": 379, "prevSales": 2},
+    {"pamaName": "HAVAL / TANK SAZGAR", "sales": null, "prevSales": 2474},
+    {"pamaName": "BAIC D20 Sazgar", "sales": null, "prevSales": 0},
+    {"pamaName": "BAIC X25 SAZGAR", "sales": null, "prevSales": 0},
+    {"pamaName": "BAIC BJ40L SAZGAR", "sales": null, "prevSales": 0},
+    {"pamaName": "JETOUR UNITED MOTORS", "sales": 768, "prevSales": 141},
+    {"pamaName": "DEWAN Honri-Ve", "sales": 36, "prevSales": 42},
+    {"pamaName": "SIGMA DEFENDER", "sales": 0, "prevSales": 0},
+    {"pamaName": "SUZUKI RAVI", "sales": 0, "prevSales": 0},
+    {"pamaName": "JAC Pickup's Ghandhara", "sales": 284, "prevSales": 373},
+    {"pamaName": "ISUZU D-MAX", "sales": 29, "prevSales": 37},
+    {"pamaName": "HYUNDAI PORTER", "sales": 319, "prevSales": 308},
+    {"pamaName": "DEWAN KIA SHEHZORE", "sales": 4, "prevSales": 21}
+  ],
+  "notCovered": [
+    "Kia / Lucky Motor (Sportage, Picanto, Stonic, Sorento, Carnival)",
+    "Changan / Master Changan",
+    "MG / JW SEZ",
+    "Proton / Al-Haj",
+    "BYD / Mega Motor",
+    "Peugeot / Lucky Motor",
+    "Chery / Ghandhara"
+  ]
+}
