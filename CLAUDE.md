@@ -79,12 +79,17 @@ The weights live in `data.js`. If they change, also update the text on both page
 
 ## Design
 
-Bold and sporty, chosen by the owner:
-- Near-black background with **one** accent, racing red `#FF2D3D`.
-- Headlines in Barlow Condensed (uppercase, italic for car names). Body text in Inter.
-- Charts use one colour: neutral grey bars with the leader or latest month in red. Hover tooltips and
-  a table view.
+Funky and friendly (Nov 2026; replaced an earlier dark "sporty" look the owner didn't like).
+Inspired by the feel of usesentira.com, but **not copied**: our own colours, fonts and layout.
+- Warm cream pages `#FFF7EA`, ink `#17130E`, truck-art accents: hot pink `#FF3E8A`, sunny yellow
+  `#FFC83D`, teal `#00A99A`, dark plum `#2A1B3D` for the footer.
+- Chunky shapes: 2px ink outlines, big rounded corners, hard offset shadows, slight tilts, stickers.
+- Headlines in Bricolage Grotesque, body in DM Sans. Logo: a tilted yellow "?" badge + "kaunsi**gaari**".
+- Roman Urdu touches in labels and the hero chat ("Kaunsi gaari lein? Data se poochein.").
+- Yellow pill buttons with a round ink arrow.
+- Charts use one colour: ink bars with the leader or latest month in pink. Hover tooltips and a table view.
 - Green and orange show up and down, always with ▲/▼ and words, never colour alone.
+- The brand deck (Slides artifact) holds the full brand guide.
 
 ## Next steps (in order)
 

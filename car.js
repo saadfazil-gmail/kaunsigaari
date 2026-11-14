@@ -15,7 +15,7 @@ if (!car) {
   img.onerror = () => { img.onerror = null; img.src = photoOf(car); };
   img.src = photoOf(car).replace(/\/\d+px-/, '/1280px-');
   img.alt = full;
-  $('d-rank').textContent = `No. ${car.rank} on the Hot List`;
+  $('d-rank').textContent = `#${car.rank} on the hot list`;
   $('d-brand').textContent = car.brand;
   $('d-name').textContent = car.name;
   $('d-price').textContent = priceText(car.price);

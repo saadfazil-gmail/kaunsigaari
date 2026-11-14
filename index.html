@@ -7,18 +7,19 @@
   <meta name="description" content="Every new car sold in Pakistan, ranked by what's hot: monthly sales, momentum and search interest.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,800&family=Inter:wght@400;500;600;700&display=swap">
-  <link rel="stylesheet" href="style.css?v=4">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=DM+Sans:opsz,wght@9..40,400..700&display=swap">
+  <link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
 
   <!-- Mockup notice: remove once real data is plugged in -->
   <div class="mock-note">Design mockup. Car names and photos are real, but every number on this page is made up.</div>
+  <div class="zigzag" aria-hidden="true"></div>
 
   <!-- Top bar -->
   <header class="topbar">
     <div class="container topbar__inner">
-      <a href="#" class="logo">KAUNSI<span>GAARI</span>?</a>
+      <a href="#" class="logo"><span class="logo__mark">?</span><span>kaunsi<b>gaari</b></span></a>
       <nav class="nav">
         <a href="#hot">What's hot</a>
         <a href="#sales">Sales</a>
@@ -33,28 +34,40 @@
   </header>
 
   <main>
-    <!-- Hero: this month's #1 car, full width -->
+    <!-- Hero: the question on the left, this month's No. 1 car as a chat card on the right -->
     <section class="hero" id="hero">
-      <img class="hero__img" id="hero-img" alt="">
-      <div class="hero__shade"></div>
-      <div class="container hero__content">
-        <p class="kicker">No. 1 this month</p>
-        <h1 class="hero__title"><span id="hero-brand"></span> <em id="hero-name"></em></h1>
-        <div class="hero__stats">
-          <div><b id="hero-sales">-</b><span>sold in October</span></div>
-          <div><b id="hero-change">-</b><span>vs September</span></div>
-          <div><b id="hero-price">-</b><span>starting price</span></div>
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="kicker">Har nayi gaari. Ek jagah.</p>
+          <h1 class="hero__title">Kaunsi gaari lein? <span class="hl">Data se poochein.</span></h1>
+          <p class="hero__lead">Every new car sold in Pakistan, ranked by what people are actually buying, what it costs today, and which prices just moved.</p>
+          <div class="hero__ctas">
+            <a href="#hot" class="btn">See what's hot <span class="btn__arrow">↗</span></a>
+            <a href="#sales" class="btn btn--ghost">Sales chart</a>
+          </div>
+          <div class="hero__stats">
+            <div><b id="stat-total">0</b><span>new cars sold in Oct</span></div>
+            <div><b id="stat-riser">-</b><span>biggest riser</span></div>
+            <div><b id="stat-models">0</b><span>models tracked</span></div>
+          </div>
         </div>
-        <a href="#hot" class="btn">See the full ranking</a>
-      </div>
-    </section>
 
-    <!-- Month strip -->
-    <section class="strip">
-      <div class="container strip__inner">
-        <div><b id="stat-total">0</b><span>new cars sold, Oct 2026</span></div>
-        <div><b id="stat-riser">-</b><span>biggest riser</span></div>
-        <div><b id="stat-models">0</b><span>models tracked</span></div>
+        <div class="hero__card">
+          <div class="hero__photo">
+            <img id="hero-img" alt="">
+            <span class="sticker">#1 this month 🔥</span>
+          </div>
+          <div class="chat">
+            <p class="bubble bubble--you">Bhai, is mahine kaunsi gaari hot hai?</p>
+            <p class="bubble bubble--kg"><span class="bubble__from">kaunsigaari</span><span id="hero-chat"></span></p>
+          </div>
+          <div class="hero__facts">
+            <div><span id="hero-brand"></span><b id="hero-name"></b></div>
+            <div><b id="hero-sales">-</b><span>sold</span></div>
+            <div><b id="hero-change">-</b><span>vs Sep</span></div>
+            <div><b id="hero-price">-</b><span>from</span></div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -63,7 +76,7 @@
       <div class="container">
         <div class="section__head">
           <div>
-            <p class="kicker">The Hot List</p>
+            <p class="kicker">Hot list · abhi kya chal raha hai</p>
             <h2>What Pakistan wants right now</h2>
             <p class="section__sub">Hot Score = sales (45%) + growth vs last month (30%) + Google search interest (25%).</p>
           </div>
@@ -103,7 +116,7 @@
       <div class="container">
         <div class="section__head">
           <div>
-            <p class="kicker">Sales</p>
+            <p class="kicker">Sales · kitni biki</p>
             <h2>Top 10, October 2026</h2>
             <p class="section__sub">Units sold in the month. Hover a bar for September's number.</p>
           </div>
@@ -121,7 +134,7 @@
     <!-- Price changes -->
     <section class="section" id="prices">
       <div class="container">
-        <p class="kicker">Prices</p>
+        <p class="kicker">Prices · kya mehnga, kya sasta</p>
         <h2>Who changed prices this month</h2>
         <p class="section__sub">Official ex-factory prices, compared with last month.</p>
         <div class="price-grid" id="price-grid"></div>
@@ -131,7 +144,7 @@
     <!-- Browse -->
     <section class="section section--alt" id="browse">
       <div class="container">
-        <p class="kicker">Brands</p>
+        <p class="kicker">Brands · apni pasand</p>
         <h2>Browse by brand</h2>
         <div class="brands" id="brands"></div>
       </div>
@@ -140,7 +153,7 @@
 
   <footer class="footer">
     <div class="container footer__inner">
-      <a href="#" class="logo">KAUNSI<span>GAARI</span>?</a>
+      <a href="#" class="logo logo--big"><span class="logo__mark">?</span><span>kaunsi<b>gaari</b></span></a>
       <p>Where the numbers will come from: PAMA (Pakistan Automotive Manufacturers Association) monthly sales, official brand price lists, and Google Trends.</p>
       <details class="credits">
         <summary>Photo credits</summary>
@@ -152,7 +165,7 @@
   </footer>
 
   <script src="photos.js"></script>
-  <script src="data.js?v=4"></script>
-  <script src="script.js?v=4"></script>
+  <script src="data.js?v=5"></script>
+  <script src="script.js?v=5"></script>
 </body>
 </html>

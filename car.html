@@ -6,16 +6,17 @@
   <title>Car details | KaunsiGaari</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,800&family=Inter:wght@400;500;600;700&display=swap">
-  <link rel="stylesheet" href="style.css?v=4">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=DM+Sans:opsz,wght@9..40,400..700&display=swap">
+  <link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
 
   <div class="mock-note">Design mockup. Car names and photos are real, but every number on this page is made up.</div>
+  <div class="zigzag" aria-hidden="true"></div>
 
   <header class="topbar">
     <div class="container topbar__inner">
-      <a href="index.html" class="logo">KAUNSI<span>GAARI</span>?</a>
+      <a href="index.html" class="logo"><span class="logo__mark">?</span><span>kaunsi<b>gaari</b></span></a>
       <nav class="nav">
         <a href="index.html#hot">What's hot</a>
         <a href="index.html#sales">Sales</a>
@@ -28,20 +29,21 @@
 
   <main id="detail">
     <!-- Hero -->
-    <section class="hero hero--detail">
-      <img class="hero__img" id="d-img" alt="">
-      <div class="hero__shade"></div>
-      <div class="container hero__content">
-        <p class="kicker" id="d-rank"></p>
-        <h1 class="hero__title"><span id="d-brand"></span> <em id="d-name"></em></h1>
-        <p class="d-price" id="d-price"></p>
-        <div class="tags" id="d-tags"></div>
+    <section class="d-hero">
+      <div class="container d-hero__grid">
+        <div>
+          <p class="kicker" id="d-rank"></p>
+          <h1><span id="d-brand"></span><em id="d-name" style="font-style:normal"></em></h1>
+          <p class="d-price" id="d-price"></p>
+          <div class="tags" id="d-tags"></div>
+        </div>
+        <div class="d-hero__photo"><img id="d-img" alt=""></div>
       </div>
     </section>
 
     <!-- Quick numbers -->
-    <section class="strip">
-      <div class="container strip__inner strip__inner--4">
+    <section>
+      <div class="container stats4">
         <div><b id="d-sales">-</b><span>sold in October</span></div>
         <div><b id="d-change">-</b><span>vs September</span></div>
         <div><b id="d-search">-</b><span>search interest /100</span></div>
@@ -53,7 +55,7 @@
       <div class="container detail-grid">
         <!-- Sales trend -->
         <div class="panel">
-          <p class="kicker">Sales</p>
+          <p class="kicker">Sales · kitni biki</p>
           <h2 class="panel__title">Last 6 months</h2>
           <div class="cols" id="d-chart" role="img"></div>
           <div class="tooltip" id="tooltip" role="status" hidden></div>
@@ -92,7 +94,7 @@
     <!-- Similar cars -->
     <section class="section">
       <div class="container">
-        <p class="kicker">Also consider</p>
+        <p class="kicker">Yeh bhi dekhein</p>
         <h2>Similar cars</h2>
         <p class="section__sub" id="d-similar-sub"></p>
         <ol class="hot-list" id="d-similar"></ol>
@@ -109,14 +111,14 @@
 
   <footer class="footer">
     <div class="container footer__inner">
-      <a href="index.html" class="logo">KAUNSI<span>GAARI</span>?</a>
+      <a href="index.html" class="logo logo--big"><span class="logo__mark">?</span><span>kaunsi<b>gaari</b></span></a>
       <p id="d-credit"></p>
       <p class="footer__small">New, locally sold cars only. Starter mockup built with Claude Code.</p>
     </div>
   </footer>
 
   <script src="photos.js"></script>
-  <script src="data.js?v=4"></script>
-  <script src="car.js?v=4"></script>
+  <script src="data.js?v=5"></script>
+  <script src="car.js?v=5"></script>
 </body>
 </html>

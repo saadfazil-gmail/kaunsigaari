@@ -72,6 +72,8 @@ document.getElementById('hero-name').textContent = no1.name;
 document.getElementById('hero-sales').textContent = fmt(no1.sales);
 document.getElementById('hero-change').textContent = (no1.change >= 0 ? '▲ ' : '▼ ') + pct(no1.change);
 document.getElementById('hero-price').textContent = `Rs ${lakh(no1.price[0])}`;
+document.getElementById('hero-chat').textContent =
+  `${no1.brand} ${no1.name}! ${fmt(no1.sales)} biki, pichle mahine se ${pct(no1.change)}. Hot score ${no1.score} 🔥`;
 document.getElementById('stat-riser').textContent = `${riser.name} ${pct(riser.change)}`;
 
 // ===== Top 10 sales chart (one colour, hover tooltip, table view) =====
