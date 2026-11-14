@@ -348,3 +348,4 @@ img { display: block; max-width: 100%; }
 .group-links a:hover { background: var(--yellow-soft); }
 .body-note { color: var(--ink-2); margin: 18px 0 0; }
 .variants td { font-size: .9rem; }
+.price-card .delta--price { display: inline-block; margin-top: 6px; }

@@ -90,7 +90,7 @@ last month had 50+ units. Entries with no published sales get no score and aren'
   per car (detail page) because the free licences require it. Keep the credits.
 - Some photos are other-market versions (Cultus = Celerio, Yaris = Vios, WagonR = Indonesian model,
   Tucson is a rear view). Fine for now, better photos later.
-- `fetch_photos.py` needs `/usr/bin/python3` (the python.org Python here fails on SSL certificates).
+- `fetch_photos.py` reads the model list from `data/cars.js` and only looks up cars with no photo; `SHARE` reuses a photo for twin models, `PINNED` fixes wrong picks. Always look at the results. It needs `/usr/bin/python3` (the python.org Python here fails on SSL certificates).
   Wikipedia rate-limits fast requests, so the script spaces them out. `PINNED` in the script fixes cars
   where search picks the wrong photo.
 - Wikimedia only serves certain thumbnail widths (1280px works for the hero, with a fallback).

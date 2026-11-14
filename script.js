@@ -184,8 +184,8 @@ document.getElementById('price-grid').innerHTML = cars
   .slice(0, 6)
   .map(c => `<a class="price-card" href="${linkOf(c)}">
       ${photoTag(c, 'price-card__img')}
-      <div><h3>${c.brand} ${c.name}</h3><p>${c.variants.length} variant${c.variants.length > 1 ? 's' : ''} · ${c.body}</p></div>
-      <span class="delta delta--price">from Rs ${lakh(c.price[0])}</span>
+      <div><h3>${c.brand} ${c.name}</h3><p>${c.variants.length} variant${c.variants.length > 1 ? 's' : ''} · ${c.body}</p>
+        <span class="delta delta--price">from Rs ${lakh(c.price[0])}</span></div>
     </a>`).join('');
 
 // ===== Brands =====
