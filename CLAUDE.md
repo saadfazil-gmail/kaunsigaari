@@ -121,7 +121,8 @@ Inspired by the feel of usesentira.com, but **not copied**: our own colours, fon
 ## Git
 
 - Commit after each working step with a plain message.
-- Live site: https://saadfazil-gmail.github.io/kaunsigaari/ (GitHub Pages, served from `main`).
+- Live site: **https://kaunsigaari.com** (GitHub Pages, served from `main`; domain at GoDaddy, DNS A records
+  to GitHub plus `www` CNAME; HTTPS on). The `CNAME` file holds the domain: never delete it.
   Repo: https://github.com/saadfazil-gmail/kaunsigaari (public).
 - **Pushing `main` publishes to the live site within a minute or two.** Ask the owner before every push.
 - Commits use GitHub's private noreply email (set in this repo's git config); keep it that way.
