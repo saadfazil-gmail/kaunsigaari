@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=DM+Sans:opsz,wght@9..40,400..700&display=swap">
-  <link rel="stylesheet" href="style.css?v=10">
+  <link rel="stylesheet" href="style.css?v=12">
 </head>
 <body>
 
@@ -110,11 +110,27 @@
             <button class="chip" data-value="Electric">Electric</button>
             <button class="chip" data-value="Diesel">Diesel</button>
           </div>
+          <div class="chips" data-filter="brand" id="brand-chips" aria-label="Brand">
+            <button class="chip is-on" data-value="all">All brands</button>
+          </div>
         </div>
 
-        <p class="result-count" id="result-count"></p>
+        <div class="list-bar">
+          <p class="result-count" id="result-count"></p>
+          <label class="sort">
+            <span>Sort by</span>
+            <select id="sort">
+              <option value="hot">Hot Score</option>
+              <option value="price-asc">Price: low to high</option>
+              <option value="price-desc">Price: high to low</option>
+              <option value="buzz">Most talked about</option>
+            </select>
+          </label>
+          <button class="link-btn" id="clear-filters" hidden>Clear filters</button>
+        </div>
         <ol class="hot-list" id="hot-list"></ol>
-        <p class="empty" id="empty" hidden>No cars match those filters. Try a wider budget.</p>
+        <p class="empty" id="empty" hidden>No cars match those filters. Try a wider budget, or clear the filters.</p>
+        <div class="show-all"><button class="btn btn--ghost" id="show-all" hidden>Show all</button></div>
       </div>
     </section>
 
@@ -218,6 +234,6 @@
   <script src="photos.js?v=8"></script>
   <script src="data/cars.js?v=11"></script>
   <script src="data.js?v=11"></script>
-  <script src="script.js?v=11"></script>
+  <script src="script.js?v=13"></script>
 </body>
 </html>

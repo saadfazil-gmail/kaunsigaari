@@ -10,9 +10,18 @@ document.querySelectorAll('[data-src="prices"]').forEach(el => {
 document.querySelectorAll('[data-month]').forEach(el => (el.textContent = monthLabel(SALES_MONTH)));
 
 // ===== What's hot list (responds to filters and search) =====
-const state = { budget: 'all', body: 'all', fuel: 'all', q: '' };
+const DEFAULTS = { budget: 'all', body: 'all', fuel: 'all', brand: 'all', q: '', sort: 'hot' };
+const state = { ...DEFAULTS, showAll: false };
+const PAGE = 9;                                   // cards shown before "Show all"
+
+// Brand filter chips: one per brand, most models first
+const brandList = Object.entries(cars.reduce((m, c) => ((m[c.brand] = (m[c.brand] || 0) + 1), m), {}))
+  .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).map(([b]) => b);
+document.getElementById('brand-chips').insertAdjacentHTML('beforeend',
+  brandList.map(b => `<button class="chip" data-value="${b}">${b}</button>`).join(''));
 
 function matches(c) {
+  if (state.brand !== 'all' && c.brand !== state.brand) return false;
   if (state.body !== 'all' && c.body !== state.body) return false;
   if (state.fuel !== 'all' && !c.fuels.includes(state.fuel)) return false;
   if (state.budget !== 'all') {
@@ -80,29 +89,97 @@ function plainCard(c) {
     </li>`;
 }
 
+// A card for one model, used when sorting by price or buzz
+function modelCard(c) {
+  if (c.rank == null) return plainCard(c);
+  const e = c.entry;
+  return `
+    <li class="car">
+      <a class="car__link" href="${linkOf(c)}" aria-label="${c.brand} ${c.name} details"></a>
+      <div class="car__photo">
+        ${photoTag(c)}
+        <span class="car__rank">${c.rank}</span>
+        <span class="score" title="Hot Score out of 100">Hot score <b>${c.score}</b></span>
+      </div>
+      <div class="car__body">
+        <span class="car__brand">${c.brand}</span>
+        <h3 class="car__name">${c.name}</h3>
+        <p class="car__price">${c.price ? priceText(c.price) : 'Price not published'}</p>
+        <p class="car__meta">${c.body} · ${c.fuel}</p>
+        <div class="car__signals">
+          <span class="signal" title="${e.combined ? `PAMA counts ${e.label} together` : ''}"><b>${fmt(e.sales)}</b>sold in ${monthShort(SALES_MONTH)}${e.combined ? '*' : ''}</span>
+          <span class="signal">${changeHtml(e)}</span>
+          <span class="signal"><b>${c.buzzRaw != null ? fmt(c.buzzRaw) : '–'}</b>buzz, 30 days</span>
+        </div>
+      </div>
+    </li>`;
+}
+
+const isFiltered = () => Object.keys(DEFAULTS).some(k => state[k] !== DEFAULTS[k]);
+
 function renderHot() {
   const okCars = cars.filter(matches);
-  // Ranked entries with at least one matching car, by Hot Score; then unranked matching cars, cheapest first
-  const top = ranked.filter(e => e.cars.some(c => okCars.includes(c)));
-  const rest = okCars.filter(c => c.rank == null).sort((a, b) => (a.price?.[0] ?? 1e9) - (b.price?.[0] ?? 1e9));
-  const items = [...top.map(entryCard), ...rest.map(plainCard)].slice(0, 9);
-  document.getElementById('hot-list').innerHTML = items.join('');
+  let items;
+  if (state.sort === 'hot') {
+    // Ranked entries with at least one matching car, by Hot Score; then unranked matching cars, cheapest first
+    const top = ranked.filter(e => e.cars.some(c => okCars.includes(c)));
+    const rest = okCars.filter(c => c.rank == null).sort((a, b) => (a.price?.[0] ?? 1e9) - (b.price?.[0] ?? 1e9));
+    items = [...top.map(entryCard), ...rest.map(plainCard)];
+  } else {
+    const by = {
+      'price-asc': (a, b) => (a.price?.[0] ?? 1e9) - (b.price?.[0] ?? 1e9),
+      'price-desc': (a, b) => (b.price?.[1] ?? -1) - (a.price?.[1] ?? -1),
+      'buzz': (a, b) => (b.buzzRaw ?? -1) - (a.buzzRaw ?? -1),
+    }[state.sort];
+    items = okCars.slice().sort(by).map(modelCard);
+  }
+  const shown = state.showAll ? items : items.slice(0, PAGE);
+  document.getElementById('hot-list').innerHTML = shown.join('');
+  const sortNote = { hot: 'ranked ones first', 'price-asc': 'cheapest first', 'price-desc': 'most expensive first', buzz: 'most talked about first' }[state.sort];
   document.getElementById('result-count').textContent =
-    `${okCars.length} matching model${okCars.length === 1 ? '' : 's'} · ranked ones first`;
+    `${okCars.length} matching model${okCars.length === 1 ? '' : 's'} · ${sortNote}`;
   document.getElementById('empty').hidden = okCars.length > 0;
+  const more = document.getElementById('show-all');
+  more.hidden = items.length <= PAGE;
+  more.textContent = state.showAll ? "Show fewer" : `Show all ${okCars.length} models`;
+  document.getElementById('clear-filters').hidden = !isFiltered();
+}
+
+// Turn on the chip for a value in one filter row (used by clicks, brand tiles and "Clear")
+function setChip(filter, value) {
+  state[filter] = value;
+  document.querySelectorAll(`.chips[data-filter="${filter}"] .chip`)
+    .forEach(b => b.classList.toggle('is-on', b.dataset.value === value));
 }
 
 document.querySelectorAll('.chips').forEach(group => {
   group.addEventListener('click', e => {
     const btn = e.target.closest('.chip');
     if (!btn) return;
-    group.querySelectorAll('.chip').forEach(b => b.classList.toggle('is-on', b === btn));
-    state[group.dataset.filter] = btn.dataset.value;
+    setChip(group.dataset.filter, btn.dataset.value);
+    state.showAll = false;
     renderHot();
   });
 });
 document.getElementById('search').addEventListener('input', e => {
   state.q = e.target.value.trim().toLowerCase();
+  state.showAll = false;
+  renderHot();
+});
+document.getElementById('sort').addEventListener('change', e => {
+  state.sort = e.target.value;
+  renderHot();
+});
+document.getElementById('show-all').addEventListener('click', () => {
+  state.showAll = !state.showAll;
+  renderHot();
+  if (!state.showAll) document.getElementById('hot').scrollIntoView();
+});
+document.getElementById('clear-filters').addEventListener('click', () => {
+  ['budget', 'body', 'fuel', 'brand'].forEach(f => setChip(f, 'all'));
+  state.q = ''; document.getElementById('search').value = '';
+  state.sort = 'hot'; document.getElementById('sort').value = 'hot';
+  state.showAll = false;
   renderHot();
 });
 
@@ -200,9 +277,11 @@ document.getElementById('brands').innerHTML = Object.entries(brandCounts)
 document.getElementById('brands').addEventListener('click', e => {
   const a = e.target.closest('.brand');
   if (!a) return;
-  const input = document.getElementById('search');
-  input.value = a.dataset.brand;
-  input.dispatchEvent(new Event('input'));
+  // Brand tiles now use the brand filter (and clear any typed search)
+  setChip('brand', a.dataset.brand);
+  state.q = ''; document.getElementById('search').value = '';
+  state.showAll = true;                          // a brand has few enough models to show them all
+  renderHot();
 });
 
 // ===== Photo credits (required by the photos' free licences) =====
