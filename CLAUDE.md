@@ -31,6 +31,7 @@ interest (Google Trends) is not in yet. The strip at the top of each page says w
 | `photos.js` | Photo URLs and credits. Generated, don't edit by hand |
 | `tools/fetch_photos.py` | Finds free photos on Wikimedia Commons and writes `photos.js` |
 | `style.css` | All styling, mobile first (breakpoints at 640px and 960px) |
+| `favicon.svg` (+ `favicon.ico`, `favicon-32.png`, `apple-touch-icon.png`) | The tilted yellow "?" badge icon. The SVG is the source; the PNG/ICO copies are for older browsers and iPhones |
 
 Plain HTML, CSS and JavaScript. No framework, no build step.
 
