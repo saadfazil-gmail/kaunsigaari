@@ -349,3 +349,7 @@ img { display: block; max-width: 100%; }
 .body-note { color: var(--ink-2); margin: 18px 0 0; }
 .variants td { font-size: .9rem; }
 .price-card .delta--price { display: inline-block; margin-top: 6px; }
+/* The hero card is one big link to the No. 1 car */
+.hero__card { cursor: pointer; transition: transform .2s, box-shadow .2s; }
+.hero__card:hover { transform: rotate(0deg) translate(-3px, -3px); box-shadow: 11px 11px 0 var(--ink); }
+.hero__card .car__link { border-radius: 28px; }

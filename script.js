@@ -117,6 +117,9 @@ document.getElementById('stat-riser').textContent = riser ? `${riser.combined ? 
 // Hero: the No. 1 entry on the Hot List
 const no1 = ranked[0];
 const heroCar = no1.lead;
+const heroLink = document.getElementById('hero-link');
+heroLink.href = linkOf(heroCar);
+heroLink.setAttribute('aria-label', `${no1.brand} ${titleOf(no1)}: see details`);
 if (photoOf(heroCar)) {
   const heroImg = document.getElementById('hero-img');
   // Ask Wikimedia for a bigger copy; if that size isn't available, use the normal one
