@@ -1,0 +1,1337 @@
+{
+ "collected": "2026-11-15",
+ "models": [
+  {
+   "brand": "Changan",
+   "model": "Alsvin",
+   "specs": {
+    "engine": {
+     "value": "MT Comfort: 1.37L BlueCore, 1370 cc; DCT variants: 1.5L BlueCore, 1480 cc; In-line 4 Cylinder MPFI DOHC",
+     "source": "https://www.changan.com.pk/upload/Alsvin-Brochure-new.pdf",
+     "official": true
+    },
+    "power": {
+     "value": "99 Hp (1.37L) / 105 Hp (1.5L)",
+     "source": "https://www.changan.com.pk/upload/Alsvin-Brochure-new.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "135 Nm (1.37L) / 145 Nm (1.5L)",
+     "source": "https://www.changan.com.pk/upload/Alsvin-Brochure-new.pdf",
+     "official": true
+    },
+    "transmission": {
+     "value": "MT Comfort: 5 Speed Manual with Intelligent Shift Reminder; DCT Comfort/Lumiere/Black Edition: 5 Speed Dual Clutch Transmission with Tiptronic",
+     "source": "https://www.changan.com.pk/upload/Alsvin-Brochure-new.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4390 mm",
+     "source": "https://www.changan.com.pk/upload/Alsvin-Brochure-new.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1725 mm",
+     "source": "https://www.changan.com.pk/upload/Alsvin-Brochure-new.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1490 mm",
+     "source": "https://www.changan.com.pk/upload/Alsvin-Brochure-new.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2535 mm",
+     "source": "https://www.changan.com.pk/upload/Alsvin-Brochure-new.pdf",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "40 L",
+     "source": "https://www.changan.com.pk/upload/Alsvin-Brochure-new.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "Dual Airbags (driver + front passenger)",
+     "source": "https://www.changan.com.pk/upload/Alsvin-Brochure-new.pdf",
+     "official": true
+    }
+   },
+   "notes": "Brochure height 1490 mm; the web spec table says 1468 mm and repeats LxWxH in its Wheelbase row, so brochure used. Fuel type, seats, ground clearance not published."
+  },
+  {
+   "brand": "Changan",
+   "model": "Oshan X7",
+   "specs": {
+    "engine": {
+     "value": "Turbocharged NE15TG, 1499 cc, gasoline",
+     "source": "https://www.changan.com.pk/oshan-x7/",
+     "official": true
+    },
+    "power": {
+     "value": "138 kW (185 hp)",
+     "source": "https://www.changan.com.pk/oshan-x7/",
+     "official": true
+    },
+    "torque": {
+     "value": "300 Nm",
+     "source": "https://www.changan.com.pk/oshan-x7/",
+     "official": true
+    },
+    "transmission": {
+     "value": "7 Speed Wet DCT Triptronic",
+     "source": "https://www.changan.com.pk/oshan-x7/",
+     "official": true
+    },
+    "seats": {
+     "value": "FutureSense: 7 or 5; Comfort: 7",
+     "source": "https://www.changan.com.pk/oshan-x7/",
+     "official": true
+    },
+    "length": {
+     "value": "4730 mm",
+     "source": "https://www.changan.com.pk/upload/Oshan-X7-Brochure.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1870 mm",
+     "source": "https://www.changan.com.pk/upload/Oshan-X7-Brochure.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1720 mm",
+     "source": "https://www.changan.com.pk/upload/Oshan-X7-Brochure.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2786 mm",
+     "source": "https://www.changan.com.pk/upload/Oshan-X7-Brochure.pdf",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "55 L",
+     "source": "https://www.changan.com.pk/oshan-x7/",
+     "official": true
+    },
+    "airbags": {
+     "value": "4 (Driver + Passenger + Side Torso)",
+     "source": "https://www.changan.com.pk/oshan-x7/",
+     "official": true
+    }
+   },
+   "notes": "Dimensions from brochure; ground clearance not published."
+  },
+  {
+   "brand": "Deepal",
+   "model": "S05",
+   "specs": {
+    "engine": {
+     "value": "Range-extender (EREV): 1,497 cc, 4-cylinder 16-valve VVT (1.5L Blue Whale), drives generator; rear motor drives wheels",
+     "source": "https://deepal.com.pk/upload/s05-brochure.pdf",
+     "official": true
+    },
+    "power": {
+     "value": "Motor 160 kW / 215 HP; extender 70 kW / 94 HP",
+     "source": "https://deepal.com.pk/upload/s05-brochure.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "Motor 320 N-m; extender 122 N-m",
+     "source": "https://deepal.com.pk/upload/s05-brochure.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4,620 mm",
+     "source": "https://deepal.com.pk/upload/s05-brochure.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1,900 mm",
+     "source": "https://deepal.com.pk/upload/s05-brochure.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1,600 mm",
+     "source": "https://deepal.com.pk/upload/s05-brochure.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,880 mm",
+     "source": "https://deepal.com.pk/upload/s05-brochure.pdf",
+     "official": true
+    },
+    "groundClearance": {
+     "value": "169 mm",
+     "source": "https://deepal.com.pk/upload/s05-brochure.pdf",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "44.9 L",
+     "source": "https://deepal.com.pk/upload/s05-brochure.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "6 (Front, Front Side, Side Curtain)",
+     "source": "https://deepal.com.pk/upload/s05-brochure.pdf",
+     "official": true
+    },
+    "battery": {
+     "value": "27.28 kWh (LFP)",
+     "source": "https://deepal.com.pk/upload/s05-brochure.pdf",
+     "official": true
+    },
+    "electricRange": {
+     "value": "170 km (NEDC); combined 1,000+ km",
+     "source": "https://deepal.com.pk/upload/s05-brochure.pdf",
+     "official": true
+    }
+   },
+   "notes": "Seats and transmission not published."
+  },
+  {
+   "brand": "Deepal",
+   "model": "S07",
+   "specs": {
+    "power": {
+     "value": "190 kW / 258 PS",
+     "source": "https://deepal.com.pk/upload/s7-Brochure.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "320 N-m",
+     "source": "https://deepal.com.pk/upload/s7-Brochure.pdf",
+     "official": true
+    },
+    "seats": {
+     "value": "5",
+     "source": "https://deepal.com.pk/upload/s7-Brochure.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4,750 mm",
+     "source": "https://deepal.com.pk/upload/s7-Brochure.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1,930 mm",
+     "source": "https://deepal.com.pk/upload/s7-Brochure.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1,625 mm",
+     "source": "https://deepal.com.pk/upload/s7-Brochure.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,900 mm",
+     "source": "https://deepal.com.pk/upload/s7-Brochure.pdf",
+     "official": true
+    },
+    "groundClearance": {
+     "value": "165 mm",
+     "source": "https://deepal.com.pk/upload/s7-Brochure.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "Front, Front Side, Side Curtain (count not stated)",
+     "source": "https://deepal.com.pk/upload/s7-Brochure.pdf",
+     "official": true
+    },
+    "battery": {
+     "value": "66.8 kWh (Ternary Lithium NMC)",
+     "source": "https://deepal.com.pk/upload/s7-Brochure.pdf",
+     "official": true
+    },
+    "electricRange": {
+     "value": "485 km (NEDC)",
+     "source": "https://deepal.com.pk/upload/s7-Brochure.pdf",
+     "official": true
+    }
+   },
+   "notes": "BEV, RWD. Web page says 255 HP; brochure 190 kW / 258 PS used."
+  },
+  {
+   "brand": "Deepal",
+   "model": "L07",
+   "specs": {
+    "power": {
+     "value": "190 kW / 258 PS",
+     "source": "https://deepal.com.pk/upload/L7-Brochure.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "320 N-m",
+     "source": "https://deepal.com.pk/upload/L7-Brochure.pdf",
+     "official": true
+    },
+    "seats": {
+     "value": "5",
+     "source": "https://deepal.com.pk/upload/L7-Brochure.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4,820 mm",
+     "source": "https://deepal.com.pk/upload/L7-Brochure.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1,890 mm",
+     "source": "https://deepal.com.pk/upload/L7-Brochure.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1,480 mm",
+     "source": "https://deepal.com.pk/upload/L7-Brochure.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,900 mm",
+     "source": "https://deepal.com.pk/upload/L7-Brochure.pdf",
+     "official": true
+    },
+    "groundClearance": {
+     "value": "150 mm",
+     "source": "https://deepal.com.pk/upload/L7-Brochure.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "Front, Front Side, Side Curtain (count not stated)",
+     "source": "https://deepal.com.pk/upload/L7-Brochure.pdf",
+     "official": true
+    },
+    "battery": {
+     "value": "66.8 kWh (Ternary Lithium NMC)",
+     "source": "https://deepal.com.pk/upload/L7-Brochure.pdf",
+     "official": true
+    },
+    "electricRange": {
+     "value": "540 km (NEDC)",
+     "source": "https://deepal.com.pk/upload/L7-Brochure.pdf",
+     "official": true
+    }
+   },
+   "notes": "BEV, RWD. Web page says 255 HP; brochure 190 kW / 258 PS used."
+  },
+  {
+   "brand": "Deepal",
+   "model": "E07",
+   "specs": {
+    "power": {
+     "value": "440 kW / 590 HP (dual motor AWD)",
+     "source": "https://deepal.com.pk/upload/e07-brochure.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "645 N-m",
+     "source": "https://deepal.com.pk/upload/e07-brochure.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "5,045 mm",
+     "source": "https://deepal.com.pk/upload/e07-brochure.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1996 mm",
+     "source": "https://deepal.com.pk/upload/e07-brochure.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1695 mm",
+     "source": "https://deepal.com.pk/upload/e07-brochure.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "3,120 mm",
+     "source": "https://deepal.com.pk/upload/e07-brochure.pdf",
+     "official": true
+    },
+    "groundClearance": {
+     "value": "183 mm",
+     "source": "https://deepal.com.pk/upload/e07-brochure.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "Front, Front Side, Rear Side, Side Curtain (count not stated)",
+     "source": "https://deepal.com.pk/upload/e07-brochure.pdf",
+     "official": true
+    },
+    "battery": {
+     "value": "89.98 kWh (Ternary Lithium)",
+     "source": "https://deepal.com.pk/upload/e07-brochure.pdf",
+     "official": true
+    },
+    "electricRange": {
+     "value": "590 km (NEDC)",
+     "source": "https://deepal.com.pk/upload/e07-brochure.pdf",
+     "official": true
+    }
+   },
+   "notes": "Brochure says Ternary Lithium; web page calls it LFP. Seats not published."
+  },
+  {
+   "brand": "Haval",
+   "model": "H6",
+   "specs": {
+    "engine": {
+     "value": "1.5T / 2.0T",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "power": {
+     "value": "182 HP (1.5T) / 235 HP (2.0T)",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "275 NM (1.5T) / 385 NM (2.0T)",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "transmission": {
+     "value": "7DCT FWD (1.5T) / 9DCT AWD (2.0T)",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "fuelEconomy": {
+     "value": "6.7 L/100km (1.5T) / 8.3 L/100km (2.0T), NEDC combined",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4703 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1886 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1730 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2738 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "61 L (1.5T) / 60 L (2.0T)",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "Dual SRS, Front Side, Side Curtain (count not stated)",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    }
+   },
+   "notes": "Shared H6-family brochure linked from the GWM API. Seats and ground clearance not published."
+  },
+  {
+   "brand": "Haval",
+   "model": "H6 HEV",
+   "specs": {
+    "engine": {
+     "value": "1.5 T HEV",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "power": {
+     "value": "240 HP (Combined)",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "530 NM (Combined)",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "transmission": {
+     "value": "DHT-1, FWD",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "fuelEconomy": {
+     "value": "5.2 L/100km, NEDC combined",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4703 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1886 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1730 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2738 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "61 L",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "Dual SRS, Front Side, Side Curtain (count not stated)",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "battery": {
+     "value": "1.67 kWh",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    }
+   },
+   "notes": ""
+  },
+  {
+   "brand": "Haval",
+   "model": "H6 PHEV",
+   "specs": {
+    "engine": {
+     "value": "1.5 T PHEV",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "power": {
+     "value": "322 HP Combined (FWD) / 360 HP Combined (Hi4 AWD)",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "540 NM Combined (FWD) / 760 NM Combined (Hi4 AWD)",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "transmission": {
+     "value": "DHT-1 FWD / DHT-3 AWD (Hi4)",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "fuelEconomy": {
+     "value": "NEDC combined 1.0 / 1.1 L/100km; low-charge 5.0 / 5.3 L/100km (FWD / Hi4)",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4703 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1886 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1730 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2738 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "55 L",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "Dual SRS, Front Side, Side Curtain (count not stated)",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "battery": {
+     "value": "19.09 kWh (LFP)",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "electricRange": {
+     "value": "106 km (FWD) / 100 km (Hi4), NEDC",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    }
+   },
+   "notes": "Two variants in brochure: FWD and Hi4 AWD."
+  },
+  {
+   "brand": "Haval",
+   "model": "H6 GT",
+   "specs": {
+    "engine": {
+     "value": "1.5 T PHEV",
+     "source": "https://storage.googleapis.com/havalimages/images/Haval%20H6%20GT/GT%20Brochure%20Final.pdf",
+     "official": true
+    },
+    "power": {
+     "value": "430 HP (Combined)",
+     "source": "https://storage.googleapis.com/havalimages/images/Haval%20H6%20GT/GT%20Brochure%20Final.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "642 NM (Combined)",
+     "source": "https://storage.googleapis.com/havalimages/images/Haval%20H6%20GT/GT%20Brochure%20Final.pdf",
+     "official": true
+    },
+    "transmission": {
+     "value": "4-Speed DHT, AWD (Hi4)",
+     "source": "https://storage.googleapis.com/havalimages/images/Haval%20H6%20GT/GT%20Brochure%20Final.pdf",
+     "official": true
+    },
+    "fuelEconomy": {
+     "value": "0.6 L/100km; 5.3 L/100km combined (basis not stated)",
+     "source": "https://storage.googleapis.com/havalimages/images/Haval%20H6%20GT/GT%20Brochure%20Final.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4727 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/Haval%20H6%20GT/GT%20Brochure%20Final.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1940 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/Haval%20H6%20GT/GT%20Brochure%20Final.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1729 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/Haval%20H6%20GT/GT%20Brochure%20Final.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2738 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/Haval%20H6%20GT/GT%20Brochure%20Final.pdf",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "55 L",
+     "source": "https://storage.googleapis.com/havalimages/images/Haval%20H6%20GT/GT%20Brochure%20Final.pdf",
+     "official": true
+    },
+    "battery": {
+     "value": "35.43 kWh (LFP)",
+     "source": "https://storage.googleapis.com/havalimages/images/Haval%20H6%20GT/GT%20Brochure%20Final.pdf",
+     "official": true
+    },
+    "electricRange": {
+     "value": "183 km (NEDC)",
+     "source": "https://storage.googleapis.com/havalimages/images/Haval%20H6%20GT/GT%20Brochure%20Final.pdf",
+     "official": true
+    }
+   },
+   "notes": "Pakistan H6 GT is the PHEV (H6 GT PHEV). Airbags not checked/stated."
+  },
+  {
+   "brand": "Haval",
+   "model": "Jolion",
+   "specs": {
+    "engine": {
+     "value": "1.5 T (petrol) / 1.5 HEV",
+     "source": "https://storage.googleapis.com/havalimages/images/Sazgarautos/newsazgar/Jolion%20Facelift%20Brochure.pdf",
+     "official": true
+    },
+    "power": {
+     "value": "110 kW (150 HP) / 140 kW (190 HP) HEV",
+     "source": "https://storage.googleapis.com/havalimages/images/Sazgarautos/newsazgar/Jolion%20Facelift%20Brochure.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "220 NM / 375 NM HEV",
+     "source": "https://storage.googleapis.com/havalimages/images/Sazgarautos/newsazgar/Jolion%20Facelift%20Brochure.pdf",
+     "official": true
+    },
+    "transmission": {
+     "value": "7 DCT (1.5T) / DHT (HEV), FWD",
+     "source": "https://storage.googleapis.com/havalimages/images/Sazgarautos/newsazgar/Jolion%20Facelift%20Brochure.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4472 mm (1.5T) / 4475 mm (HEV)",
+     "source": "https://storage.googleapis.com/havalimages/images/Sazgarautos/newsazgar/Jolion%20Facelift%20Brochure.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1841 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/Sazgarautos/newsazgar/Jolion%20Facelift%20Brochure.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1574 mm (1.5T) / 1619 mm (HEV)",
+     "source": "https://storage.googleapis.com/havalimages/images/Sazgarautos/newsazgar/Jolion%20Facelift%20Brochure.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2700 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/Sazgarautos/newsazgar/Jolion%20Facelift%20Brochure.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "Dual SRS, Front Side, Side Curtain (count not stated)",
+     "source": "https://storage.googleapis.com/havalimages/images/Sazgarautos/newsazgar/Jolion%20Facelift%20Brochure.pdf",
+     "official": true
+    }
+   },
+   "notes": "Facelift brochure. Fuel tank, economy, HEV battery not found on the spec pages."
+  },
+  {
+   "brand": "Tank",
+   "model": "Tank 500",
+   "specs": {
+    "engine": {
+     "value": "2.0T HEV / 2.0T PHEV",
+     "source": "https://storage.googleapis.com/havalimages/images/Sazgarautos/Corporate%20Session/TANK%20500%20Brochure%20(1).pdf",
+     "official": true
+    },
+    "power": {
+     "value": "342 HP Combined (HEV) / 402 HP Combined (PHEV)",
+     "source": "https://storage.googleapis.com/havalimages/images/Sazgarautos/Corporate%20Session/TANK%20500%20Brochure%20(1).pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "648 NM Combined (HEV) / 750 NM Combined (PHEV)",
+     "source": "https://storage.googleapis.com/havalimages/images/Sazgarautos/Corporate%20Session/TANK%20500%20Brochure%20(1).pdf",
+     "official": true
+    },
+    "transmission": {
+     "value": "9-Speed Hybrid Automatic Transmission (9HAT); 4x4 (HEV) / Hi4-T 4x4 (PHEV)",
+     "source": "https://storage.googleapis.com/havalimages/images/Sazgarautos/Corporate%20Session/TANK%20500%20Brochure%20(1).pdf",
+     "official": true
+    },
+    "fuelEconomy": {
+     "value": "HEV 8.5L/100km (NEDC); PHEV 2.1L/100km (NEDC), low-charge 8.4L/100km (NEDC)",
+     "source": "https://storage.googleapis.com/havalimages/images/Sazgarautos/Corporate%20Session/TANK%20500%20Brochure%20(1).pdf",
+     "official": true
+    },
+    "seats": {
+     "value": "7 (HEV) / 5 (PHEV)",
+     "source": "https://storage.googleapis.com/havalimages/images/Sazgarautos/Corporate%20Session/TANK%20500%20Brochure%20(1).pdf",
+     "official": true
+    },
+    "length": {
+     "value": "5078 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/Sazgarautos/Corporate%20Session/TANK%20500%20Brochure%20(1).pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1934 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/Sazgarautos/Corporate%20Session/TANK%20500%20Brochure%20(1).pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1905 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/Sazgarautos/Corporate%20Session/TANK%20500%20Brochure%20(1).pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2850 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/Sazgarautos/Corporate%20Session/TANK%20500%20Brochure%20(1).pdf",
+     "official": true
+    },
+    "groundClearance": {
+     "value": "224 mm (HEV) / 213 mm (PHEV)",
+     "source": "https://storage.googleapis.com/havalimages/images/Sazgarautos/Corporate%20Session/TANK%20500%20Brochure%20(1).pdf",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "80 L (HEV) / 70 L (PHEV)",
+     "source": "https://storage.googleapis.com/havalimages/images/Sazgarautos/Corporate%20Session/TANK%20500%20Brochure%20(1).pdf",
+     "official": true
+    },
+    "battery": {
+     "value": "1.76 kWh (HEV) / 37.11 kWh (PHEV)",
+     "source": "https://storage.googleapis.com/havalimages/images/Sazgarautos/Corporate%20Session/TANK%20500%20Brochure%20(1).pdf",
+     "official": true
+    },
+    "electricRange": {
+     "value": "PHEV 120 km (NEDC); combined 950 km",
+     "source": "https://storage.googleapis.com/havalimages/images/Sazgarautos/Corporate%20Session/TANK%20500%20Brochure%20(1).pdf",
+     "official": true
+    }
+   },
+   "notes": "GWM API lists both tank-500 (HEV) and tank-500-phev; one brochure covers both. Airbags not checked."
+  },
+  {
+   "brand": "GWM",
+   "model": "Ora 5",
+   "specs": {
+    "power": {
+     "value": "201 HP",
+     "source": "https://storage.googleapis.com/havalimages/images/Ora%2005/ORA%205%20Brochure%20(1).pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "260 NM",
+     "source": "https://storage.googleapis.com/havalimages/images/Ora%2005/ORA%205%20Brochure%20(1).pdf",
+     "official": true
+    },
+    "fuelEconomy": {
+     "value": "15.5 kWh/100km (basis not stated)",
+     "source": "https://storage.googleapis.com/havalimages/images/Ora%2005/ORA%205%20Brochure%20(1).pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4471 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/Ora%2005/ORA%205%20Brochure%20(1).pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1833 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/Ora%2005/ORA%205%20Brochure%20(1).pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1641 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/Ora%2005/ORA%205%20Brochure%20(1).pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2720 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/Ora%2005/ORA%205%20Brochure%20(1).pdf",
+     "official": true
+    },
+    "groundClearance": {
+     "value": "175 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/Ora%2005/ORA%205%20Brochure%20(1).pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "Driver, Passenger, Front Side, Front & Rear Side Curtain (count not stated)",
+     "source": "https://storage.googleapis.com/havalimages/images/Ora%2005/ORA%205%20Brochure%20(1).pdf",
+     "official": true
+    },
+    "battery": {
+     "value": "58.33 kWh (LFP)",
+     "source": "https://storage.googleapis.com/havalimages/images/Ora%2005/ORA%205%20Brochure%20(1).pdf",
+     "official": true
+    },
+    "electricRange": {
+     "value": "435 km (WLTP)",
+     "source": "https://storage.googleapis.com/havalimages/images/Ora%2005/ORA%205%20Brochure%20(1).pdf",
+     "official": true
+    }
+   },
+   "notes": "BEV, FWD. Listed in the API as 'ORA 5' (slug ora-05)."
+  },
+  {
+   "brand": "MG",
+   "model": "ZS",
+   "specs": {
+    "engine": {
+     "value": "Vibe (petrol): 1,495 cc; Hybrid+: 1498 cc; RON 92 and above",
+     "source": "https://mgmotors.com.pk/assets/brochure/mg-zs-spec-sheet.pdf",
+     "official": true
+    },
+    "power": {
+     "value": "80 kW (Vibe) / 158 kW combined (Hybrid+)",
+     "source": "https://mgmotors.com.pk/assets/brochure/mg-zs-spec-sheet.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "142 Nm (Vibe) / 465 Nm combined (Hybrid+)",
+     "source": "https://mgmotors.com.pk/assets/brochure/mg-zs-spec-sheet.pdf",
+     "official": true
+    },
+    "transmission": {
+     "value": "CVT (Vibe) / 3-Speed Hybrid Transmission (Hybrid+)",
+     "source": "https://mgmotors.com.pk/assets/brochure/mg-zs-spec-sheet.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4,430 mm",
+     "source": "https://mgmotors.com.pk/assets/brochure/mg-zs-spec-sheet.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1,818 mm",
+     "source": "https://mgmotors.com.pk/assets/brochure/mg-zs-spec-sheet.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1,635 mm",
+     "source": "https://mgmotors.com.pk/assets/brochure/mg-zs-spec-sheet.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,610 mm",
+     "source": "https://mgmotors.com.pk/assets/brochure/mg-zs-spec-sheet.pdf",
+     "official": true
+    },
+    "groundClearance": {
+     "value": "161 mm (running clearance)",
+     "source": "https://mgmotors.com.pk/assets/brochure/mg-zs-spec-sheet.pdf",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "55 L (Vibe) / 41 L (Hybrid+)",
+     "source": "https://mgmotors.com.pk/assets/brochure/mg-zs-spec-sheet.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "6",
+     "source": "https://mgmotors.com.pk/model/mg-zs",
+     "official": true
+    },
+    "battery": {
+     "value": "Hybrid+: 1.83 kWh",
+     "source": "https://mgmotors.com.pk/assets/brochure/mg-zs-spec-sheet.pdf",
+     "official": true
+    }
+   },
+   "notes": "Spec sheet labels Vibe petrol power as 'Combined Maximum Power'."
+  },
+  {
+   "brand": "MG",
+   "model": "HS",
+   "specs": {
+    "engine": {
+     "value": "1496 cc Turbo petrol (all three); RON 92 and above",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG-HS-petrol-Spec-Sheet-2026.pdf",
+     "official": true
+    },
+    "power": {
+     "value": "Petrol 123 kW; Hybrid+ 165 kW combined; Super Hybrid 220 kW combined (nominal)",
+     "source": "https://mgmotors.com.pk/assets/brochure/Hybrid-plus-Back-Updated.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "Petrol 250 Nm; Hybrid+ 340 Nm combined; Super Hybrid 350 Nm combined (nominal)",
+     "source": "https://mgmotors.com.pk/assets/brochure/Super-Hybrid-Updated.pdf",
+     "official": true
+    },
+    "transmission": {
+     "value": "Petrol 7-Speed DCT; Hybrid+ / Super Hybrid: Hybrid Transmission",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG-HS-petrol-Spec-Sheet-2026.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4655 mm (Petrol) / 4670 mm (Hybrid+, Super Hybrid)",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG-HS-petrol-Spec-Sheet-2026.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1890 mm",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG-HS-petrol-Spec-Sheet-2026.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1664 mm (Petrol) / 1663 mm (hybrids)",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG-HS-petrol-Spec-Sheet-2026.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2765 mm",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG-HS-petrol-Spec-Sheet-2026.pdf",
+     "official": true
+    },
+    "groundClearance": {
+     "value": "Petrol 180 mm (running); Hybrid+ 167 mm; Super Hybrid 176 mm",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG-HS-petrol-Spec-Sheet-2026.pdf",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "55 L (all)",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG-HS-petrol-Spec-Sheet-2026.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "Driver + Passenger, Two Side, Two Curtain, Far Side (count not stated)",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG-HS-petrol-Spec-Sheet-2026.pdf",
+     "official": true
+    },
+    "battery": {
+     "value": "Hybrid+ 1.83 kWh; Super Hybrid 24.7 kWh (nominal)",
+     "source": "https://mgmotors.com.pk/assets/brochure/Super-Hybrid-Updated.pdf",
+     "official": true
+    },
+    "electricRange": {
+     "value": "Super Hybrid: 135 km (NEDC)",
+     "source": "https://mgmotors.com.pk/assets/brochure/Super-Hybrid-Updated.pdf",
+     "official": true
+    }
+   },
+   "notes": "Three spec sheets (petrol, Hybrid+, Super Hybrid); each value is per variant as listed. Sources: petrol sheet, Hybrid+ sheet, Super Hybrid sheet."
+  },
+  {
+   "brand": "MG",
+   "model": "HS PHEV",
+   "specs": {
+    "engine": {
+     "value": "1.5 T, 15E4E + Motor",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG-HS-PHEV-corve.pdf",
+     "official": true
+    },
+    "power": {
+     "value": "119+90 (Motor) kW; 209 kW combined",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG-HS-PHEV-corve.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "250+230 (Motor) Nm; 480 Nm combined",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG-HS-PHEV-corve.pdf",
+     "official": true
+    },
+    "transmission": {
+     "value": "EDU2, FWD",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG-HS-PHEV-corve.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4610 mm",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG-HS-PHEV-corve.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1876 mm",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG-HS-PHEV-corve.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1685 mm",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG-HS-PHEV-corve.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2720 mm",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG-HS-PHEV-corve.pdf",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "37 L",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG-HS-PHEV-corve.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "6",
+     "source": "https://mgmotors.com.pk/model/phev",
+     "official": true
+    },
+    "battery": {
+     "value": "16.6 kWh (Ternary Lithium)",
+     "source": "https://mgmotors.com.pk/model/phev",
+     "official": true
+    },
+    "electricRange": {
+     "value": "52 km (WLTP)",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG-HS-PHEV-corve.pdf",
+     "official": true
+    }
+   },
+   "notes": "Combined 209 kW / 480 Nm from the web page. The page also shows '0.34 kW Max Power' and '+50 km' range, which conflict."
+  },
+  {
+   "brand": "MG",
+   "model": "MG4",
+   "specs": {
+    "power": {
+     "value": "110 kW",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG4_EV_Urban_Brochure.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "250 Nm",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG4_EV_Urban_Brochure.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4395 mm",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG4_EV_Urban_Brochure.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1842 mm",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG4_EV_Urban_Brochure.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1549 mm",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG4_EV_Urban_Brochure.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2750 mm",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG4_EV_Urban_Brochure.pdf",
+     "official": true
+    },
+    "groundClearance": {
+     "value": "130 mm (running clearance)",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG4_EV_Urban_Brochure.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "7 (seven airbags as standard)",
+     "source": "https://mgmotors.com.pk/model/mg4-ev-urban",
+     "official": true
+    },
+    "battery": {
+     "value": "43 kWh (LFP)",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG4_EV_Urban_Brochure.pdf",
+     "official": true
+    },
+    "electricRange": {
+     "value": "316 km (WLTP Combined)",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG4_EV_Urban_Brochure.pdf",
+     "official": true
+    }
+   },
+   "notes": "Pakistan model is MG4 EV Urban."
+  },
+  {
+   "brand": "MG",
+   "model": "Binguo",
+   "specs": {
+    "power": {
+     "value": "50 kW (drive motor)",
+     "source": "https://mgmotors.com.pk/assets/brochure/Binguo-Brochure.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "125 Nm",
+     "source": "https://mgmotors.com.pk/model/binguo",
+     "official": true
+    },
+    "transmission": {
+     "value": "Single Reduction Gear",
+     "source": "https://mgmotors.com.pk/assets/brochure/Binguo-Brochure.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "3950 mm",
+     "source": "https://mgmotors.com.pk/assets/brochure/Binguo-Brochure.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1708 mm",
+     "source": "https://mgmotors.com.pk/assets/brochure/Binguo-Brochure.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1580 mm",
+     "source": "https://mgmotors.com.pk/assets/brochure/Binguo-Brochure.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2560 mm",
+     "source": "https://mgmotors.com.pk/assets/brochure/Binguo-Brochure.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "Driver & Passenger",
+     "source": "https://mgmotors.com.pk/assets/brochure/Binguo-Brochure.pdf",
+     "official": true
+    },
+    "battery": {
+     "value": "31.9 kWh (LFP)",
+     "source": "https://mgmotors.com.pk/assets/brochure/Binguo-Brochure.pdf",
+     "official": true
+    },
+    "electricRange": {
+     "value": "Up to 333 km (CLTC)",
+     "source": "https://mgmotors.com.pk/assets/brochure/Binguo-Brochure.pdf",
+     "official": true
+    }
+   },
+   "notes": "Brochure covers the 'Pro' variant only. The web page hero says 'Up To 198 kms CLTC' while the body and brochure say 333 km."
+  },
+  {
+   "brand": "BYD",
+   "model": "Atto 2",
+   "specs": {
+    "length": {
+     "value": "4,310 mm",
+     "source": "https://byd-mega.com/brochure/new/atto-2-brochure-aug-2026.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1,830 mm",
+     "source": "https://byd-mega.com/brochure/new/atto-2-brochure-aug-2026.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1,675 mm",
+     "source": "https://byd-mega.com/brochure/new/atto-2-brochure-aug-2026.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,620 mm",
+     "source": "https://byd-mega.com/brochure/new/atto-2-brochure-aug-2026.pdf",
+     "official": true
+    },
+    "battery": {
+     "value": "45.12 kWh",
+     "source": "https://byd-mega.com/brochure/new/atto-2-brochure-aug-2026.pdf",
+     "official": true
+    },
+    "electricRange": {
+     "value": "380 km (NEDC)",
+     "source": "https://byd-mega.com/brochure/new/atto-2-brochure-aug-2026.pdf",
+     "official": true
+    }
+   },
+   "notes": "Power, torque, airbags not published on byd-mega.com."
+  },
+  {
+   "brand": "BYD",
+   "model": "Atto 3",
+   "specs": {
+    "power": {
+     "value": "150 kW",
+     "source": "https://byd-mega.com/api/v1/image/spec-sheets/BYD-Atto-3-Spec-Sheet.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "310 N·m",
+     "source": "https://byd-mega.com/api/v1/image/spec-sheets/BYD-Atto-3-Spec-Sheet.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4,455 mm",
+     "source": "https://byd-mega.com/api/v1/image/spec-sheets/BYD-Atto-3-Spec-Sheet.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1,875 mm",
+     "source": "https://byd-mega.com/api/v1/image/spec-sheets/BYD-Atto-3-Spec-Sheet.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1,615 mm",
+     "source": "https://byd-mega.com/api/v1/image/spec-sheets/BYD-Atto-3-Spec-Sheet.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,720 mm",
+     "source": "https://byd-mega.com/api/v1/image/spec-sheets/BYD-Atto-3-Spec-Sheet.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "Front (D+P), Side (D+P), Side Curtain, Driver Far-Side (count not stated)",
+     "source": "https://byd-mega.com/api/v1/image/spec-sheets/BYD-Atto-3-Spec-Sheet.pdf",
+     "official": true
+    },
+    "battery": {
+     "value": "49.92 kWh (Blade)",
+     "source": "https://byd-mega.com/api/v1/image/spec-sheets/BYD-Atto-3-Spec-Sheet.pdf",
+     "official": true
+    },
+    "electricRange": {
+     "value": "410 km (NEDC Combined)",
+     "source": "https://byd-mega.com/api/v1/image/spec-sheets/BYD-Atto-3-Spec-Sheet.pdf",
+     "official": true
+    }
+   },
+   "notes": "Spec sheet caveats that some specs may not be available in Pakistan."
+  },
+  {
+   "brand": "BYD",
+   "model": "Seal",
+   "specs": {
+    "length": {
+     "value": "4,800 mm",
+     "source": "https://byd-mega.com/brochure/BYD-SEAL.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1,875 mm",
+     "source": "https://byd-mega.com/brochure/BYD-SEAL.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1,460 mm",
+     "source": "https://byd-mega.com/brochure/BYD-SEAL.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,920 mm",
+     "source": "https://byd-mega.com/brochure/BYD-SEAL.pdf",
+     "official": true
+    },
+    "battery": {
+     "value": "82.56 kWh",
+     "source": "https://byd-mega.com/brochure/BYD-SEAL.pdf",
+     "official": true
+    },
+    "electricRange": {
+     "value": "Up to 650 km (test cycle not stated)",
+     "source": "https://byd-mega.com/brochure/BYD-SEAL.pdf",
+     "official": true
+    }
+   },
+   "notes": "Sold as Dynamic and Premium; the official brochure gives one headline figure and no per-variant split. Power/torque not published."
+  },
+  {
+   "brand": "BYD",
+   "model": "Sealion 7",
+   "specs": {
+    "power": {
+     "value": "230 kW",
+     "source": "https://byd-mega.com/brochure/new/sealion-7-brochure-aug-2026.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "380 Nm",
+     "source": "https://byd-mega.com/brochure/new/sealion-7-brochure-aug-2026.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4,830 mm",
+     "source": "https://byd-mega.com/brochure/new/sealion-7-brochure-aug-2026.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1,925 mm",
+     "source": "https://byd-mega.com/brochure/new/sealion-7-brochure-aug-2026.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1,620 mm",
+     "source": "https://byd-mega.com/brochure/new/sealion-7-brochure-aug-2026.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,930 mm",
+     "source": "https://byd-mega.com/brochure/new/sealion-7-brochure-aug-2026.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "9",
+     "source": "https://byd-mega.com/brochure/new/sealion-7-brochure-aug-2026.pdf",
+     "official": true
+    },
+    "battery": {
+     "value": "82.56 kWh",
+     "source": "https://byd-mega.com/brochure/new/sealion-7-brochure-aug-2026.pdf",
+     "official": true
+    },
+    "electricRange": {
+     "value": "Up to 567 km (NEDC)",
+     "source": "https://byd-mega.com/brochure/new/sealion-7-brochure-aug-2026.pdf",
+     "official": true
+    }
+   },
+   "notes": ""
+  }
+ ],
+ "unreachable": [
+  "https://www.byd-mega.com (www host has an expired TLS certificate; the bare byd-mega.com host works and was used)",
+  "BYD Seal spec sheet (no spec-sheet PDF found; the guessed URL returned JSON, not a PDF)"
+ ],
+ "notes": [
+  "Official Pakistani brand sources only (changan.com.pk, deepal.com.pk, GWM Pakistan brochures, mgmotors.com.pk, byd-mega.com). Image brochures read visually.",
+  "Where a brand's web page and brochure disagree, the brochure/spec sheet is used (Alsvin height, Deepal power, Binguo range, MG HS PHEV, E07 battery type)."
+ ]
+}

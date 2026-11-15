@@ -353,3 +353,9 @@ img { display: block; max-width: 100%; }
 .hero__card { cursor: pointer; transition: transform .2s, box-shadow .2s; }
 .hero__card:hover { transform: rotate(0deg) translate(-3px, -3px); box-shadow: 11px 11px 0 var(--ink); }
 .hero__card .car__link { border-radius: 28px; }
+.specs sup a { color: var(--pink-text); font-size: .7rem; font-weight: 800; text-decoration: none; margin-left: 2px; }
+.specs dd { font-size: .95rem; }
+/* Buzz: the stories behind the number */
+.buzz-list { margin: 14px 0 0; padding-left: 20px; display: grid; gap: 10px; }
+.buzz-list a { color: var(--ink); font-weight: 600; text-decoration-color: var(--pink); text-underline-offset: 3px; }
+.buzz-kind { font-size: .75rem; color: var(--muted); font-weight: 700; }

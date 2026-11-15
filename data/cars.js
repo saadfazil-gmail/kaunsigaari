@@ -6,6 +6,10 @@ const DATA = {
  "salesSource": "https://pama.org.pk/wp-content/uploads/2026/11/Production-Sales-October-2026.pdf",
  "pricesChecked": "2026-11-14",
  "pricesCheckedLabel": "14 Nov 2026",
+ "buzzCollected": "2026-11-15",
+ "buzzSources": [
+  "news"
+ ],
  "salesGroups": [
   {
    "id": "suzuki-alto",
@@ -431,7 +435,72 @@ const DATA = {
      "sourceName": "ProPakistani",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "length": {
+     "value": "4,310 mm",
+     "source": "https://byd-mega.com/brochure/new/atto-2-brochure-aug-2026.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1,830 mm",
+     "source": "https://byd-mega.com/brochure/new/atto-2-brochure-aug-2026.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1,675 mm",
+     "source": "https://byd-mega.com/brochure/new/atto-2-brochure-aug-2026.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,620 mm",
+     "source": "https://byd-mega.com/brochure/new/atto-2-brochure-aug-2026.pdf",
+     "official": true
+    },
+    "battery": {
+     "value": "45.12 kWh",
+     "source": "https://byd-mega.com/brochure/new/atto-2-brochure-aug-2026.pdf",
+     "official": true
+    },
+    "electricRange": {
+     "value": "380 km (NEDC)",
+     "source": "https://byd-mega.com/brochure/new/atto-2-brochure-aug-2026.pdf",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 9,
+     "examples": [
+      {
+       "title": "Jaecoo J5 BEV vs BYD Atto 2: More EV for Less Money? - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOWjlIclBJdHBQOTFPSThIU3N6akhmVmhkcnMxQ1lfNm5EdUlpWmFVTzBLc1pkWFFaWU42Y0pNZV9TSENONF9YLTV5QkVZNUw2Tjk3RzUzVFlNVmZfeDh2Zmg1TlpRa1lPY0RzZThmVDktZUp1d0p1dHVZdTZ3SVhrUWUtWmpnSnNGUEE?oc=5",
+       "date": "Fri, 06 Nov 2026 08:00:00 GMT"
+      },
+      {
+       "title": "BYD Atto 2 Brings Big EV Features to Pakistan at Rs. 72.90 Lakh - Bloom Pakistan",
+       "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOQ1NuWFAtX3lsZnJCOVQyZlZldGJVUTI2anNMckU4SElFRW1NX2Q2RGM0aGdZdGUxSGxCRUlzSTBJb0hmR3hYQmhDR0ZSZ0V0b19ZZ1AyQ25YX203ZGpPNEhheUdRaTY2RzlDaWhJMkEtaHkzLU9xMjl3M2cwblZXQ1hYVFY0cVZrcURPVll2SXRZRWc?oc=5",
+       "date": "Wed, 11 Nov 2026 07:48:54 GMT"
+      },
+      {
+       "title": "NCCIA Adds BYD Atto 2 Electric SUVs for Official Operations - PhoneWorld",
+       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPRGtHekpScnFkUUJDWjQydk11aFN1MVpKRzZLOVY3UnMxYW8tcnZQQXBhMFpER2tpdGtJS25FT3RsUmg5RlZHWnkwa0NPZmtzR0drdE5qZEJ2OG5SVnUtUXI5QVpVenpNLW1HZi1ZNjdsak05YVNMR3g2T29peEVYVVozR3R5S2xCdmt2WkVsOEYwdUVz?oc=5",
+       "date": "Fri, 30 Oct 2026 07:00:00 GMT"
+      }
+     ],
+     "ids": [
+      "byd atto 2 brings big ev features to pakistan at rs. 72.90 lakh",
+      "byd sales rise 11% as overseas shipments double",
+      "car industry unhappy with new gift scheme",
+      "jaecoo j5 bev launches in pakistan from rs. 5.99 million",
+      "jaecoo j5 bev vs byd atto 2: more ev for less money?",
+      "nccia adds byd atto 2 electric suvs for official operations",
+      "nccia adds byd atto 2 electric suvs to its official fleet",
+      "nccia gets new byd atto 2 electric cars",
+      "pakistan auto policy 2026–31: evs vs hybrids"
+     ]
+    }
+   }
   },
   {
    "brand": "BYD",
@@ -455,7 +524,87 @@ const DATA = {
      "sourceName": "ProPakistani",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "power": {
+     "value": "150 kW",
+     "source": "https://byd-mega.com/api/v1/image/spec-sheets/BYD-Atto-3-Spec-Sheet.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "310 N·m",
+     "source": "https://byd-mega.com/api/v1/image/spec-sheets/BYD-Atto-3-Spec-Sheet.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4,455 mm",
+     "source": "https://byd-mega.com/api/v1/image/spec-sheets/BYD-Atto-3-Spec-Sheet.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1,875 mm",
+     "source": "https://byd-mega.com/api/v1/image/spec-sheets/BYD-Atto-3-Spec-Sheet.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1,615 mm",
+     "source": "https://byd-mega.com/api/v1/image/spec-sheets/BYD-Atto-3-Spec-Sheet.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,720 mm",
+     "source": "https://byd-mega.com/api/v1/image/spec-sheets/BYD-Atto-3-Spec-Sheet.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "Front (D+P), Side (D+P), Side Curtain, Driver Far-Side (count not stated)",
+     "source": "https://byd-mega.com/api/v1/image/spec-sheets/BYD-Atto-3-Spec-Sheet.pdf",
+     "official": true
+    },
+    "battery": {
+     "value": "49.92 kWh (Blade)",
+     "source": "https://byd-mega.com/api/v1/image/spec-sheets/BYD-Atto-3-Spec-Sheet.pdf",
+     "official": true
+    },
+    "electricRange": {
+     "value": "410 km (NEDC Combined)",
+     "source": "https://byd-mega.com/api/v1/image/spec-sheets/BYD-Atto-3-Spec-Sheet.pdf",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 9,
+     "examples": [
+      {
+       "title": "Pakistan’s new auto policy eyes nearly $25 billion in savings via local manufacturing, EV adoption - Arab News PK",
+       "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNM25UMDRmS1REeEpOUVJXckxPcG9qZG9idkJWUlZBNG1icVg1M3ZPX1JEZzZCN2otdXJ1ZHVmbjROWlQ1SC0yd2JFYkxPLXR6U0RrZmJhUm04Ti15Rl9VZzNCVHlubzRrQW1FcW5DRzlvZ21ZbDFtZWtvWnFxeEtlMG1YUGZETlM0U2drVDdHT0h5cXM4VWFaTnhJU19rSWJaVVdkV056T21RREllcFFpVnJfOGozOWw2YjFRU2tXZlB6VXJHeHB3bzUtOF9hUFFBYnc?oc=5",
+       "date": "Fri, 23 Oct 2026 07:00:00 GMT"
+      },
+      {
+       "title": "Draft Auto Policy 2026-31 May Cut Electric Vehicle Prices by Over 20pc - Energy Update",
+       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPc0dGV0ZGQUtJeU8zdXBvbmdHdV9lSFg1UW0xdTgwbEVNX1FsRmtmT0Z5aUNYa2dJQ2Uxd3dSSk84dUVaMV8yRkVpVWxUZkxmRElkZ2doNGNBMmpYaXhZcENITHVWOV9Bc2g5Rkg1Umk2Njk3SkFCWThvRmUwRjR5TTc4MFB3QVdMbmRHZGxaM0Q0WFZKdzRnTDUyNk9qWmxIOHZjWHRn?oc=5",
+       "date": "Thu, 22 Oct 2026 07:00:00 GMT"
+      },
+      {
+       "title": "Geely EX5 vs BYD Atto 3: Which EV Offers More? - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5aaFdETUtua1FidVpSMkI2WS15b2FqYmphMklJNkpkYlJLSmVacHBqMVZndXNzeFg0MlZaejRtbmxKMERSX1F5cE4xaEx2d3Jsa213ZDUwYWFnc2V2dU01ZlZzUDR1VTM1YmdLZWlBSERmUlI0?oc=5",
+       "date": "Mon, 26 Oct 2026 07:00:00 GMT"
+      }
+     ],
+     "ids": [
+      "draft auto policy 2026-31 may cut electric vehicle prices by over 20pc",
+      "first drive review: jaecoo j5 bev – is it worth waiting for?",
+      "geely cars likely to launch this week as new teaser drops",
+      "geely ex5 vs byd atto 3: which ev offers more?",
+      "geely teases october 24 pakistan debut with two electric cars expected",
+      "pakistan auto policy 2026–31: evs vs hybrids",
+      "pakistan auto policy: suzuki, honda, toyota and kia cars new expected prices",
+      "pakistan’s new auto policy eyes nearly $25 billion in savings via local manufacturing, ev adoption",
+      "what might geely be bringing to pakistan?"
+     ]
+    }
+   }
   },
   {
    "brand": "BYD",
@@ -491,7 +640,70 @@ const DATA = {
      "sourceName": "ProPakistani",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "length": {
+     "value": "4,800 mm",
+     "source": "https://byd-mega.com/brochure/BYD-SEAL.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1,875 mm",
+     "source": "https://byd-mega.com/brochure/BYD-SEAL.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1,460 mm",
+     "source": "https://byd-mega.com/brochure/BYD-SEAL.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,920 mm",
+     "source": "https://byd-mega.com/brochure/BYD-SEAL.pdf",
+     "official": true
+    },
+    "battery": {
+     "value": "82.56 kWh",
+     "source": "https://byd-mega.com/brochure/BYD-SEAL.pdf",
+     "official": true
+    },
+    "electricRange": {
+     "value": "Up to 650 km (test cycle not stated)",
+     "source": "https://byd-mega.com/brochure/BYD-SEAL.pdf",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 7,
+     "examples": [
+      {
+       "title": "Second-Gen BYD Seal 07 Interior Revealed With 20-Speaker Devialet Audio - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9iWmk4UnpkVHFJUkJmdkJ4U2lsbmItQVp2Qzc1VTExQTQ5aE01eFdTZDRvdWhmaHVWc2h3OUp5azN2WExPR3dIMG5xRF9KZ3dTRFUyWTkwcFYtYUVUSUlmYUI2S2hvUWVhZlVMOFdNVWMxV0FpTDZ4RDhBcw?oc=5",
+       "date": "Fri, 23 Oct 2026 07:00:00 GMT"
+      },
+      {
+       "title": "Car Prices Expected to Drop for Alto, Haval H6, Kia Sorento, EVs Under Auto Policy 2026–31 - Bloom Pakistan",
+       "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNLU1TNlI3MlpIVHJNVlBLOGN0WmN6QWw4aDVuTGlrV1VaZW5ZVndNb2Y0NkJYMTNVY0xVLTBvRkRlVG9qbkJFVV91R05xd24zc2E2d3RLVHpsZ1RWVnlwMnNKOEVzaXVoSG4xVldPVVhwMnE5dGd2YlVRNmtxLUxVbUxRc1A3aHM?oc=5",
+       "date": "Sun, 08 Nov 2026 09:08:28 GMT"
+      },
+      {
+       "title": "Suzuki Alto, Haval H6 Expected Prices in Pakistan after New Auto Policy 2026–2031 - Daily Pakistan",
+       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQN0FiSG9yeVhDWlJlbnBzTERlc3A3eVkyYlhUZ3R4X3RMYjVuTkFvb0h1Uy12U1hPM1hBbjB1d3RTNkY1U0Q1TExETC1uZ21GZzU3WUVVVlVmOXNxU1VFNkRkWVF0RFNrNmw2b1hWbGVpcU9nTy01V1Jud1N6MGxrZ0Jpd3hBNEpUWnFfMGNkbW4waVJPdXl2X2QtbU94SW41QkZjNlhYUmJ3NDR5MS1lSFBILXRVNGwyeWc4WUU0YjhZdw?oc=5",
+       "date": "Sun, 08 Nov 2026 00:22:55 GMT"
+      }
+     ],
+     "ids": [
+      "byd’s rolls-royce rival goes global as yangwang altior",
+      "cabin air filters explained: can your car protect you from smog?",
+      "car prices expected to drop for alto, haval h6, kia sorento, evs under auto policy 2026–31",
+      "haval h6, suzuki alto, kia sorento prices in pakistan amid new auto policy 2026-2031",
+      "jaecoo j5 bev price, range and features revealed in pakistan",
+      "second-gen byd seal 07 interior revealed with 20-speaker devialet audio",
+      "suzuki alto, haval h6 expected prices in pakistan after new auto policy 2026–2031"
+     ]
+    }
+   }
   },
   {
    "brand": "BYD",
@@ -515,7 +727,81 @@ const DATA = {
      "sourceName": "ProPakistani",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "power": {
+     "value": "230 kW",
+     "source": "https://byd-mega.com/brochure/new/sealion-7-brochure-aug-2026.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "380 Nm",
+     "source": "https://byd-mega.com/brochure/new/sealion-7-brochure-aug-2026.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4,830 mm",
+     "source": "https://byd-mega.com/brochure/new/sealion-7-brochure-aug-2026.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1,925 mm",
+     "source": "https://byd-mega.com/brochure/new/sealion-7-brochure-aug-2026.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1,620 mm",
+     "source": "https://byd-mega.com/brochure/new/sealion-7-brochure-aug-2026.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,930 mm",
+     "source": "https://byd-mega.com/brochure/new/sealion-7-brochure-aug-2026.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "9",
+     "source": "https://byd-mega.com/brochure/new/sealion-7-brochure-aug-2026.pdf",
+     "official": true
+    },
+    "battery": {
+     "value": "82.56 kWh",
+     "source": "https://byd-mega.com/brochure/new/sealion-7-brochure-aug-2026.pdf",
+     "official": true
+    },
+    "electricRange": {
+     "value": "Up to 567 km (NEDC)",
+     "source": "https://byd-mega.com/brochure/new/sealion-7-brochure-aug-2026.pdf",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 3,
+     "examples": [
+      {
+       "title": "BYD Unveils Yangwang Altior Sedan Priced at 2.08 Million Yuan - Retail News Asia",
+       "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNWkpDLXFzakFfVXFvQzFMclhYRWdLX2FoSnNEczhuVUNfMng1d1dCM080bDNjRUQ0Ty03UHRJeUJHdGh1akF4VmY3NVFqVXJ5U29sVkM4WDU0RWhSLTV1bnFyc3AxLXZJWElKM3otLTlrelN5OC1kSEtYSTFIelZnbnBVSEZiejlacmdoUXZR?oc=5",
+       "date": "Sun, 08 Nov 2026 13:40:32 GMT"
+      },
+      {
+       "title": "BYD Sealion 7 Second Row Seats Image – Sealion 7 Photos in India - Autocar India",
+       "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5RX1Q2UVlOd1Y3bkZsU1FYaWpILVRrX21VcUZlRmdPa3V5RlY0TjVOX25KTHlyaFI1Z3ZKcWZXNTN6SlBDQ1M3ZEJTZDBtZE9HU0hRVGlwWU5hT09QVkloVnFkVW8yNjdTcFhqeWVEb05mb0pfaVl3SFJORQ?oc=5",
+       "date": "Wed, 04 Nov 2026 08:00:00 GMT"
+      },
+      {
+       "title": "Cabin Air Filters Explained: Can Your Car Protect You From Smog? - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5qT19KWHVTTFU3d0QxeTRuQlltZUVGRjltckRGOVBqeURwM1MzWk9xWVM0MGZFT3lsSmVXZlVuUmkzb0VzZG1GWVFGbzgxSDA2RlNxQ1hRdWZ4NEZrdjFwU1F5eUtZNGhCMzZLWFNvUm9TendQMjhDRw?oc=5",
+       "date": "Thu, 29 Oct 2026 07:00:00 GMT"
+      }
+     ],
+     "ids": [
+      "byd sealion 7 second row seats image – sealion 7 photos in india",
+      "byd unveils yangwang altior sedan priced at 2.08 million yuan",
+      "cabin air filters explained: can your car protect you from smog?"
+     ]
+    }
+   }
   },
   {
    "brand": "Changan",
@@ -563,7 +849,89 @@ const DATA = {
      "sourceName": "changan.com.pk",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "engine": {
+     "value": "MT Comfort: 1.37L BlueCore, 1370 cc; DCT variants: 1.5L BlueCore, 1480 cc; In-line 4 Cylinder MPFI DOHC",
+     "source": "https://www.changan.com.pk/upload/Alsvin-Brochure-new.pdf",
+     "official": true
+    },
+    "power": {
+     "value": "99 Hp (1.37L) / 105 Hp (1.5L)",
+     "source": "https://www.changan.com.pk/upload/Alsvin-Brochure-new.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "135 Nm (1.37L) / 145 Nm (1.5L)",
+     "source": "https://www.changan.com.pk/upload/Alsvin-Brochure-new.pdf",
+     "official": true
+    },
+    "transmission": {
+     "value": "MT Comfort: 5 Speed Manual with Intelligent Shift Reminder; DCT Comfort/Lumiere/Black Edition: 5 Speed Dual Clutch Transmission with Tiptronic",
+     "source": "https://www.changan.com.pk/upload/Alsvin-Brochure-new.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4390 mm",
+     "source": "https://www.changan.com.pk/upload/Alsvin-Brochure-new.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1725 mm",
+     "source": "https://www.changan.com.pk/upload/Alsvin-Brochure-new.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1490 mm",
+     "source": "https://www.changan.com.pk/upload/Alsvin-Brochure-new.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2535 mm",
+     "source": "https://www.changan.com.pk/upload/Alsvin-Brochure-new.pdf",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "40 L",
+     "source": "https://www.changan.com.pk/upload/Alsvin-Brochure-new.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "Dual Airbags (driver + front passenger)",
+     "source": "https://www.changan.com.pk/upload/Alsvin-Brochure-new.pdf",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 6,
+     "examples": [
+      {
+       "title": "What If Your Changan Alsvin Gets in an Accident? Here’s What Parts Cost - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOaFBvUWREcmZVVGU1WDhpVmZrSWRPNm9YQlhBdEtYTy1CMENONGFDUncyTWxIZWJ4S1JRR1FqOVBqbHZ0d05BRi1MdFNtMDIzZk5WNmxqTmF0aEs5ZGM2U1o0cmhjSmFOWHlpMERaYnBsNHRUSTNEOG9sYWotNS1heF9SVE04U054ZDR4ZkNlZ19SUG45STJ6MnBudmZhS2Mzekdr?oc=5",
+       "date": "Fri, 23 Oct 2026 07:00:00 GMT"
+      },
+      {
+       "title": "Changan begins local assembly of NEVO Hunter 4×4 Pickup in Pakistan at Rs 10.99 million - Islamabad Scene",
+       "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPRzBBa0VjWTNSXzhmTC0zdlRDQlV3S19SX2M0NnVsdEpUQ0psaUN2OWsxWml0UGQwekdhNmREUU5pYTlvSno3SlJ5NzRGUy1JRmZaWlJSWHczdjI0MENSMlFsdXVkRFhfc1o3RVg1RWlPYkFESkRoV3lBMGpiVXZYNmN5dlpqaXFBOEZBVmxpYnJKdGJPOWZLMDRlVUxXVkpjRnVkNmZ1NjU1WEQ1NExkdkQzWm9jVVI3X1Y00gHAAUFVX3lxTE5qMndWQkNZZzhzMHJNczNkekVNVEZ3U0x1XzB3RkR0UW9LT0RCY0xGNEhyRGlFUm9GS3dDTktjbmVLdWpQNHd4dzdHcGtjRHh6MTVLRGprRWxlbU5INFJucjB4bkhXQ3dDczgyWEVhS0xiVXVpaTZOX000WjZzWllkanZHV1QwT1V6cF9PNmFvMHg5cTRJY1lZaGEycXg0ek1WVVFYNXpNU2VTWGlmemdHUDZfUDVHdWxpNDBkUEhuYw?oc=5",
+       "date": "Fri, 30 Oct 2026 07:00:00 GMT"
+      },
+      {
+       "title": "Buy Changan Alsvin Dashboard Mat – Premium Velvet Anti-Slip Custom Fit Dashboard Cover in Pakistan - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQUlVLYXdCWXprS1hqa2RwX0V2X3lMVEl5LWRjN2tuU01DUU1PZTRkc0JBYmUyc0RJaDkzS0pDdmpDN0c1OWNGLWhvdmpRSGdZTlN1VFhEYTFxSEd3UHhPNDAyM1dubktXeWdwaUl3WWNJdWpDRTloalFfQW8wTEViM2JhVzRVNHlIU3F5TmVuY19PVFhZbFByeFpNZ1A0UXFTSVluZkM0NU5xVjdRQ1VUdGZfUW9pSHpEaFEzZEh5UUJ3SnE2Tm1Xd1AwV3dmY1RvSUhvX3Nn?oc=5",
+       "date": "Mon, 19 Oct 2026 21:16:31 GMT"
+      }
+     ],
+     "ids": [
+      "10 phevs with the longest electric range in pakistan (2026)",
+      "buy changan alsvin dashboard mat – premium velvet anti-slip custom fit dashboard cover in pakistan",
+      "changan begins local assembly of nevo hunter 4×4 pickup in pakistan at rs 10.99 million",
+      "ford mustang cobra returns in 2027 with v8 teaser",
+      "rs. 54,000 apart: two long-range electric scooters compared",
+      "what if your changan alsvin gets in an accident? here’s what parts cost"
+     ]
+    }
+   }
   },
   {
    "brand": "Changan",
@@ -623,7 +991,93 @@ const DATA = {
      "sourceName": "changan.com.pk",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "engine": {
+     "value": "Turbocharged NE15TG, 1499 cc, gasoline",
+     "source": "https://www.changan.com.pk/oshan-x7/",
+     "official": true
+    },
+    "power": {
+     "value": "138 kW (185 hp)",
+     "source": "https://www.changan.com.pk/oshan-x7/",
+     "official": true
+    },
+    "torque": {
+     "value": "300 Nm",
+     "source": "https://www.changan.com.pk/oshan-x7/",
+     "official": true
+    },
+    "transmission": {
+     "value": "7 Speed Wet DCT Triptronic",
+     "source": "https://www.changan.com.pk/oshan-x7/",
+     "official": true
+    },
+    "seats": {
+     "value": "FutureSense: 7 or 5; Comfort: 7",
+     "source": "https://www.changan.com.pk/oshan-x7/",
+     "official": true
+    },
+    "length": {
+     "value": "4730 mm",
+     "source": "https://www.changan.com.pk/upload/Oshan-X7-Brochure.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1870 mm",
+     "source": "https://www.changan.com.pk/upload/Oshan-X7-Brochure.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1720 mm",
+     "source": "https://www.changan.com.pk/upload/Oshan-X7-Brochure.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2786 mm",
+     "source": "https://www.changan.com.pk/upload/Oshan-X7-Brochure.pdf",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "55 L",
+     "source": "https://www.changan.com.pk/oshan-x7/",
+     "official": true
+    },
+    "airbags": {
+     "value": "4 (Driver + Passenger + Side Torso)",
+     "source": "https://www.changan.com.pk/oshan-x7/",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 5,
+     "examples": [
+      {
+       "title": "FIA busts illegal kidney transplant racket in capital; five held - Dawn",
+       "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9qUHZRMUNUNHVKVG5zWExrekVDZ2FIc2pDOGdZRG95em9XcTJTcFAyQUpZY0I4UGxPZmUtYS0zZk9hUEpqOW1adg?oc=5",
+       "date": "Fri, 23 Oct 2026 07:00:00 GMT"
+      },
+      {
+       "title": "What If Your Changan Oshan X7 Gets in an Accident? Here’s What the Parts Cost - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNcDYydXl0R2ZpQ2pieUJIbEk2NFV3LTN0S3V1ejhBdUtwUjVsaS1FdlVNMDlFbVhINFNwWmlUNFpqNUFyX19pUnc5WXVBWmttTjJIT1ZLb216Nk16MVozaFVsMVI3bEdGSG12Zl9lRG5mS1pzYjY0Qmh5VjdlT1ViT216eEoxUHhTRGtubmRZR3IyT29kMlRHMXJhTVFpZGxrZUJwSUpvWnZZem8?oc=5",
+       "date": "Mon, 19 Oct 2026 07:00:00 GMT"
+      },
+      {
+       "title": "Organ trade network busted - The Express Tribune",
+       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9RN0tHX2daR1lOT2FCTk5qeC14aVRNSlFKU19nR0d6X2lMQ1AtUndKNkZPRl8tdnlLVjZqNEYyQmlPa3ZSNWdYaldZcUxhSUh3Zm9RZDhXRUhGc2VkY2dhV2F5bmN0RkRQdk1jQWxMRVPSAXhBVV95cUxOeko1M1pTcUxwLWFTemNsN0h3X0x1RURxRnNfR3I3bTNhYUhmMDVybnlUMUVFTFVVTVFaTDBqZXRuMnc3bF9kS2JYTUs2X1l5NUxfZ1BTWUZpVmNadWN6OWl3YkFaZG5WOEJTek4zd3pkR2RoY2VCQXU?oc=5",
+       "date": "Fri, 23 Oct 2026 07:00:00 GMT"
+      }
+     ],
+     "ids": [
+      "cabin air filters explained: can your car protect you from smog?",
+      "fia busts illegal kidney transplant network in islamabad, arrests five",
+      "fia busts illegal kidney transplant racket in capital; five held",
+      "organ trade network busted",
+      "what if your changan oshan x7 gets in an accident? here’s what the parts cost"
+     ]
+    }
+   }
   },
   {
    "brand": "Chery",
@@ -647,7 +1101,108 @@ const DATA = {
      "sourceName": "ProPakistani",
      "effectiveFrom": "2026-07-31"
     }
-   ]
+   ],
+   "specs": {
+    "engine": {
+     "value": "1,499 cc turbo petrol plug-in hybrid",
+     "source": "https://www.cherypakistan.com/wp-content/uploads/2026/04/chery7final.pdf",
+     "official": true
+    },
+    "power": {
+     "value": "342 hp (system)",
+     "source": "https://www.cherypakistan.com/chery-tiggo-7/",
+     "official": true
+    },
+    "torque": {
+     "value": "525 Nm (system)",
+     "source": "https://www.cherypakistan.com/wp-content/uploads/2026/04/chery7final.pdf",
+     "official": true
+    },
+    "transmission": {
+     "value": "DHT hybrid transmission",
+     "source": "https://www.cherypakistan.com/wp-content/uploads/2026/04/chery7final.pdf",
+     "official": true
+    },
+    "seats": {
+     "value": "5",
+     "source": "https://www.cherypakistan.com/wp-content/uploads/2026/04/chery7final.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4,553 mm",
+     "source": "https://www.cherypakistan.com/chery-tiggo-7/",
+     "official": true
+    },
+    "width": {
+     "value": "1,862 mm",
+     "source": "https://www.cherypakistan.com/chery-tiggo-7/",
+     "official": true
+    },
+    "height": {
+     "value": "1,696 mm",
+     "source": "https://www.cherypakistan.com/chery-tiggo-7/",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,670 mm",
+     "source": "https://www.cherypakistan.com/chery-tiggo-7/",
+     "official": true
+    },
+    "groundClearance": {
+     "value": "175 mm",
+     "source": "https://www.cherypakistan.com/chery-tiggo-7/",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "60 L",
+     "source": "https://www.cherypakistan.com/chery-tiggo-7/",
+     "official": true
+    },
+    "airbags": {
+     "value": "8",
+     "source": "https://www.cherypakistan.com/chery-tiggo-7/",
+     "official": true
+    },
+    "battery": {
+     "value": "18.3 kWh",
+     "source": "https://www.cherypakistan.com/chery-tiggo-7/",
+     "official": true
+    },
+    "electricRange": {
+     "value": "Up to 90+ km (test cycle not stated)",
+     "source": "https://www.cherypakistan.com/chery-tiggo-7/",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 5,
+     "examples": [
+      {
+       "title": "Plug-In Hybrid Cars in Pakistan 2026: Prices & Specs - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA2QzhsY1dVeDBXcU00VXdSSWdtVTlRNjRuMlliQW9sTFYtMTFDRFRBbWtJOUlBcXZYMEt0TFprQkFBUTBPRXY1Y29pU0JsVFE4UDVOU0pkM2JrZ0luNk5kc3dsOGJLQWRFdU1ZTmtXTzRORUN2MlNwVA?oc=5",
+       "date": "Tue, 27 Oct 2026 07:00:00 GMT"
+      },
+      {
+       "title": "Suzuki Alto, Haval H6 Expected Prices in Pakistan after New Auto Policy 2026–2031 - Daily Pakistan",
+       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQN0FiSG9yeVhDWlJlbnBzTERlc3A3eVkyYlhUZ3R4X3RMYjVuTkFvb0h1Uy12U1hPM1hBbjB1d3RTNkY1U0Q1TExETC1uZ21GZzU3WUVVVlVmOXNxU1VFNkRkWVF0RFNrNmw2b1hWbGVpcU9nTy01V1Jud1N6MGxrZ0Jpd3hBNEpUWnFfMGNkbW4waVJPdXl2X2QtbU94SW41QkZjNlhYUmJ3NDR5MS1lSFBILXRVNGwyeWc4WUU0YjhZdw?oc=5",
+       "date": "Sun, 08 Nov 2026 00:22:55 GMT"
+      },
+      {
+       "title": "10 PHEVs With the Longest Electric Range in Pakistan (2026) - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPcmVBcUU5MDM1OUJJR0FVcm1wMDFzTV9sRjBnNUx6M2YycUFvZnpXNy0xYnh6cEpEZHprT1JwaFNyeThLZ2hzUmhkT3dLRVZGVHVsQkJacU5OUEZGUjlNSlpqcWV0M1RaQ1oybWJlQnJ5dWRNMVp5NzNURXItNkNQR2Rmb0RlWHc?oc=5",
+       "date": "Fri, 13 Nov 2026 08:08:54 GMT"
+      }
+     ],
+     "ids": [
+      "10 phevs with the longest electric range in pakistan (2026)",
+      "haval h6, suzuki alto, kia sorento prices in pakistan amid new auto policy 2026-2031",
+      "plug-in hybrid cars in pakistan 2026: prices & specs",
+      "plug-in hybrids hit 200 km range: phev vs ev",
+      "suzuki alto, haval h6 expected prices in pakistan after new auto policy 2026–2031"
+     ]
+    }
+   }
   },
   {
    "brand": "Chery",
@@ -671,7 +1226,111 @@ const DATA = {
      "sourceName": "ProPakistani",
      "effectiveFrom": "2026-07-31"
     }
-   ]
+   ],
+   "specs": {
+    "engine": {
+     "value": "1,499 cc turbo petrol plug-in hybrid",
+     "source": "https://www.cherypakistan.com/chery-tiggo-8/",
+     "official": true
+    },
+    "power": {
+     "value": "496 hp (system)",
+     "source": "https://www.cherypakistan.com/chery-tiggo-8/",
+     "official": true
+    },
+    "torque": {
+     "value": "735 Nm",
+     "source": "https://www.cherypakistan.com/chery-tiggo-8/",
+     "official": true
+    },
+    "transmission": {
+     "value": "DHT hybrid transmission, AWD",
+     "source": "https://www.cherypakistan.com/wp-content/uploads/2026/01/Chery-Tiggo-8-PHEV-Mobile.pdf",
+     "official": true
+    },
+    "fuelEconomy": {
+     "value": "16.6 km/L (NEDC)",
+     "source": "https://www.cherypakistan.com/wp-content/uploads/2026/01/Chery-Tiggo-8-PHEV-Mobile.pdf",
+     "official": true
+    },
+    "seats": {
+     "value": "7",
+     "source": "https://www.cherypakistan.com/chery-tiggo-8/",
+     "official": true
+    },
+    "length": {
+     "value": "4,725 mm",
+     "source": "https://www.cherypakistan.com/chery-tiggo-8/",
+     "official": true
+    },
+    "width": {
+     "value": "1,860 mm",
+     "source": "https://www.cherypakistan.com/chery-tiggo-8/",
+     "official": true
+    },
+    "height": {
+     "value": "1,705 mm",
+     "source": "https://www.cherypakistan.com/chery-tiggo-8/",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,710 mm",
+     "source": "https://www.cherypakistan.com/wp-content/uploads/2026/01/Chery-Tiggo-8-PHEV-Mobile.pdf",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "60 L",
+     "source": "https://www.cherypakistan.com/wp-content/uploads/2026/01/Chery-Tiggo-8-PHEV-Mobile.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "10",
+     "source": "https://www.cherypakistan.com/wp-content/uploads/2026/01/Chery-Tiggo-8-PHEV-Mobile.pdf",
+     "official": true
+    },
+    "battery": {
+     "value": "18.3 kWh",
+     "source": "https://www.cherypakistan.com/chery-tiggo-8/",
+     "official": true
+    },
+    "electricRange": {
+     "value": "Up to 90 km (NEDC)",
+     "source": "https://www.cherypakistan.com/chery-tiggo-8/",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 8,
+     "examples": [
+      {
+       "title": "Chery Tiggo 8 PHEV AWD Highway Test: How Efficient Is It Really? - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPZk9abFZDb09HUzMtYlo2cDhIRlNTZFNVbUVJZlRJOXAwUk5oQ0cxdVdQbkpodHA4TVNMYnExNnhkQ2QzcUFtQUI3S1pVcFhfMkZlUUMwNENjZmMxd1Z3d3JwdW1rZWJ0aUlYR0QxeThvYVkwYk9fZjZCY3pmd3FTaEdR?oc=5",
+       "date": "Mon, 02 Nov 2026 08:00:00 GMT"
+      },
+      {
+       "title": "Chery Tiggo 8 PHEV Review: Powerful, Practical SUV for Pakistan - NewzTodays",
+       "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPSXZVajM4UkFSWDBOYkxmQUpxVG1uQnNROWZYZ3hsaGwyRUFCTDZncm5HNTR2dnYyQW1idlVfdHEzU0N2RlNJeGRFN1JlOHZlaGdRQXhVNWRvTmhYc2hBenVIWXBvTkpsS2t1UjQxaW52ekhqXzUxMGxBMEVVdUdsckx1U2U0YlhFQ19MWFRn?oc=5",
+       "date": "Sat, 17 Oct 2026 07:00:00 GMT"
+      },
+      {
+       "title": "Plug-In Hybrid Cars in Pakistan 2026: Prices & Specs - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA2QzhsY1dVeDBXcU00VXdSSWdtVTlRNjRuMlliQW9sTFYtMTFDRFRBbWtJOUlBcXZYMEt0TFprQkFBUTBPRXY1Y29pU0JsVFE4UDVOU0pkM2JrZ0luNk5kc3dsOGJLQWRFdU1ZTmtXTzRORUN2MlNwVA?oc=5",
+       "date": "Tue, 27 Oct 2026 07:00:00 GMT"
+      }
+     ],
+     "ids": [
+      "500 km of highway driving! how much fuel did the chery tiggo 8 phev awd consume?",
+      "chery tiggo 8 phev awd highway test: how efficient is it really?",
+      "chery tiggo 8 phev review: powerful, practical suv for pakistan",
+      "pakistan adds 11% duty on 13 more auto parts",
+      "phev and reev sales tax set at 9% and 6% in presented auto policy, pending imf approval",
+      "plug-in hybrid cars in pakistan 2026: prices & specs",
+      "tesla roadster launches flying model with spacex thrusters",
+      "testing different driving modes of the chery tiggo 8 on the highway!"
+     ]
+    }
+   }
   },
   {
    "brand": "Chery",
@@ -695,7 +1354,105 @@ const DATA = {
      "sourceName": "ProPakistani",
      "effectiveFrom": "2026-07-31"
     }
-   ]
+   ],
+   "specs": {
+    "engine": {
+     "value": "1,499 cc turbo petrol plug-in hybrid, 3 motors",
+     "source": "https://www.cherypakistan.com/chery-tiggo-9/",
+     "official": true
+    },
+    "power": {
+     "value": "610 hp (system)",
+     "source": "https://www.cherypakistan.com/chery-tiggo-9/",
+     "official": true
+    },
+    "torque": {
+     "value": "920 Nm (system)",
+     "source": "https://www.cherypakistan.com/wp-content/uploads/2026/03/Chery-T9-Brochure-Final_compressed.pdf",
+     "official": true
+    },
+    "transmission": {
+     "value": "3-speed DHT, AWD",
+     "source": "https://www.cherypakistan.com/wp-content/uploads/2026/03/Chery-T9-Brochure-Final_compressed.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4,810 mm",
+     "source": "https://www.cherypakistan.com/chery-tiggo-9/",
+     "official": true
+    },
+    "width": {
+     "value": "1,925 mm",
+     "source": "https://www.cherypakistan.com/chery-tiggo-9/",
+     "official": true
+    },
+    "height": {
+     "value": "1,741 mm",
+     "source": "https://www.cherypakistan.com/chery-tiggo-9/",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,800 mm",
+     "source": "https://www.cherypakistan.com/chery-tiggo-9/",
+     "official": true
+    },
+    "groundClearance": {
+     "value": "147–183 mm (loaded/unloaded)",
+     "source": "https://www.cherypakistan.com/chery-tiggo-9/",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "70 L",
+     "source": "https://www.cherypakistan.com/chery-tiggo-9/",
+     "official": true
+    },
+    "airbags": {
+     "value": "10",
+     "source": "https://www.cherypakistan.com/chery-tiggo-9/",
+     "official": true
+    },
+    "battery": {
+     "value": "34.46 kWh",
+     "source": "https://www.cherypakistan.com/chery-tiggo-9/",
+     "official": true
+    },
+    "electricRange": {
+     "value": "170 km (NEDC)",
+     "source": "https://www.cherypakistan.com/chery-tiggo-9/",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 7,
+     "examples": [
+      {
+       "title": "Chery Tiggo 9 PHEV review 2026: 428 horsepower for 1.19 million Czech korunas, but the chassis and brakes spoil the impression - Autohled.cz",
+       "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9Oelljdjc2cEpjRFRWVm10NWppVUZUSkZFLXYyVVdoQlF4SjBIeERvZGp3by1iV3dYYnRMT29qUWU0am9HOG5mTWFSTmVFVXJmOTc4S2xfeVVLbTFZb2xyeTlLMA?oc=5",
+       "date": "Sat, 24 Oct 2026 07:00:00 GMT"
+      },
+      {
+       "title": "Chery Tiggo 9 PHEV Owner Review: 920 Nm in a Family SUV - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE03aTBaWWpWdS1sakJGRjlIMjdLWDZwa3RCNW1XUVViMW5iaG1jM05KdlFDajZPQ0FNTVhLQmVNd2hyckhWUll4c2N2bTkxTFFKWGR5V3ozekhKUHJ6NzgwbTBzdU95b0xwemlWNEZ5Vkt2d2VDQ2plUWJyX2ozbGc?oc=5",
+       "date": "Wed, 21 Oct 2026 07:00:00 GMT"
+      },
+      {
+       "title": "Chery Tiggo 9 PHEV- Pakistan’s Most Efficient PHEV, up to 1,400 km Combined Range & 170 km Pure Electric - TechJuice",
+       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOaDJYM1Q0MDV3ckNmRWZsa1p5My1qY1JGdFBpR2NkUDRLcTJzcXg2OGVjT3pRZjVDaGJjdUJpSmVPYk5KMThuVFdSSlpncXNRR2piYnJWY3dVU0tuN0R1cTRkS1BITmxpZ2Z1MVVITlFWa042dXJwaE9COHhNQWVna0Y0Rm9ZQ3ZKdHFiM3Z5aVJWTGZEVDRFbEtabHRJQ2tvOERHdC1ydDZ2SzZicGtxNTJGU0tSRGprNU5Rc05iSmZhdw?oc=5",
+       "date": "Thu, 12 Nov 2026 17:11:31 GMT"
+      }
+     ],
+     "ids": [
+      "10 phevs with the longest electric range in pakistan (2026)",
+      "chery tiggo 9 phev owner review: 920 nm in a family suv",
+      "chery tiggo 9 phev review 2026: 428 horsepower for 1.19 million czech korunas, but the chassis and brakes spoil the impression",
+      "chery tiggo 9 phev- pakistan’s most efficient phev, up to 1,400 km combined range & 170 km pure electric",
+      "plug-in hybrid cars in pakistan 2026: prices & specs",
+      "why modern cars feature multiple airbags",
+      "your car might have 10 airbags. but why?"
+     ]
+    }
+   }
   },
   {
    "brand": "Deepal",
@@ -719,7 +1476,80 @@ const DATA = {
      "sourceName": "deepal.com.pk",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "power": {
+     "value": "440 kW / 590 HP (dual motor AWD)",
+     "source": "https://deepal.com.pk/upload/e07-brochure.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "645 N-m",
+     "source": "https://deepal.com.pk/upload/e07-brochure.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "5,045 mm",
+     "source": "https://deepal.com.pk/upload/e07-brochure.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1996 mm",
+     "source": "https://deepal.com.pk/upload/e07-brochure.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1695 mm",
+     "source": "https://deepal.com.pk/upload/e07-brochure.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "3,120 mm",
+     "source": "https://deepal.com.pk/upload/e07-brochure.pdf",
+     "official": true
+    },
+    "groundClearance": {
+     "value": "183 mm",
+     "source": "https://deepal.com.pk/upload/e07-brochure.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "Front, Front Side, Rear Side, Side Curtain (count not stated)",
+     "source": "https://deepal.com.pk/upload/e07-brochure.pdf",
+     "official": true
+    },
+    "battery": {
+     "value": "89.98 kWh (Ternary Lithium)",
+     "source": "https://deepal.com.pk/upload/e07-brochure.pdf",
+     "official": true
+    },
+    "electricRange": {
+     "value": "590 km (NEDC)",
+     "source": "https://deepal.com.pk/upload/e07-brochure.pdf",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 2,
+     "examples": [
+      {
+       "title": "Pakistan’s First Locally Assembled Electric SUV - JAECOO J5 BEV Launched At PKR 5,999,000 And PKR 6,699,000 - The Friday Times",
+       "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPYlh4SG9WOGFZUUhMWGxpdklUWURFc2JEdFBjYkhlOG5TT3ZSaktyekpka2V5bW1GVFltQzlRWm1sOW9lc0Q1bHBpMF9wNUc4QVhBSzBKaWhDcFFYVjFMYzJPVVVmYkk1R3FHejNreENqX3ZHODlSMkZFdlhIVjQzaVBXRmw0TUVMMVVKVVVlTlpGclcwRmx2NldEQ1ZOc1ZJZl9adzlScnhiU1cwMnpGRzg2a2x6SHJteHhpRDRNSjZtNmlHbXB0d3NkOEhVcTIyQ1Nsbk9iTGE?oc=5",
+       "date": "Sat, 07 Nov 2026 09:22:14 GMT"
+      },
+      {
+       "title": "10 EVs With the Biggest Batteries in Pakistan (2026) - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9xbElqQWxuVHl1X3pKUF96NFdsSkFVN3dKWlZxdWI1U0Vzb0VXSDZjVjB4ZWxhU0l3QmlTZFdkU2pHMlI1bmtESXBKal9YSmM4bThnbC1XWGFyODI3VzZlSjdGVWhieTZSWHBrS2Z6MA?oc=5",
+       "date": "Wed, 21 Oct 2026 07:00:00 GMT"
+      }
+     ],
+     "ids": [
+      "10 evs with the biggest batteries in pakistan (2026)",
+      "pakistan’s first locally assembled electric suv - jaecoo j5 bev launched at pkr 5,999,000 and pkr 6,699,000"
+     ]
+    }
+   }
   },
   {
    "brand": "Deepal",
@@ -743,7 +1573,91 @@ const DATA = {
      "sourceName": "deepal.com.pk",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "power": {
+     "value": "190 kW / 258 PS",
+     "source": "https://deepal.com.pk/upload/L7-Brochure.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "320 N-m",
+     "source": "https://deepal.com.pk/upload/L7-Brochure.pdf",
+     "official": true
+    },
+    "seats": {
+     "value": "5",
+     "source": "https://deepal.com.pk/upload/L7-Brochure.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4,820 mm",
+     "source": "https://deepal.com.pk/upload/L7-Brochure.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1,890 mm",
+     "source": "https://deepal.com.pk/upload/L7-Brochure.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1,480 mm",
+     "source": "https://deepal.com.pk/upload/L7-Brochure.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,900 mm",
+     "source": "https://deepal.com.pk/upload/L7-Brochure.pdf",
+     "official": true
+    },
+    "groundClearance": {
+     "value": "150 mm",
+     "source": "https://deepal.com.pk/upload/L7-Brochure.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "Front, Front Side, Side Curtain (count not stated)",
+     "source": "https://deepal.com.pk/upload/L7-Brochure.pdf",
+     "official": true
+    },
+    "battery": {
+     "value": "66.8 kWh (Ternary Lithium NMC)",
+     "source": "https://deepal.com.pk/upload/L7-Brochure.pdf",
+     "official": true
+    },
+    "electricRange": {
+     "value": "540 km (NEDC)",
+     "source": "https://deepal.com.pk/upload/L7-Brochure.pdf",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 3,
+     "examples": [
+      {
+       "title": "Car Prices Expected to Drop for Alto, Haval H6, Kia Sorento, EVs Under Auto Policy 2026–31 - Bloom Pakistan",
+       "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNLU1TNlI3MlpIVHJNVlBLOGN0WmN6QWw4aDVuTGlrV1VaZW5ZVndNb2Y0NkJYMTNVY0xVLTBvRkRlVG9qbkJFVV91R05xd24zc2E2d3RLVHpsZ1RWVnlwMnNKOEVzaXVoSG4xVldPVVhwMnE5dGd2YlVRNmtxLUxVbUxRc1A3aHM?oc=5",
+       "date": "Sun, 08 Nov 2026 09:08:28 GMT"
+      },
+      {
+       "title": "Suzuki Alto, Haval H6 Expected Prices in Pakistan after New Auto Policy 2026–2031 - Daily Pakistan",
+       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQN0FiSG9yeVhDWlJlbnBzTERlc3A3eVkyYlhUZ3R4X3RMYjVuTkFvb0h1Uy12U1hPM1hBbjB1d3RTNkY1U0Q1TExETC1uZ21GZzU3WUVVVlVmOXNxU1VFNkRkWVF0RFNrNmw2b1hWbGVpcU9nTy01V1Jud1N6MGxrZ0Jpd3hBNEpUWnFfMGNkbW4waVJPdXl2X2QtbU94SW41QkZjNlhYUmJ3NDR5MS1lSFBILXRVNGwyeWc4WUU0YjhZdw?oc=5",
+       "date": "Sun, 08 Nov 2026 00:22:55 GMT"
+      },
+      {
+       "title": "Haval H6, Suzuki Alto, Kia Sorento Prices in Pakistan amid New Auto Policy 2026-2031 - The Opinion",
+       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOQWNWNV9mQ2xiZGpTak94ZmoyaDFkSkp4dGdhZ1F6QktPWXJ1VHNjNjR6YmtXUmM5T0tKeUdXTEpDOXk4M1A0QzFUOFRzT3BudllBSDh1VHpqUThOUExJMVJxSk5lQWhoYjRkQXNGYmMtY3Z1X21FZWJzRHpWQzNoeXBpYTZGdHpQSHlDV2F3cWVkaHhuZ3VHV3JBZzhJWTRGc2duam95YTMtZGdUcGptRjFuVQ?oc=5",
+       "date": "Mon, 09 Nov 2026 12:16:15 GMT"
+      }
+     ],
+     "ids": [
+      "car prices expected to drop for alto, haval h6, kia sorento, evs under auto policy 2026–31",
+      "haval h6, suzuki alto, kia sorento prices in pakistan amid new auto policy 2026-2031",
+      "suzuki alto, haval h6 expected prices in pakistan after new auto policy 2026–2031"
+     ]
+    }
+   }
   },
   {
    "brand": "Deepal",
@@ -767,7 +1681,102 @@ const DATA = {
      "sourceName": "deepal.com.pk",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "engine": {
+     "value": "Range-extender (EREV): 1,497 cc, 4-cylinder 16-valve VVT (1.5L Blue Whale), drives generator; rear motor drives wheels",
+     "source": "https://deepal.com.pk/upload/s05-brochure.pdf",
+     "official": true
+    },
+    "power": {
+     "value": "Motor 160 kW / 215 HP; extender 70 kW / 94 HP",
+     "source": "https://deepal.com.pk/upload/s05-brochure.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "Motor 320 N-m; extender 122 N-m",
+     "source": "https://deepal.com.pk/upload/s05-brochure.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4,620 mm",
+     "source": "https://deepal.com.pk/upload/s05-brochure.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1,900 mm",
+     "source": "https://deepal.com.pk/upload/s05-brochure.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1,600 mm",
+     "source": "https://deepal.com.pk/upload/s05-brochure.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,880 mm",
+     "source": "https://deepal.com.pk/upload/s05-brochure.pdf",
+     "official": true
+    },
+    "groundClearance": {
+     "value": "169 mm",
+     "source": "https://deepal.com.pk/upload/s05-brochure.pdf",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "44.9 L",
+     "source": "https://deepal.com.pk/upload/s05-brochure.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "6 (Front, Front Side, Side Curtain)",
+     "source": "https://deepal.com.pk/upload/s05-brochure.pdf",
+     "official": true
+    },
+    "battery": {
+     "value": "27.28 kWh (LFP)",
+     "source": "https://deepal.com.pk/upload/s05-brochure.pdf",
+     "official": true
+    },
+    "electricRange": {
+     "value": "170 km (NEDC); combined 1,000+ km",
+     "source": "https://deepal.com.pk/upload/s05-brochure.pdf",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 9,
+     "examples": [
+      {
+       "title": "Deepal S05 vs Geely Starray EM-R Which REEV Offers More - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPUk1vQlVXeW5HdUxER3BMd1ZiWjJiSG1nOFRlckpPbWVZZ3RsYW9oZmVObUt5VUpTTDZmN1pRQmdoQ1lucGdzWk1KRTJKclEzaTB2Vm1yQjA4aHZfcXdZZXd3UTAtc3hLQzJaYms2WHd5QmhDM3cwN2NQdnE2MUJpSA?oc=5",
+       "date": "Mon, 26 Oct 2026 07:00:00 GMT"
+      },
+      {
+       "title": "Changan Announces Limited-Time Offers on Nevo Hunter and Deepal S05 - ProPakistani",
+       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOMEhtX2llYVRmcVRadDhrS1NNV1hJWTU2UFZFUmhzOVJBZk5DTU5ZLUg1bjhMaE4tbEFPOFNFOFVPbDVob3kwc3Q0ZHdJRkFuZGpUY3RobHE3N2VRTGJOR3BnblZIOE91b0JOOWRZXzVQYXAyS0FWSkJxSW50WFRHcTFQbzUySmhJZ2tVcUdMVVVqMk1jeVlQZGVCb0xOaXQwNHJQeFB30gGrAUFVX3lxTE5lUTJmaGkyb0lRVlhEZWJUOEx3UlNQb2d5UEpBY3RnYzdFa25Nd1BuNW1iZmNHYmpjRXItbVE5RUpEdHdJWExjNWNiTjNQamlvSU1LNF94VGZZMm9vSmpNaWtLV1JVNVR3MjVFOW1HWERYRnVqc0dsOGdXQ05lakRWZ2F0U3BEUE9ZeXUtWmMwcDhuZmdiY1BZOGZrX28xY3JpNzdBSHByS0VHcw?oc=5",
+       "date": "Wed, 11 Nov 2026 12:03:21 GMT"
+      },
+      {
+       "title": "Deepal S05 Running Cost Analysis in Pakistan - NewzTodays",
+       "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFB1a3A5c3pSUkhvMlBwSUFMWmhTUmNiNGkwUldkT2RJSU5WTWxwMDhQVl8tc3lIb3IydHZXcnlxbVF0Q0ZHb3NBV1NReGpJS3g5Q19EWjN2Q1FvaWZwUnM3c3BuLUsyNFR1aGZNNGZyVE0xR2N4Z3RZ?oc=5",
+       "date": "Thu, 12 Nov 2026 14:39:07 GMT"
+      }
+     ],
+     "ids": [
+      "buying a reev in pakistan: the complete 2026 guide",
+      "byd reveals local production date for pakistan",
+      "changan announces limited-time offer on nevo hunter, deepal s05 – check details",
+      "changan announces limited-time offers on nevo hunter and deepal s05",
+      "changan announces special offers on nevo hunter and deepal s05",
+      "deepal s05 running cost analysis in pakistan",
+      "deepal s05 vs geely starray em-r which reev offers more",
+      "fesco introduces qr code payment facility for electricity bills",
+      "what if your deepal s05 gets in an accident? here’s what parts cost"
+     ]
+    }
+   }
   },
   {
    "brand": "Deepal",
@@ -791,7 +1800,91 @@ const DATA = {
      "sourceName": "deepal.com.pk",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "power": {
+     "value": "190 kW / 258 PS",
+     "source": "https://deepal.com.pk/upload/s7-Brochure.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "320 N-m",
+     "source": "https://deepal.com.pk/upload/s7-Brochure.pdf",
+     "official": true
+    },
+    "seats": {
+     "value": "5",
+     "source": "https://deepal.com.pk/upload/s7-Brochure.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4,750 mm",
+     "source": "https://deepal.com.pk/upload/s7-Brochure.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1,930 mm",
+     "source": "https://deepal.com.pk/upload/s7-Brochure.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1,625 mm",
+     "source": "https://deepal.com.pk/upload/s7-Brochure.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,900 mm",
+     "source": "https://deepal.com.pk/upload/s7-Brochure.pdf",
+     "official": true
+    },
+    "groundClearance": {
+     "value": "165 mm",
+     "source": "https://deepal.com.pk/upload/s7-Brochure.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "Front, Front Side, Side Curtain (count not stated)",
+     "source": "https://deepal.com.pk/upload/s7-Brochure.pdf",
+     "official": true
+    },
+    "battery": {
+     "value": "66.8 kWh (Ternary Lithium NMC)",
+     "source": "https://deepal.com.pk/upload/s7-Brochure.pdf",
+     "official": true
+    },
+    "electricRange": {
+     "value": "485 km (NEDC)",
+     "source": "https://deepal.com.pk/upload/s7-Brochure.pdf",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 3,
+     "examples": [
+      {
+       "title": "What Might Geely Be Bringing to Pakistan? - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBheC16N1NyTzJidWRpbWpnY0g2NmhMakFfeWpiaGd2RlpBdkprMnlUNTZ6SnY1Y09ZU2RvQUUtdDJyVkt1OXhnZzIzN1JOLXlBaUI5V1ZRanQ5N2tEQV8tWURFOV9GUG44dEpPNHdwUWJMdHMtYjVsRFUyVm0?oc=5",
+       "date": "Sat, 24 Oct 2026 07:00:00 GMT"
+      },
+      {
+       "title": "Haval H6, Suzuki Alto, Kia Sorento Prices in Pakistan amid New Auto Policy 2026-2031 - The Opinion",
+       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOQWNWNV9mQ2xiZGpTak94ZmoyaDFkSkp4dGdhZ1F6QktPWXJ1VHNjNjR6YmtXUmM5T0tKeUdXTEpDOXk4M1A0QzFUOFRzT3BudllBSDh1VHpqUThOUExJMVJxSk5lQWhoYjRkQXNGYmMtY3Z1X21FZWJzRHpWQzNoeXBpYTZGdHpQSHlDV2F3cWVkaHhuZ3VHV3JBZzhJWTRGc2duam95YTMtZGdUcGptRjFuVQ?oc=5",
+       "date": "Mon, 09 Nov 2026 12:16:15 GMT"
+      },
+      {
+       "title": "Cabin Air Filters Explained: Can Your Car Protect You From Smog? - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5qT19KWHVTTFU3d0QxeTRuQlltZUVGRjltckRGOVBqeURwM1MzWk9xWVM0MGZFT3lsSmVXZlVuUmkzb0VzZG1GWVFGbzgxSDA2RlNxQ1hRdWZ4NEZrdjFwU1F5eUtZNGhCMzZLWFNvUm9TendQMjhDRw?oc=5",
+       "date": "Thu, 29 Oct 2026 07:00:00 GMT"
+      }
+     ],
+     "ids": [
+      "cabin air filters explained: can your car protect you from smog?",
+      "haval h6, suzuki alto, kia sorento prices in pakistan amid new auto policy 2026-2031",
+      "what might geely be bringing to pakistan?"
+     ]
+    }
+   }
   },
   {
    "brand": "GWM",
@@ -815,7 +1908,79 @@ const DATA = {
      "sourceName": "gwm-pakistan.com",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "power": {
+     "value": "201 HP",
+     "source": "https://storage.googleapis.com/havalimages/images/Ora%2005/ORA%205%20Brochure%20(1).pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "260 NM",
+     "source": "https://storage.googleapis.com/havalimages/images/Ora%2005/ORA%205%20Brochure%20(1).pdf",
+     "official": true
+    },
+    "fuelEconomy": {
+     "value": "15.5 kWh/100km (basis not stated)",
+     "source": "https://storage.googleapis.com/havalimages/images/Ora%2005/ORA%205%20Brochure%20(1).pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4471 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/Ora%2005/ORA%205%20Brochure%20(1).pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1833 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/Ora%2005/ORA%205%20Brochure%20(1).pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1641 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/Ora%2005/ORA%205%20Brochure%20(1).pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2720 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/Ora%2005/ORA%205%20Brochure%20(1).pdf",
+     "official": true
+    },
+    "groundClearance": {
+     "value": "175 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/Ora%2005/ORA%205%20Brochure%20(1).pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "Driver, Passenger, Front Side, Front & Rear Side Curtain (count not stated)",
+     "source": "https://storage.googleapis.com/havalimages/images/Ora%2005/ORA%205%20Brochure%20(1).pdf",
+     "official": true
+    },
+    "battery": {
+     "value": "58.33 kWh (LFP)",
+     "source": "https://storage.googleapis.com/havalimages/images/Ora%2005/ORA%205%20Brochure%20(1).pdf",
+     "official": true
+    },
+    "electricRange": {
+     "value": "435 km (WLTP)",
+     "source": "https://storage.googleapis.com/havalimages/images/Ora%2005/ORA%205%20Brochure%20(1).pdf",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 1,
+     "examples": [
+      {
+       "title": "GWM On Wheels Hits Islamabad Today: Here’s What You Can Experience - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1BdjRXQzI3UU5tRV9kcFQ1bGtianVKX1RUX05ONWMxUUZqUE00WkJvV1I2bzBNaWFDNkoyWER0YVk3djA2V1lUT015aEVtVDRueUtKcW11S0NQVGU0RFFvQ3cyUUllRzBGSTZRbA?oc=5",
+       "date": "Sun, 18 Oct 2026 07:00:00 GMT"
+      }
+     ],
+     "ids": [
+      "gwm on wheels hits islamabad today: here’s what you can experience"
+     ]
+    }
+   }
   },
   {
    "brand": "Haval",
@@ -851,7 +2016,96 @@ const DATA = {
      "sourceName": "gwm-pakistan.com",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "engine": {
+     "value": "1.5T / 2.0T",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "power": {
+     "value": "182 HP (1.5T) / 235 HP (2.0T)",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "275 NM (1.5T) / 385 NM (2.0T)",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "transmission": {
+     "value": "7DCT FWD (1.5T) / 9DCT AWD (2.0T)",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "fuelEconomy": {
+     "value": "6.7 L/100km (1.5T) / 8.3 L/100km (2.0T), NEDC combined",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4703 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1886 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1730 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2738 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "61 L (1.5T) / 60 L (2.0T)",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "Dual SRS, Front Side, Side Curtain (count not stated)",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 8,
+     "examples": [
+      {
+       "title": "Plug-In Hybrid Cars in Pakistan 2026: Prices & Specs - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA2QzhsY1dVeDBXcU00VXdSSWdtVTlRNjRuMlliQW9sTFYtMTFDRFRBbWtJOUlBcXZYMEt0TFprQkFBUTBPRXY1Y29pU0JsVFE4UDVOU0pkM2JrZ0luNk5kc3dsOGJLQWRFdU1ZTmtXTzRORUN2MlNwVA?oc=5",
+       "date": "Tue, 27 Oct 2026 07:00:00 GMT"
+      },
+      {
+       "title": "Suzuki Alto, Haval H6 Expected Prices in Pakistan after New Auto Policy 2026–2031 - Daily Pakistan",
+       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQN0FiSG9yeVhDWlJlbnBzTERlc3A3eVkyYlhUZ3R4X3RMYjVuTkFvb0h1Uy12U1hPM1hBbjB1d3RTNkY1U0Q1TExETC1uZ21GZzU3WUVVVlVmOXNxU1VFNkRkWVF0RFNrNmw2b1hWbGVpcU9nTy01V1Jud1N6MGxrZ0Jpd3hBNEpUWnFfMGNkbW4waVJPdXl2X2QtbU94SW41QkZjNlhYUmJ3NDR5MS1lSFBILXRVNGwyeWc4WUU0YjhZdw?oc=5",
+       "date": "Sun, 08 Nov 2026 00:22:55 GMT"
+      },
+      {
+       "title": "Car Prices Expected to Drop for Alto, Haval H6, Kia Sorento, EVs Under Auto Policy 2026–31 - Bloom Pakistan",
+       "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNLU1TNlI3MlpIVHJNVlBLOGN0WmN6QWw4aDVuTGlrV1VaZW5ZVndNb2Y0NkJYMTNVY0xVLTBvRkRlVG9qbkJFVV91R05xd24zc2E2d3RLVHpsZ1RWVnlwMnNKOEVzaXVoSG4xVldPVVhwMnE5dGd2YlVRNmtxLUxVbUxRc1A3aHM?oc=5",
+       "date": "Sun, 08 Nov 2026 09:08:28 GMT"
+      }
+     ],
+     "ids": [
+      "10 phevs with the longest electric range in pakistan (2026)",
+      "cabin air filters explained: can your car protect you from smog?",
+      "car prices expected to drop for alto, haval h6, kia sorento, evs under auto policy 2026–31",
+      "gwm on wheels hits islamabad today: here’s what you can experience",
+      "haval h6, suzuki alto, kia sorento prices in pakistan amid new auto policy 2026-2031",
+      "hi-octane price lowered by pso across pakistan cities",
+      "plug-in hybrid cars in pakistan 2026: prices & specs",
+      "suzuki alto, haval h6 expected prices in pakistan after new auto policy 2026–2031"
+     ]
+    }
+   }
   },
   {
    "brand": "Haval",
@@ -875,7 +2129,97 @@ const DATA = {
      "sourceName": "gwm-pakistan.com",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "engine": {
+     "value": "1.5 T PHEV",
+     "source": "https://storage.googleapis.com/havalimages/images/Haval%20H6%20GT/GT%20Brochure%20Final.pdf",
+     "official": true
+    },
+    "power": {
+     "value": "430 HP (Combined)",
+     "source": "https://storage.googleapis.com/havalimages/images/Haval%20H6%20GT/GT%20Brochure%20Final.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "642 NM (Combined)",
+     "source": "https://storage.googleapis.com/havalimages/images/Haval%20H6%20GT/GT%20Brochure%20Final.pdf",
+     "official": true
+    },
+    "transmission": {
+     "value": "4-Speed DHT, AWD (Hi4)",
+     "source": "https://storage.googleapis.com/havalimages/images/Haval%20H6%20GT/GT%20Brochure%20Final.pdf",
+     "official": true
+    },
+    "fuelEconomy": {
+     "value": "0.6 L/100km; 5.3 L/100km combined (basis not stated)",
+     "source": "https://storage.googleapis.com/havalimages/images/Haval%20H6%20GT/GT%20Brochure%20Final.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4727 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/Haval%20H6%20GT/GT%20Brochure%20Final.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1940 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/Haval%20H6%20GT/GT%20Brochure%20Final.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1729 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/Haval%20H6%20GT/GT%20Brochure%20Final.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2738 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/Haval%20H6%20GT/GT%20Brochure%20Final.pdf",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "55 L",
+     "source": "https://storage.googleapis.com/havalimages/images/Haval%20H6%20GT/GT%20Brochure%20Final.pdf",
+     "official": true
+    },
+    "battery": {
+     "value": "35.43 kWh (LFP)",
+     "source": "https://storage.googleapis.com/havalimages/images/Haval%20H6%20GT/GT%20Brochure%20Final.pdf",
+     "official": true
+    },
+    "electricRange": {
+     "value": "183 km (NEDC)",
+     "source": "https://storage.googleapis.com/havalimages/images/Haval%20H6%20GT/GT%20Brochure%20Final.pdf",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 4,
+     "examples": [
+      {
+       "title": "10 PHEVs With the Longest Electric Range in Pakistan (2026) - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPcmVBcUU5MDM1OUJJR0FVcm1wMDFzTV9sRjBnNUx6M2YycUFvZnpXNy0xYnh6cEpEZHprT1JwaFNyeThLZ2hzUmhkT3dLRVZGVHVsQkJacU5OUEZGUjlNSlpqcWV0M1RaQ1oybWJlQnJ5dWRNMVp5NzNURXItNkNQR2Rmb0RlWHc?oc=5",
+       "date": "Fri, 13 Nov 2026 08:08:54 GMT"
+      },
+      {
+       "title": "Plug-In Hybrid Cars in Pakistan 2026: Prices & Specs - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA2QzhsY1dVeDBXcU00VXdSSWdtVTlRNjRuMlliQW9sTFYtMTFDRFRBbWtJOUlBcXZYMEt0TFprQkFBUTBPRXY1Y29pU0JsVFE4UDVOU0pkM2JrZ0luNk5kc3dsOGJLQWRFdU1ZTmtXTzRORUN2MlNwVA?oc=5",
+       "date": "Tue, 27 Oct 2026 07:00:00 GMT"
+      },
+      {
+       "title": "GWM On Wheels Hits Islamabad Today: Here’s What You Can Experience - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1BdjRXQzI3UU5tRV9kcFQ1bGtianVKX1RUX05ONWMxUUZqUE00WkJvV1I2bzBNaWFDNkoyWER0YVk3djA2V1lUT015aEVtVDRueUtKcW11S0NQVGU0RFFvQ3cyUUllRzBGSTZRbA?oc=5",
+       "date": "Sun, 18 Oct 2026 07:00:00 GMT"
+      }
+     ],
+     "ids": [
+      "10 phevs with the longest electric range in pakistan (2026)",
+      "gwm on wheels hits islamabad today: here’s what you can experience",
+      "phev and reev sales tax set at 9% and 6% in presented auto policy, pending imf approval",
+      "plug-in hybrid cars in pakistan 2026: prices & specs"
+     ]
+    }
+   }
   },
   {
    "brand": "Haval",
@@ -899,7 +2243,90 @@ const DATA = {
      "sourceName": "gwm-pakistan.com",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "engine": {
+     "value": "1.5 T HEV",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "power": {
+     "value": "240 HP (Combined)",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "530 NM (Combined)",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "transmission": {
+     "value": "DHT-1, FWD",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "fuelEconomy": {
+     "value": "5.2 L/100km, NEDC combined",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4703 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1886 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1730 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2738 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "61 L",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "Dual SRS, Front Side, Side Curtain (count not stated)",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "battery": {
+     "value": "1.67 kWh",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 2,
+     "examples": [
+      {
+       "title": "Petrol Cars Could Still Dominate in 2035, SEMA Report Predicts - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9xaGtyMWJ4SGFUYzZSV04tQzlBcVBWNC1zcVRDX2l6SlNxdzNkbXJGRk9NVjBGU0JqNThhTzZzVDhTQ3Y1ZExxaHZTZzVIN1gzcGxnWU1EV1M4WktOd2ExR0hVQnhidWpaLWJTWGxDYw?oc=5",
+       "date": "Tue, 03 Nov 2026 08:01:55 GMT"
+      },
+      {
+       "title": "Cabin Air Filters Explained: Can Your Car Protect You From Smog? - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5qT19KWHVTTFU3d0QxeTRuQlltZUVGRjltckRGOVBqeURwM1MzWk9xWVM0MGZFT3lsSmVXZlVuUmkzb0VzZG1GWVFGbzgxSDA2RlNxQ1hRdWZ4NEZrdjFwU1F5eUtZNGhCMzZLWFNvUm9TendQMjhDRw?oc=5",
+       "date": "Thu, 29 Oct 2026 07:00:00 GMT"
+      }
+     ],
+     "ids": [
+      "cabin air filters explained: can your car protect you from smog?",
+      "petrol cars could still dominate in 2035, sema report predicts"
+     ]
+    }
+   }
   },
   {
    "brand": "Haval",
@@ -923,7 +2350,105 @@ const DATA = {
      "sourceName": "gwm-pakistan.com",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "engine": {
+     "value": "1.5 T PHEV",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "power": {
+     "value": "322 HP Combined (FWD) / 360 HP Combined (Hi4 AWD)",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "540 NM Combined (FWD) / 760 NM Combined (Hi4 AWD)",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "transmission": {
+     "value": "DHT-1 FWD / DHT-3 AWD (Hi4)",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "fuelEconomy": {
+     "value": "NEDC combined 1.0 / 1.1 L/100km; low-charge 5.0 / 5.3 L/100km (FWD / Hi4)",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4703 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1886 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1730 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2738 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "55 L",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "Dual SRS, Front Side, Side Curtain (count not stated)",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "battery": {
+     "value": "19.09 kWh (LFP)",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    },
+    "electricRange": {
+     "value": "106 km (FWD) / 100 km (Hi4), NEDC",
+     "source": "https://storage.googleapis.com/havalimages/images/H6%20broucher/H6%20Brochure.pdf",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 7,
+     "examples": [
+      {
+       "title": "Plug-In Hybrid Cars in Pakistan 2026: Prices & Specs - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA2QzhsY1dVeDBXcU00VXdSSWdtVTlRNjRuMlliQW9sTFYtMTFDRFRBbWtJOUlBcXZYMEt0TFprQkFBUTBPRXY1Y29pU0JsVFE4UDVOU0pkM2JrZ0luNk5kc3dsOGJLQWRFdU1ZTmtXTzRORUN2MlNwVA?oc=5",
+       "date": "Tue, 27 Oct 2026 07:00:00 GMT"
+      },
+      {
+       "title": "Suzuki Alto, Haval H6 Expected Prices in Pakistan after New Auto Policy 2026–2031 - Daily Pakistan",
+       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQN0FiSG9yeVhDWlJlbnBzTERlc3A3eVkyYlhUZ3R4X3RMYjVuTkFvb0h1Uy12U1hPM1hBbjB1d3RTNkY1U0Q1TExETC1uZ21GZzU3WUVVVlVmOXNxU1VFNkRkWVF0RFNrNmw2b1hWbGVpcU9nTy01V1Jud1N6MGxrZ0Jpd3hBNEpUWnFfMGNkbW4waVJPdXl2X2QtbU94SW41QkZjNlhYUmJ3NDR5MS1lSFBILXRVNGwyeWc4WUU0YjhZdw?oc=5",
+       "date": "Sun, 08 Nov 2026 00:22:55 GMT"
+      },
+      {
+       "title": "10 PHEVs With the Longest Electric Range in Pakistan (2026) - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPcmVBcUU5MDM1OUJJR0FVcm1wMDFzTV9sRjBnNUx6M2YycUFvZnpXNy0xYnh6cEpEZHprT1JwaFNyeThLZ2hzUmhkT3dLRVZGVHVsQkJacU5OUEZGUjlNSlpqcWV0M1RaQ1oybWJlQnJ5dWRNMVp5NzNURXItNkNQR2Rmb0RlWHc?oc=5",
+       "date": "Fri, 13 Nov 2026 08:08:54 GMT"
+      }
+     ],
+     "ids": [
+      "10 phevs with the longest electric range in pakistan (2026)",
+      "geely teases october 24 pakistan debut with two electric cars expected",
+      "gwm on wheels hits islamabad today: here’s what you can experience",
+      "haval h6, suzuki alto, kia sorento prices in pakistan amid new auto policy 2026-2031",
+      "phev and reev sales tax set at 9% and 6% in presented auto policy, pending imf approval",
+      "plug-in hybrid cars in pakistan 2026: prices & specs",
+      "suzuki alto, haval h6 expected prices in pakistan after new auto policy 2026–2031"
+     ]
+    }
+   }
   },
   {
    "brand": "Haval",
@@ -960,7 +2485,84 @@ const DATA = {
      "sourceName": "gwm-pakistan.com",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "engine": {
+     "value": "1.5 T (petrol) / 1.5 HEV",
+     "source": "https://storage.googleapis.com/havalimages/images/Sazgarautos/newsazgar/Jolion%20Facelift%20Brochure.pdf",
+     "official": true
+    },
+    "power": {
+     "value": "110 kW (150 HP) / 140 kW (190 HP) HEV",
+     "source": "https://storage.googleapis.com/havalimages/images/Sazgarautos/newsazgar/Jolion%20Facelift%20Brochure.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "220 NM / 375 NM HEV",
+     "source": "https://storage.googleapis.com/havalimages/images/Sazgarautos/newsazgar/Jolion%20Facelift%20Brochure.pdf",
+     "official": true
+    },
+    "transmission": {
+     "value": "7 DCT (1.5T) / DHT (HEV), FWD",
+     "source": "https://storage.googleapis.com/havalimages/images/Sazgarautos/newsazgar/Jolion%20Facelift%20Brochure.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4472 mm (1.5T) / 4475 mm (HEV)",
+     "source": "https://storage.googleapis.com/havalimages/images/Sazgarautos/newsazgar/Jolion%20Facelift%20Brochure.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1841 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/Sazgarautos/newsazgar/Jolion%20Facelift%20Brochure.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1574 mm (1.5T) / 1619 mm (HEV)",
+     "source": "https://storage.googleapis.com/havalimages/images/Sazgarautos/newsazgar/Jolion%20Facelift%20Brochure.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2700 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/Sazgarautos/newsazgar/Jolion%20Facelift%20Brochure.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "Dual SRS, Front Side, Side Curtain (count not stated)",
+     "source": "https://storage.googleapis.com/havalimages/images/Sazgarautos/newsazgar/Jolion%20Facelift%20Brochure.pdf",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 6,
+     "examples": [
+      {
+       "title": "Draft auto policy revs up hopes for cheaper vehicles - Dawn",
+       "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9qYVVGbzZ3Q245eXVYUm01NjM3SWlzRk03N1E5MDJJY1lOT1FpUXFKbFNkdnhaUHpRNUtPd2tnVW9qSVJMZUFqYQ?oc=5",
+       "date": "Thu, 22 Oct 2026 07:00:00 GMT"
+      },
+      {
+       "title": "Pakistan auto policy may cut some car prices by over 20% — Dawn - UA.NEWS",
+       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPcDlPazAyMjhxejdLUXhySU45eVpmM2VObVlfYXNaWFRpcDBpcjNKYlgtTVotWS1lS2o3YV90RUg5WFV4c3ZnUlY3LW1LV2hvSVhaUXlNVldkS1BpNDBldm9hQllsUkN5R1V0Rkk0RFNvQmUybkRjTHJqM09VY1JQaWxrMU9HVHpUcW1MdEZ5MkZUWm05R05DS2JtZmhFOVZhX0ZyY09VOEhLNGls?oc=5",
+       "date": "Thu, 22 Oct 2026 07:00:00 GMT"
+      },
+      {
+       "title": "GWM On Wheels Hits Islamabad Today: Here’s What You Can Experience - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1BdjRXQzI3UU5tRV9kcFQ1bGtianVKX1RUX05ONWMxUUZqUE00WkJvV1I2bzBNaWFDNkoyWER0YVk3djA2V1lUT015aEVtVDRueUtKcW11S0NQVGU0RFFvQ3cyUUllRzBGSTZRbA?oc=5",
+       "date": "Sun, 18 Oct 2026 07:00:00 GMT"
+      }
+     ],
+     "ids": [
+      "draft auto policy revs up hopes for cheaper vehicles",
+      "gwm on wheels hits islamabad today: here’s what you can experience",
+      "pakistan auto policy may cut some car prices by over 20% — dawn",
+      "pakistan auto policy: suzuki, honda, toyota and kia cars new expected prices",
+      "petrol cars could still dominate in 2035, sema report predicts",
+      "which cars will become cheaper in pakistan after new auto policy 2026–31?"
+     ]
+    }
+   }
   },
   {
    "brand": "Honda",
@@ -973,42 +2575,134 @@ const DATA = {
    "salesGroup": "honda-city-and-civic",
    "variants": [
     {
-     "name": "City 1.2L CVT",
+     "name": "City 1.2LS",
      "price": 4737000,
      "fuel": "Petrol",
      "engineCc": null,
      "batteryKwh": null,
      "transmission": "CVT",
-     "source": "https://en.dailypakistan.com.pk/13-Jul-2026/new-honda-car-prices-in-pakistan-after-tax-revision",
-     "official": false,
-     "sourceName": "Daily Pakistan, 13 Jul 2026",
+     "source": "https://www.honda.com.pk/city1-2l",
+     "official": true,
+     "sourceName": "honda.com.pk",
      "effectiveFrom": null
     },
     {
-     "name": "City 1.5L Aspire CVT",
+     "name": "City Aspire 1.5LAS",
      "price": 6069000,
      "fuel": "Petrol",
      "engineCc": null,
      "batteryKwh": null,
      "transmission": "CVT",
-     "source": "https://en.dailypakistan.com.pk/13-Jul-2026/new-honda-car-prices-in-pakistan-after-tax-revision",
-     "official": false,
-     "sourceName": "Daily Pakistan, 13 Jul 2026",
+     "source": "https://www.honda.com.pk/cityaspire",
+     "official": true,
+     "sourceName": "honda.com.pk",
      "effectiveFrom": null
     },
     {
-     "name": "City 1.5L Aspire S CVT",
+     "name": "City Aspire S 1.5LAS CVT",
      "price": 6149000,
      "fuel": "Petrol",
      "engineCc": null,
      "batteryKwh": null,
      "transmission": "CVT",
-     "source": "https://en.dailypakistan.com.pk/13-Jul-2026/new-honda-car-prices-in-pakistan-after-tax-revision",
-     "official": false,
-     "sourceName": "Daily Pakistan, 13 Jul 2026",
+     "source": "https://www.honda.com.pk/cityaspires",
+     "official": true,
+     "sourceName": "honda.com.pk",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "engine": {
+     "value": "1,199 cc (1.2LS) / 1,497 cc (1.5 Aspire), 4-cylinder petrol i-VTEC",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=City25-Brochure-14-4-26-S.pdf",
+     "official": true
+    },
+    "power": {
+     "value": "88 hp @ 6,000 rpm (1.2) / 118 hp @ 6,600 rpm (1.5)",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=City25-Brochure-14-4-26-S.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "110 Nm @ 4,800 rpm (1.2) / 145 Nm @ 4,600 rpm (1.5)",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=City25-Brochure-14-4-26-S.pdf",
+     "official": true
+    },
+    "transmission": {
+     "value": "CVT",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=City25-Brochure-14-4-26-S.pdf",
+     "official": true
+    },
+    "seats": {
+     "value": "5",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=City25-Brochure-14-4-26-S.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4,451 mm",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=City25-Brochure-14-4-26-S.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1,694 mm",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=City25-Brochure-14-4-26-S.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1,498 mm",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=City25-Brochure-14-4-26-S.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,600 mm",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=City25-Brochure-14-4-26-S.pdf",
+     "official": true
+    },
+    "groundClearance": {
+     "value": "172 mm",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=City25-Brochure-14-4-26-S.pdf",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "40 L",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=City25-Brochure-14-4-26-S.pdf",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 11,
+     "examples": [
+      {
+       "title": "New Honda City Facelift Spotted Testing – Is Pakistan Launch Near? - TechJuice",
+       "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQQmgycEdIMEJhdXAxUmFVc3M4LUg1MVdDOUF0Ukx5aG5KdExZS3BuRGc5VExWakx1QjdoOVpHSWZHMWt5OEk4bkdXcElBUEpRaC1QekNiX09yaEtjRmJDREp3OTNCcmdRa0t6X1pickgwcHI5LTVKc3FEdGk3OTF1T2p0eVdQVXU1ZG5JcnVMYlBwOHc?oc=5",
+       "date": "Wed, 11 Nov 2026 11:38:14 GMT"
+      },
+      {
+       "title": "Toyota Yaris vs Honda City: Which Saves More at Rs. 379.25 Petrol? - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOcHV5RFI0RDJYOG9yNTVJaGpYOVZPVHFEUktfUzh4djNNVjZodnQtREdrbVJ0bXlWWHZiMk92Q2IyMWktZ0QtU0JfS3ZKbktfTFV4MGwyTElWY0EwZlJ4dWlYZU82aHdWQmpwcXhZNVZaVXhuWWpBdmdJM3FKSE0tN0RjeFp4ZWs?oc=5",
+       "date": "Tue, 27 Oct 2026 07:00:00 GMT"
+      },
+      {
+       "title": "Honda City Installment Plans in Pakistan 2026 - Pakistan Observer",
+       "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1ldEJlTXM1S2gtX1EteUJCalI4WFZrdTdZSDl3R0JaUEk3WmFoWjU4bFJMTnVKMVc3dXYwRlh5VUJudG0xaG9SU2tZSzJZSDJGbVpaNUhqSzRRcHpvWmJabGp3bFNpdGlqYmE1VXFjWkFBbEVaQlRPekN3?oc=5",
+       "date": "Wed, 28 Oct 2026 07:00:00 GMT"
+      }
+     ],
+     "ids": [
+      "buy honda city key immobilizer leather key chain cover in pakistan",
+      "honda atlas pakistan profit rises 19% despite 40% decline in q4 earnings",
+      "honda city installment plans in pakistan 2026",
+      "honda city installments plans in pakistan – october 2026",
+      "japanese cars available in pakistan within rs3.1 million to rs3.5 million budget",
+      "new honda city facelift spotted testing – is pakistan launch near?",
+      "pakistan auto policy reportedly approved with focus on cheaper cars and evs",
+      "thai supercar maker reveals 280 ps honda city race car",
+      "toyota and honda sales decline despite 41% yoy jump in pakistan car market",
+      "toyota yaris vs honda city: which saves more at rs. 379.25 petrol?",
+      "valore quad revealed in pakistan with 292 km wltp range"
+     ]
+    }
+   }
   },
   {
    "brand": "Honda",
@@ -1026,10 +2720,10 @@ const DATA = {
      "fuel": "Petrol",
      "engineCc": null,
      "batteryKwh": null,
-     "transmission": null,
-     "source": "https://en.dailypakistan.com.pk/13-Jul-2026/new-honda-car-prices-in-pakistan-after-tax-revision",
-     "official": false,
-     "sourceName": "Daily Pakistan, 13 Jul 2026",
+     "transmission": "CVT",
+     "source": "https://www.honda.com.pk/civic-oriel-1-5",
+     "official": true,
+     "sourceName": "honda.com.pk",
      "effectiveFrom": null
     },
     {
@@ -1038,10 +2732,10 @@ const DATA = {
      "fuel": "Petrol",
      "engineCc": null,
      "batteryKwh": null,
-     "transmission": null,
-     "source": "https://en.dailypakistan.com.pk/13-Jul-2026/new-honda-car-prices-in-pakistan-after-tax-revision",
-     "official": false,
-     "sourceName": "Daily Pakistan, 13 Jul 2026",
+     "transmission": "CVT",
+     "source": "https://www.honda.com.pk/civic-oriel-1-5",
+     "official": true,
+     "sourceName": "honda.com.pk",
      "effectiveFrom": null
     },
     {
@@ -1050,13 +2744,107 @@ const DATA = {
      "fuel": "Petrol",
      "engineCc": null,
      "batteryKwh": null,
-     "transmission": null,
-     "source": "https://en.dailypakistan.com.pk/13-Jul-2026/new-honda-car-prices-in-pakistan-after-tax-revision",
-     "official": false,
-     "sourceName": "Daily Pakistan, 13 Jul 2026",
+     "transmission": "CVT",
+     "source": "https://www.honda.com.pk/civic-rs-turbo",
+     "official": true,
+     "sourceName": "honda.com.pk",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "engine": {
+     "value": "1,498 cc turbo petrol (VTEC Turbo)",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=Civic26-Brochure.pdf",
+     "official": true
+    },
+    "power": {
+     "value": "127 hp (Standard, Oriel) / 176 hp (RS)",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=Civic26-Brochure.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "180 Nm (Standard, Oriel) / 220 Nm (RS)",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=Civic26-Brochure.pdf",
+     "official": true
+    },
+    "transmission": {
+     "value": "CVT",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=Civic26-Brochure.pdf",
+     "official": true
+    },
+    "seats": {
+     "value": "5",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=Civic26-Brochure.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4,695 mm",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=Civic26-Brochure.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1,802 mm",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=Civic26-Brochure.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1,432 mm",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=Civic26-Brochure.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,735 mm",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=Civic26-Brochure.pdf",
+     "official": true
+    },
+    "groundClearance": {
+     "value": "154 mm",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=Civic26-Brochure.pdf",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "47 L",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=Civic26-Brochure.pdf",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 13,
+     "examples": [
+      {
+       "title": "Pakistan October 2026: Suzuki Alto and Swift at record highs, market up 40.9% - Best Selling Cars Blog",
+       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNZzR2WVY2aDBvenJKSmpFQWVPTTZ1YUZVQTBsWE53cUU1UTZEY05QTFoxTnkyV1FvV2xhWF95YllkRU1TaTAyOWEzcmh2a0xwYVBBVmdYbmJkM2ZqNVpOWkdCRlpSODUtNDFuSkRCUnFzaG82clFvbV9UZ1JfU2JPbE9ScGNtOGxXWnBCMjl6ckZiSW5Za3h3ZVlmMWxyZDdYc1ZpVlI0Znhtei16NEczRm44X0ZaZw?oc=5",
+       "date": "Fri, 13 Nov 2026 03:03:46 GMT"
+      },
+      {
+       "title": "Honda Offers Free Interior Upgrade Worth Rs 30,000 on Civic RS - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOLXZtU01rUXZ0MFgzSmRXXzVPc2J5VG5BZGFLaWhaYkppZ3l3WjAxSE91N0RrS0JGZ1B5RXhMcEV1RjVUZ0N3M1hvWlFSYjZOOFJGRjR6cWxjVS1yWjFYMUJaMHJZMTRRa1V2MFRBeWRkLTc1TVgxQ0tVNnpzQlR6TjJ6N01kUGVzYWhHSjNFbnIxVVRfbEJNdA?oc=5",
+       "date": "Mon, 26 Oct 2026 07:00:00 GMT"
+      },
+      {
+       "title": "Honda Announces Free Interior Upgrade for Civic - ProPakistani",
+       "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOYU1Obld3UXZUTzR2RDFFTFFTTWIwVS04ZEhIMjFNYjk4cWM5aWJpT1J2UVZKVUo1RU9uWDZBQVFDTkFoeWxFSmpLRXlDZWNnSDZkM0ZlWE5KcGt0QV9wLXRpcUI3M0NTY29pNV9Hc2NFUURhS004Zkpud1cwOWs3ZVhtM2pmZFZ0MkVv0gGQAUFVX3lxTFBwMGNnS0hadE5ZOXludW1FNDMyci00cXQ4cGZrc1FjckxtLU1vbVpob3dJQ2xCbkktWkR2bGItYTFoU1d6Z053ZTZQa09QSmJaakV0eWYzSGhZcnlTb3ZKTDJiOFVkV1ctUkJORENiWEpUWnBsZDhGV1dBTUVtd01rUmlGazZCdHZQRDZqRHJRSQ?oc=5",
+       "date": "Mon, 26 Oct 2026 07:00:00 GMT"
+      }
+     ],
+     "ids": [
+      "auto policy draft proposes removing fed on cars up to 1000cc",
+      "euro 6 rules and 2016 models: pakistan’s car import policy might change soon",
+      "first icaur v27 shipment lands in pakistan",
+      "hi-octane price lowered by pso across pakistan cities",
+      "honda announces free interior upgrade for civic",
+      "honda announces special offer for honda civic rs buyers",
+      "honda offers free interior upgrade worth rs 30,000 on civic rs",
+      "honda pakistan offers free interior upgrade on civic rs turbo",
+      "jinpeng launches junoon and zalmi electric bikes in pakistan",
+      "pakistan october 2026: suzuki alto and swift at record highs, market up 40.9%",
+      "petrol cars could still dominate in 2035, sema report predicts",
+      "plug-in hybrid cars in pakistan 2026: prices & specs",
+      "street fighter, but every fighter is a pakistani car"
+     ]
+    }
+   }
   },
   {
    "brand": "Honda",
@@ -1070,30 +2858,135 @@ const DATA = {
    "salesGroup": "honda-hr-v-and-br-v",
    "variants": [
     {
-     "name": "HR-V e:HEV (limited-time price)",
-     "price": 9299000,
-     "fuel": "Hybrid",
-     "engineCc": null,
-     "batteryKwh": null,
-     "transmission": null,
-     "source": "https://propakistani.pk/2026/09/25/honda-reduces-prices-of-2-hr-v-variants/",
-     "official": false,
-     "sourceName": "ProPakistani, 25 Sep 2026",
-     "effectiveFrom": null
-    },
-    {
-     "name": "HR-V VTi-S (limited-time price)",
-     "price": 7299000,
+     "name": "HR-V VTi",
+     "price": 7549000,
      "fuel": "Petrol",
      "engineCc": null,
      "batteryKwh": null,
-     "transmission": null,
-     "source": "https://propakistani.pk/2026/09/25/honda-reduces-prices-of-2-hr-v-variants/",
-     "official": false,
-     "sourceName": "ProPakistani, 25 Sep 2026",
+     "transmission": "CVT",
+     "source": "https://www.honda.com.pk/hrv-vti-s",
+     "official": true,
+     "sourceName": "honda.com.pk",
+     "effectiveFrom": null
+    },
+    {
+     "name": "HR-V VTi-S",
+     "price": 7799000,
+     "fuel": "Petrol",
+     "engineCc": null,
+     "batteryKwh": null,
+     "transmission": "CVT",
+     "source": "https://www.honda.com.pk/hrv-vti-s",
+     "official": true,
+     "sourceName": "honda.com.pk",
+     "effectiveFrom": null
+    },
+    {
+     "name": "HR-V e:HEV",
+     "price": 10369000,
+     "fuel": "Hybrid",
+     "engineCc": null,
+     "batteryKwh": null,
+     "transmission": "e-CVT",
+     "source": "https://www.honda.com.pk/hrv-ehev",
+     "official": true,
+     "sourceName": "honda.com.pk",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "engine": {
+     "value": "1,498 cc petrol (VTi, VTi-S) / 1,498 cc petrol hybrid (e:HEV)",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=HR-V-ehev-25-Brochure.pdf",
+     "official": true
+    },
+    "power": {
+     "value": "119 hp @ 6,600 rpm (VTi, VTi-S) / e:HEV: engine 105 PS + motor 131 PS",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=HR-V-ehev-25-Brochure.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "145 Nm (VTi, VTi-S) / e:HEV motor 253 Nm",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=HR-V-ehev-25-Brochure.pdf",
+     "official": true
+    },
+    "transmission": {
+     "value": "CVT (VTi, VTi-S) / e-CVT (e:HEV)",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=HR-V-ehev-25-Brochure.pdf",
+     "official": true
+    },
+    "battery": {
+     "value": "Lithium-ion (e:HEV)",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=HR-V-ehev-25-Brochure.pdf",
+     "official": true
+    },
+    "seats": {
+     "value": "5",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=HR-V-ehev-25-Brochure.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4,361 mm",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=HR-V-ehev-25-Brochure.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1,790 mm",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=HR-V-ehev-25-Brochure.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1,591 mm",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=HR-V-ehev-25-Brochure.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,610 mm",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=HR-V-ehev-25-Brochure.pdf",
+     "official": true
+    },
+    "groundClearance": {
+     "value": "196 mm",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=HR-V-ehev-25-Brochure.pdf",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "40 L",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=HR-V-ehev-25-Brochure.pdf",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 7,
+     "examples": [
+      {
+       "title": "Draft auto policy revs up hopes for cheaper vehicles - Dawn",
+       "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9qYVVGbzZ3Q245eXVYUm01NjM3SWlzRk03N1E5MDJJY1lOT1FpUXFKbFNkdnhaUHpRNUtPd2tnVW9qSVJMZUFqYQ?oc=5",
+       "date": "Thu, 22 Oct 2026 07:00:00 GMT"
+      },
+      {
+       "title": "Pakistan auto policy may cut some car prices by over 20% — Dawn - UA.NEWS",
+       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPcDlPazAyMjhxejdLUXhySU45eVpmM2VObVlfYXNaWFRpcDBpcjNKYlgtTVotWS1lS2o3YV90RUg5WFV4c3ZnUlY3LW1LV2hvSVhaUXlNVldkS1BpNDBldm9hQllsUkN5R1V0Rkk0RFNvQmUybkRjTHJqM09VY1JQaWxrMU9HVHpUcW1MdEZ5MkZUWm05R05DS2JtZmhFOVZhX0ZyY09VOEhLNGls?oc=5",
+       "date": "Thu, 22 Oct 2026 07:00:00 GMT"
+      },
+      {
+       "title": "Honda’s Electric SUV “Alpha” to Make Global Debut in India - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBPVkp5R0xJZGhzTzJYbjRnUEpkZXZzNmhGTWxiZTE3dUhKaVJKbkpBamJZNDhBM05lcGZFRWZyWjNSWTRXZ3FuOVgyVjRJRTZYRnZCWGxhQ09zN2hHaHdRMm1GZUlvTFJyWm5rS21zREJSdGpHeGxFRVg2bi1NQQ?oc=5",
+       "date": "Tue, 03 Nov 2026 08:00:00 GMT"
+      }
+     ],
+     "ids": [
+      "automart: car prices in karachi",
+      "draft auto policy revs up hopes for cheaper vehicles",
+      "honda atlas pakistan profit rises 19% despite 40% decline in q4 earnings",
+      "honda’s electric suv “alpha” to make global debut in india",
+      "pakistan auto policy may cut some car prices by over 20% — dawn",
+      "pakistan auto policy: suzuki, honda, toyota and kia cars new expected prices",
+      "which cars will become cheaper in pakistan after new auto policy 2026–31?"
+     ]
+    }
+   }
   },
   {
    "brand": "Hyundai",
@@ -1117,7 +3010,95 @@ const DATA = {
      "sourceName": "hyundai-nishat.com",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "engine": {
+     "value": "1,591 cc, 4-cylinder petrol (1.6 MPi)",
+     "source": "https://hyundai-nishat.com/elantra-specification/",
+     "official": true
+    },
+    "power": {
+     "value": "126 hp @ 6,300 rpm",
+     "source": "https://hyundai-nishat.com/elantra-specification/",
+     "official": true
+    },
+    "torque": {
+     "value": "155 Nm @ 4,850 rpm",
+     "source": "https://hyundai-nishat.com/elantra-specification/",
+     "official": true
+    },
+    "transmission": {
+     "value": "6-speed automatic",
+     "source": "https://hyundai-nishat.com/elantra-specification/",
+     "official": true
+    },
+    "seats": {
+     "value": "5",
+     "source": "https://hyundai-nishat.com/elantra-specification/",
+     "official": true
+    },
+    "length": {
+     "value": "4,620 mm",
+     "source": "https://hyundai-nishat.com/elantra-specification/",
+     "official": true
+    },
+    "width": {
+     "value": "1,800 mm",
+     "source": "https://hyundai-nishat.com/elantra-specification/",
+     "official": true
+    },
+    "height": {
+     "value": "1,450 mm",
+     "source": "https://hyundai-nishat.com/elantra-specification/",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,700 mm",
+     "source": "https://hyundai-nishat.com/elantra-specification/",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "50 L",
+     "source": "https://hyundai-nishat.com/elantra-specification/",
+     "official": true
+    },
+    "airbags": {
+     "value": "2 (driver + passenger)",
+     "source": "https://hyundai-nishat.com/wp-content/uploads/2026/08/Hyundai-Elantra-1.6-SP-Price-List.pdf",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 7,
+     "examples": [
+      {
+       "title": "Pakistan October 2026: Suzuki Alto and Swift at record highs, market up 40.9% - Best Selling Cars Blog",
+       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNZzR2WVY2aDBvenJKSmpFQWVPTTZ1YUZVQTBsWE53cUU1UTZEY05QTFoxTnkyV1FvV2xhWF95YllkRU1TaTAyOWEzcmh2a0xwYVBBVmdYbmJkM2ZqNVpOWkdCRlpSODUtNDFuSkRCUnFzaG82clFvbV9UZ1JfU2JPbE9ScGNtOGxXWnBCMjl6ckZiSW5Za3h3ZVlmMWxyZDdYc1ZpVlI0Znhtei16NEczRm44X0ZaZw?oc=5",
+       "date": "Fri, 13 Nov 2026 03:03:46 GMT"
+      },
+      {
+       "title": "Auto sales surge 60% YoY in October - Mettis Global",
+       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE03cGE4YVRTRmZxY3ZIWFNsOUdVQi1fSGFYSG1obDA3eUxWQTlxdHo1RmtNMGZhaXhIOEZrcHk1bG1JWUxCS1hoVm9jajNZaWpUMU5manBoa3g2WFdHclQ2N0dNX1A4QlNNNnE0Y21MQmJ2RERP?oc=5",
+       "date": "Thu, 12 Nov 2026 10:48:00 GMT"
+      },
+      {
+       "title": "Alto leads as Pakistan’s car sales jump 60pc - Minute Mirror",
+       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQZkRDQ3FvNG43MWlTcmlMUkRBUWdoRTB0TThqeXhkYjdsUjFnUzhkV1JJWFp4ZVY1Z3dLQVFyWjNway1CQVM4U1ZiUUUyMVY2c3ktZzlqaU1CaHF3MzkxLS03amZoUHBjd1NEQnRqcEdoSnREUXZuVU9ZVkdrbDJWdndaX1U0QQ?oc=5",
+       "date": "Fri, 13 Nov 2026 11:52:12 GMT"
+      }
+     ],
+     "ids": [
+      "alto leads as pakistan’s car sales jump 60pc",
+      "auto sales surge 60% yoy in october",
+      "hyundai elantra 1.6 special edition launching soon in pakistan",
+      "hyundai free gift with limited-time offer for car lovers",
+      "pakistan auto sales jump 63%",
+      "pakistan car sales jump 63% in october 2026",
+      "pakistan october 2026: suzuki alto and swift at record highs, market up 40.9%"
+     ]
+    }
+   }
   },
   {
    "brand": "Hyundai",
@@ -1141,7 +3122,89 @@ const DATA = {
      "sourceName": "hyundai-nishat.com",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "engine": {
+     "value": "1,580 cc, 4-cylinder petrol hybrid (1.6 GDI)",
+     "source": "https://hyundai-nishat.com/elantra-hybrid-specification/",
+     "official": true
+    },
+    "power": {
+     "value": "139 hp combined",
+     "source": "https://hyundai-nishat.com/elantra-hybrid-specification/",
+     "official": true
+    },
+    "torque": {
+     "value": "264 Nm combined",
+     "source": "https://hyundai-nishat.com/elantra-hybrid-specification/",
+     "official": true
+    },
+    "transmission": {
+     "value": "6-speed dual-clutch",
+     "source": "https://hyundai-nishat.com/elantra-hybrid-specification/",
+     "official": true
+    },
+    "seats": {
+     "value": "5",
+     "source": "https://hyundai-nishat.com/elantra-hybrid-specification/",
+     "official": true
+    },
+    "length": {
+     "value": "4,710 mm",
+     "source": "https://hyundai-nishat.com/elantra-hybrid-specification/",
+     "official": true
+    },
+    "width": {
+     "value": "1,825 mm",
+     "source": "https://hyundai-nishat.com/elantra-hybrid-specification/",
+     "official": true
+    },
+    "height": {
+     "value": "1,430 mm",
+     "source": "https://hyundai-nishat.com/elantra-hybrid-specification/",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,720 mm",
+     "source": "https://hyundai-nishat.com/elantra-hybrid-specification/",
+     "official": true
+    },
+    "groundClearance": {
+     "value": "150 mm",
+     "source": "https://hyundai-nishat.com/elantra-hybrid-specification/",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "42 L",
+     "source": "https://hyundai-nishat.com/elantra-hybrid-specification/",
+     "official": true
+    },
+    "airbags": {
+     "value": "2 (driver + passenger)",
+     "source": "https://hyundai-nishat.com/wp-content/uploads/2026/08/Price-List-ELANTRA-Hybrid-HNMPL.pdf",
+     "official": true
+    },
+    "battery": {
+     "value": "1.32 kWh (lithium-ion polymer)",
+     "source": "https://hyundai-nishat.com/elantra-hybrid-specification/",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 1,
+     "examples": [
+      {
+       "title": "Hyundai free gift with limited-time offer for car lovers - Pakistan Connect",
+       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5kTGxXUDZiYUsyeElsSms0R0wyX0QwT0lkeXZ0c29KOVdReElTS1lzSGJHbk5MZlFBMlEwVmZSaVYzZWQ0QWRkbDBDV0s1SlpaRkQ5RmlfVVZTYjUxZHUwb0VzYTNnZ3kwcXVoaXY0ajhFemM?oc=5",
+       "date": "Sun, 25 Oct 2026 07:00:00 GMT"
+      }
+     ],
+     "ids": [
+      "hyundai free gift with limited-time offer for car lovers"
+     ]
+    }
+   }
   },
   {
    "brand": "Hyundai",
@@ -1177,7 +3240,96 @@ const DATA = {
      "sourceName": "hyundai-nishat.com",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "power": {
+     "value": "239 kW (305 PS), dual motor AWD",
+     "source": "https://hyundai-nishat.com/ioniq-5-specification/",
+     "official": true
+    },
+    "torque": {
+     "value": "605 Nm",
+     "source": "https://hyundai-nishat.com/ioniq-5-specification/",
+     "official": true
+    },
+    "transmission": {
+     "value": "Single-speed reduction gear, AWD",
+     "source": "https://hyundai-nishat.com/ioniq-5-specification/",
+     "official": true
+    },
+    "seats": {
+     "value": "5",
+     "source": "https://hyundai-nishat.com/ioniq-5-specification/",
+     "official": true
+    },
+    "length": {
+     "value": "4,635 mm",
+     "source": "https://hyundai-nishat.com/ioniq-5-specification/",
+     "official": true
+    },
+    "width": {
+     "value": "1,890 mm",
+     "source": "https://hyundai-nishat.com/ioniq-5-specification/",
+     "official": true
+    },
+    "height": {
+     "value": "1,605 mm",
+     "source": "https://hyundai-nishat.com/ioniq-5-specification/",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "3,000 mm",
+     "source": "https://hyundai-nishat.com/ioniq-5-specification/",
+     "official": true
+    },
+    "groundClearance": {
+     "value": "170 mm",
+     "source": "https://hyundai-nishat.com/ioniq-5-specification/",
+     "official": true
+    },
+    "airbags": {
+     "value": "6",
+     "source": "https://hyundai-nishat.com/ioniq-5-specification/",
+     "official": true
+    },
+    "battery": {
+     "value": "84 kWh (lithium-ion)",
+     "source": "https://hyundai-nishat.com/ioniq-5-specification/",
+     "official": true
+    },
+    "electricRange": {
+     "value": "Up to 500 km (test cycle not stated)",
+     "source": "https://hyundai-nishat.com/ioniq-5-specification/",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 3,
+     "examples": [
+      {
+       "title": "Car Prices Expected to Drop for Alto, Haval H6, Kia Sorento, EVs Under Auto Policy 2026–31 - Bloom Pakistan",
+       "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNLU1TNlI3MlpIVHJNVlBLOGN0WmN6QWw4aDVuTGlrV1VaZW5ZVndNb2Y0NkJYMTNVY0xVLTBvRkRlVG9qbkJFVV91R05xd24zc2E2d3RLVHpsZ1RWVnlwMnNKOEVzaXVoSG4xVldPVVhwMnE5dGd2YlVRNmtxLUxVbUxRc1A3aHM?oc=5",
+       "date": "Sun, 08 Nov 2026 09:08:28 GMT"
+      },
+      {
+       "title": "Suzuki Alto, Haval H6 Expected Prices in Pakistan after New Auto Policy 2026–2031 - Daily Pakistan",
+       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQN0FiSG9yeVhDWlJlbnBzTERlc3A3eVkyYlhUZ3R4X3RMYjVuTkFvb0h1Uy12U1hPM1hBbjB1d3RTNkY1U0Q1TExETC1uZ21GZzU3WUVVVlVmOXNxU1VFNkRkWVF0RFNrNmw2b1hWbGVpcU9nTy01V1Jud1N6MGxrZ0Jpd3hBNEpUWnFfMGNkbW4waVJPdXl2X2QtbU94SW41QkZjNlhYUmJ3NDR5MS1lSFBILXRVNGwyeWc4WUU0YjhZdw?oc=5",
+       "date": "Sun, 08 Nov 2026 00:22:55 GMT"
+      },
+      {
+       "title": "Haval H6, Suzuki Alto, Kia Sorento Prices in Pakistan amid New Auto Policy 2026-2031 - The Opinion",
+       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOQWNWNV9mQ2xiZGpTak94ZmoyaDFkSkp4dGdhZ1F6QktPWXJ1VHNjNjR6YmtXUmM5T0tKeUdXTEpDOXk4M1A0QzFUOFRzT3BudllBSDh1VHpqUThOUExJMVJxSk5lQWhoYjRkQXNGYmMtY3Z1X21FZWJzRHpWQzNoeXBpYTZGdHpQSHlDV2F3cWVkaHhuZ3VHV3JBZzhJWTRGc2duam95YTMtZGdUcGptRjFuVQ?oc=5",
+       "date": "Mon, 09 Nov 2026 12:16:15 GMT"
+      }
+     ],
+     "ids": [
+      "car prices expected to drop for alto, haval h6, kia sorento, evs under auto policy 2026–31",
+      "haval h6, suzuki alto, kia sorento prices in pakistan amid new auto policy 2026-2031",
+      "suzuki alto, haval h6 expected prices in pakistan after new auto policy 2026–2031"
+     ]
+    }
+   }
   },
   {
    "brand": "Hyundai",
@@ -1213,7 +3365,99 @@ const DATA = {
      "sourceName": "hyundai-nishat.com",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "power": {
+     "value": "239 kW (325 PS), dual motor AWD",
+     "source": "https://hyundai-nishat.com/ioniq-6-specification/",
+     "official": true
+    },
+    "torque": {
+     "value": "605 Nm",
+     "source": "https://hyundai-nishat.com/ioniq-6-specification/",
+     "official": true
+    },
+    "transmission": {
+     "value": "Single-speed reduction gear, AWD",
+     "source": "https://hyundai-nishat.com/ioniq-6-specification/",
+     "official": true
+    },
+    "seats": {
+     "value": "5",
+     "source": "https://hyundai-nishat.com/ioniq-6-specification/",
+     "official": true
+    },
+    "length": {
+     "value": "4,855 mm",
+     "source": "https://hyundai-nishat.com/ioniq-6-specification/",
+     "official": true
+    },
+    "width": {
+     "value": "1,880 mm",
+     "source": "https://hyundai-nishat.com/ioniq-6-specification/",
+     "official": true
+    },
+    "height": {
+     "value": "1,495 mm",
+     "source": "https://hyundai-nishat.com/ioniq-6-specification/",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,950 mm",
+     "source": "https://hyundai-nishat.com/ioniq-6-specification/",
+     "official": true
+    },
+    "groundClearance": {
+     "value": "150 mm",
+     "source": "https://hyundai-nishat.com/ioniq-6-specification/",
+     "official": true
+    },
+    "airbags": {
+     "value": "6",
+     "source": "https://hyundai-nishat.com/ioniq-6-specification/",
+     "official": true
+    },
+    "battery": {
+     "value": "77.4 kWh (lithium-ion)",
+     "source": "https://hyundai-nishat.com/ioniq-6-specification/",
+     "official": true
+    },
+    "electricRange": {
+     "value": "Up to 519 km (test cycle not stated)",
+     "source": "https://hyundai-nishat.com/ioniq-6-specification/",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 6,
+     "examples": [
+      {
+       "title": "Mercedes CLA 200 vs Hyundai IONIQ 6: Which Luxury EV Should You Buy? - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxORFhnOXdDWnZSWi0zMVZ3QTV6djRiLXByZ1ZxZ1pnSXVFWGNuX1hjcllGeDktNFFuOFNHN0R2M3lkeVFxN21yLXlmajFVS2tTa0VScWVhZkt6WHUwZUpwLXc5TFE3dmZ1U3poblNHeWN4RkVoZ3hRTUZNYXMtU1V1NUZGSzM?oc=5",
+       "date": "Sat, 07 Nov 2026 13:30:06 GMT"
+      },
+      {
+       "title": "PakWheels Car Mela Returns to Karachi on November 15 - NewzTodays",
+       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQUnRNUVZtTXpTRENsa2d2UC1wbWh6MENtb2YwdVVQMFNPdk5MUXNXRWl6eW5henhUZE1xZmpnRC04SGpQcjNBZlZXR01OTTBiNXo3TjEzcjFJbDhPRGtwemdfYm1VVlhBRE5Ebk9jTTlqcFBTOHM3Q1JpcnlJaVFPRFhB?oc=5",
+       "date": "Tue, 10 Nov 2026 14:00:46 GMT"
+      },
+      {
+       "title": "Pakistan Adopts 45 UN-Backed Safety Standards in Auto Policy - NewzTodays",
+       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPOG9PNlZXNXN3NjJvNFh6bHFHTFhxSGdSREVWb21SM0dlNDNtbkJfN0MzU3ItNEk3eW9Mb2JKRGpvMXFXTWRDXzk0aWJtMFk2dkE5a0tmOTd6WUhTaVQ0eTZJMzB3c0ZNR3ZSNnhrNXpoNkU0a2NfNmZISWk2dUJzcG5Pa1lnemVEMGpuZw?oc=5",
+       "date": "Sun, 08 Nov 2026 08:11:39 GMT"
+      }
+     ],
+     "ids": [
+      "jaecoo j5 bev launches in pakistan from rs. 5.99 million",
+      "jinpeng unveils junoon and zalmi electric motorcycles in pakistan",
+      "mercedes cla 200 vs hyundai ioniq 6: which luxury ev should you buy?",
+      "new auto policy approved to boost evs and market competition",
+      "pakistan adopts 45 un-backed safety standards in auto policy",
+      "pakwheels car mela returns to karachi on november 15"
+     ]
+    }
+   }
   },
   {
    "brand": "Hyundai",
@@ -1249,7 +3493,103 @@ const DATA = {
      "sourceName": "hyundai-nishat.com",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "engine": {
+     "value": "2,497 cc, 4-cylinder turbo petrol hybrid",
+     "source": "https://hyundai-nishat.com/wp-content/uploads/2026/09/Hyundai-PALISADE-Hybrid-Brochure-V6.pdf",
+     "official": true
+    },
+    "power": {
+     "value": "329 hp combined",
+     "source": "https://hyundai-nishat.com/wp-content/uploads/2026/09/Hyundai-PALISADE-Hybrid-Brochure-V6.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "460 Nm combined",
+     "source": "https://hyundai-nishat.com/wp-content/uploads/2026/09/Hyundai-PALISADE-Hybrid-Brochure-V6.pdf",
+     "official": true
+    },
+    "transmission": {
+     "value": "6-speed automatic, AWD",
+     "source": "https://hyundai-nishat.com/wp-content/uploads/2026/09/Hyundai-PALISADE-Hybrid-Brochure-V6.pdf",
+     "official": true
+    },
+    "seats": {
+     "value": "8 (Smart) / 7 (Calligraphy)",
+     "source": "https://hyundai-nishat.com/wp-content/uploads/2026/09/Price-List-PALISADE-Hybrid-Launch.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "5,060 mm (Smart) / 5,065 mm (Calligraphy)",
+     "source": "https://hyundai-nishat.com/wp-content/uploads/2026/09/Hyundai-PALISADE-Hybrid-Brochure-V6.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1,980 mm",
+     "source": "https://hyundai-nishat.com/wp-content/uploads/2026/09/Hyundai-PALISADE-Hybrid-Brochure-V6.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1,805 mm",
+     "source": "https://hyundai-nishat.com/wp-content/uploads/2026/09/Hyundai-PALISADE-Hybrid-Brochure-V6.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,970 mm",
+     "source": "https://hyundai-nishat.com/wp-content/uploads/2026/09/Hyundai-PALISADE-Hybrid-Brochure-V6.pdf",
+     "official": true
+    },
+    "groundClearance": {
+     "value": "187 mm",
+     "source": "https://hyundai-nishat.com/wp-content/uploads/2026/09/Hyundai-PALISADE-Hybrid-Brochure-V6.pdf",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "72 L",
+     "source": "https://hyundai-nishat.com/wp-content/uploads/2026/09/Hyundai-PALISADE-Hybrid-Brochure-V6.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "8",
+     "source": "https://hyundai-nishat.com/palisade-hybrid-safety/",
+     "official": true
+    },
+    "battery": {
+     "value": "1.65 kWh (lithium-ion polymer)",
+     "source": "https://hyundai-nishat.com/wp-content/uploads/2026/09/Hyundai-PALISADE-Hybrid-Brochure-V6.pdf",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 5,
+     "examples": [
+      {
+       "title": "Pakistan October 2026: Suzuki Alto and Swift at record highs, market up 40.9% - Best Selling Cars Blog",
+       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNZzR2WVY2aDBvenJKSmpFQWVPTTZ1YUZVQTBsWE53cUU1UTZEY05QTFoxTnkyV1FvV2xhWF95YllkRU1TaTAyOWEzcmh2a0xwYVBBVmdYbmJkM2ZqNVpOWkdCRlpSODUtNDFuSkRCUnFzaG82clFvbV9UZ1JfU2JPbE9ScGNtOGxXWnBCMjl6ckZiSW5Za3h3ZVlmMWxyZDdYc1ZpVlI0Znhtei16NEczRm44X0ZaZw?oc=5",
+       "date": "Fri, 13 Nov 2026 03:03:46 GMT"
+      },
+      {
+       "title": "Auto sales surge 60% YoY in October - Mettis Global",
+       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE03cGE4YVRTRmZxY3ZIWFNsOUdVQi1fSGFYSG1obDA3eUxWQTlxdHo1RmtNMGZhaXhIOEZrcHk1bG1JWUxCS1hoVm9jajNZaWpUMU5manBoa3g2WFdHclQ2N0dNX1A4QlNNNnE0Y21MQmJ2RERP?oc=5",
+       "date": "Thu, 12 Nov 2026 10:48:00 GMT"
+      },
+      {
+       "title": "Hyundai Palisade Hybrid: The Cost of Driving This SUV Today - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOc2xtbi1oMmswY0w3Y2pjSDUyU2h0QlZFd3l5UlAzelJWY2VYVmdpenRxdldfU1dna1RJRkRCbEhoRExWbldhTDNMakx1OWJtd0dMRWx0U1JLSVNxbGJCRC1Rc0U2ZjRRRU12YTFBUnQ2MWx4OXZldWFYdU94TGJmRWoxTQ?oc=5",
+       "date": "Thu, 29 Oct 2026 07:00:00 GMT"
+      }
+     ],
+     "ids": [
+      "auto sales surge 60% yoy in october",
+      "hyundai palisade hybrid: the cost of driving this suv today",
+      "mercedes-benz cla 200 ev: price, specs and features",
+      "pakistan october 2026: suzuki alto and swift at record highs, market up 40.9%",
+      "pakistan’s car investment bubble is facing a reality check"
+     ]
+    }
+   }
   },
   {
    "brand": "Hyundai",
@@ -1285,7 +3625,98 @@ const DATA = {
      "sourceName": "hyundai-nishat.com",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "engine": {
+     "value": "1,598 cc, 4-cylinder turbo petrol hybrid",
+     "source": "https://hyundai-nishat.com/santa-fe-specification/",
+     "official": true
+    },
+    "power": {
+     "value": "227 hp",
+     "source": "https://hyundai-nishat.com/santa-fe-specification/",
+     "official": true
+    },
+    "torque": {
+     "value": "350 Nm",
+     "source": "https://hyundai-nishat.com/santa-fe-specification/",
+     "official": true
+    },
+    "transmission": {
+     "value": "6-speed automatic (Smart FWD / Signature AWD)",
+     "source": "https://hyundai-nishat.com/santa-fe-specification/",
+     "official": true
+    },
+    "seats": {
+     "value": "7",
+     "source": "https://hyundai-nishat.com/santa-fe-specification/",
+     "official": true
+    },
+    "length": {
+     "value": "4,785 mm",
+     "source": "https://hyundai-nishat.com/santa-fe-specification/",
+     "official": true
+    },
+    "width": {
+     "value": "1,900 mm",
+     "source": "https://hyundai-nishat.com/santa-fe-specification/",
+     "official": true
+    },
+    "height": {
+     "value": "1,710 mm",
+     "source": "https://hyundai-nishat.com/santa-fe-specification/",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,765 mm",
+     "source": "https://hyundai-nishat.com/santa-fe-specification/",
+     "official": true
+    },
+    "groundClearance": {
+     "value": "176 mm",
+     "source": "https://hyundai-nishat.com/santa-fe-specification/",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "67 L",
+     "source": "https://hyundai-nishat.com/santa-fe-specification/",
+     "official": true
+    },
+    "airbags": {
+     "value": "6",
+     "source": "https://hyundai-nishat.com/santa-fe-specification/",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 5,
+     "examples": [
+      {
+       "title": "Pakistan October 2026: Suzuki Alto and Swift at record highs, market up 40.9% - Best Selling Cars Blog",
+       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNZzR2WVY2aDBvenJKSmpFQWVPTTZ1YUZVQTBsWE53cUU1UTZEY05QTFoxTnkyV1FvV2xhWF95YllkRU1TaTAyOWEzcmh2a0xwYVBBVmdYbmJkM2ZqNVpOWkdCRlpSODUtNDFuSkRCUnFzaG82clFvbV9UZ1JfU2JPbE9ScGNtOGxXWnBCMjl6ckZiSW5Za3h3ZVlmMWxyZDdYc1ZpVlI0Znhtei16NEczRm44X0ZaZw?oc=5",
+       "date": "Fri, 13 Nov 2026 03:03:46 GMT"
+      },
+      {
+       "title": "Pakistan Car Sales Jump 63% in October 2026 - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9ubXNFQVVVZ2UzOUFOQkpFM3k2eVNaM3l5YzVlbE1LdnRfUmppXzJ5U25aQ2xDV2pKLUF4WVU3dV9fdndhQXJSMV9ZN3VxMmhkSDhtNTI0ejgySzl2d2ZZRXhNN1prWkxNNHZOZzZaNEV5ME9yNFZ3Y1ZwajRNUTA?oc=5",
+       "date": "Fri, 13 Nov 2026 06:02:17 GMT"
+      },
+      {
+       "title": "Pakistan Auto Sales Jump 63% - Bloom Pakistan",
+       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5aeDljamkyRVpsU2JNZVVhSUIzbjdmTmphUmZfbW5NUXpmZU02d2JlNVR5WHdaWXd1N19qakxaOXFBYWttSDNKbEFCUnZZZ1ZuQjBnemMzQTRIT1REZ3ktRUx0ODM?oc=5",
+       "date": "Fri, 13 Nov 2026 10:22:46 GMT"
+      }
+     ],
+     "ids": [
+      "hyundai free gift with limited-time offer for car lovers",
+      "pakistan auto sales jump 63%",
+      "pakistan car sales jump 63% in october 2026",
+      "pakistan october 2026: suzuki alto and swift at record highs, market up 40.9%",
+      "plug-in hybrids hit 200 km range: phev vs ev"
+     ]
+    }
+   }
   },
   {
    "brand": "Hyundai",
@@ -1321,7 +3752,95 @@ const DATA = {
      "sourceName": "hyundai-nishat.com",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "engine": {
+     "value": "1,999 cc (2.0) / 2,497 cc (2.5), 4-cylinder petrol",
+     "source": "https://hyundai-nishat.com/sonata-specification/",
+     "official": true
+    },
+    "power": {
+     "value": "152 hp (2.0) / 180 hp (2.5)",
+     "source": "https://hyundai-nishat.com/sonata-specification/",
+     "official": true
+    },
+    "torque": {
+     "value": "192 Nm (2.0) / 232 Nm (2.5)",
+     "source": "https://hyundai-nishat.com/sonata-specification/",
+     "official": true
+    },
+    "transmission": {
+     "value": "6-speed automatic",
+     "source": "https://hyundai-nishat.com/sonata-specification/",
+     "official": true
+    },
+    "seats": {
+     "value": "5",
+     "source": "https://hyundai-nishat.com/sonata-specification/",
+     "official": true
+    },
+    "length": {
+     "value": "4,900 mm",
+     "source": "https://hyundai-nishat.com/sonata-specification/",
+     "official": true
+    },
+    "width": {
+     "value": "1,860 mm",
+     "source": "https://hyundai-nishat.com/sonata-specification/",
+     "official": true
+    },
+    "height": {
+     "value": "1,445 mm",
+     "source": "https://hyundai-nishat.com/sonata-specification/",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,840 mm",
+     "source": "https://hyundai-nishat.com/sonata-specification/",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "60 L",
+     "source": "https://hyundai-nishat.com/sonata-specification/",
+     "official": true
+    },
+    "airbags": {
+     "value": "2 (2.0) / 6 (2.5)",
+     "source": "https://hyundai-nishat.com/wp-content/uploads/2025/07/Price-Lists-Sonata.pdf",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 7,
+     "examples": [
+      {
+       "title": "Small-car sales more than double in Pakistan amid Iran war fuel price shock - Arab News PK",
+       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQSy1uUHRaaGJfZnZlNlhhcHFpV18zZWZMMFczTm5mMkpOV2JQdHZtNHZUOE9wWWJ0WHZ2eENrZnQ3TW5oSWdxZTBzUWxvU1drZVJVdEpzX25tVjFicEtUejFpU3FMUUZMRzZFeHlYMnBYdjRyZS1XZUhuaEtFMkVRaGh4Q1BjcjR3WWx2VkNfa25PM3dHVmJpdWI0aE1TRGsxTDJrXzg0SHE5VmxtbWRjR0xXMG1nZXM?oc=5",
+       "date": "Sat, 14 Nov 2026 03:41:30 GMT"
+      },
+      {
+       "title": "Pakistan October 2026: Suzuki Alto and Swift at record highs, market up 40.9% - Best Selling Cars Blog",
+       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNZzR2WVY2aDBvenJKSmpFQWVPTTZ1YUZVQTBsWE53cUU1UTZEY05QTFoxTnkyV1FvV2xhWF95YllkRU1TaTAyOWEzcmh2a0xwYVBBVmdYbmJkM2ZqNVpOWkdCRlpSODUtNDFuSkRCUnFzaG82clFvbV9UZ1JfU2JPbE9ScGNtOGxXWnBCMjl6ckZiSW5Za3h3ZVlmMWxyZDdYc1ZpVlI0Znhtei16NEczRm44X0ZaZw?oc=5",
+       "date": "Fri, 13 Nov 2026 03:03:46 GMT"
+      },
+      {
+       "title": "Pakistan Car Sales Jump 63% in October 2026 - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9ubXNFQVVVZ2UzOUFOQkpFM3k2eVNaM3l5YzVlbE1LdnRfUmppXzJ5U25aQ2xDV2pKLUF4WVU3dV9fdndhQXJSMV9ZN3VxMmhkSDhtNTI0ejgySzl2d2ZZRXhNN1prWkxNNHZOZzZaNEV5ME9yNFZ3Y1ZwajRNUTA?oc=5",
+       "date": "Fri, 13 Nov 2026 06:02:17 GMT"
+      }
+     ],
+     "ids": [
+      "hyundai palisade hybrid: the cost of driving this suv today",
+      "mercedes cla 200 vs hyundai ioniq 6: which luxury ev should you buy?",
+      "pakistan car sales jump 63% in october 2026",
+      "pakistan october 2026: suzuki alto and swift at record highs, market up 40.9%",
+      "pakistan’s car investment bubble is facing a reality check",
+      "small-car sales more than double in pakistan amid iran war fuel price shock",
+      "street fighter, but every fighter is a pakistani car"
+     ]
+    }
+   }
   },
   {
    "brand": "Hyundai",
@@ -1345,7 +3864,74 @@ const DATA = {
      "sourceName": "hyundai-nishat.com",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "engine": {
+     "value": "2,497 cc, 4-cylinder turbo petrol",
+     "source": "https://hyundai-nishat.com/sonata-n-line-specification/",
+     "official": true
+    },
+    "power": {
+     "value": "290 hp @ 5,800 rpm",
+     "source": "https://hyundai-nishat.com/sonata-n-line-specification/",
+     "official": true
+    },
+    "torque": {
+     "value": "422 Nm @ 4,000 rpm",
+     "source": "https://hyundai-nishat.com/sonata-n-line-specification/",
+     "official": true
+    },
+    "transmission": {
+     "value": "8-speed dual-clutch",
+     "source": "https://hyundai-nishat.com/sonata-n-line-specification/",
+     "official": true
+    },
+    "seats": {
+     "value": "5",
+     "source": "https://hyundai-nishat.com/sonata-n-line-specification/",
+     "official": true
+    },
+    "length": {
+     "value": "4,910 mm",
+     "source": "https://hyundai-nishat.com/sonata-n-line-specification/",
+     "official": true
+    },
+    "width": {
+     "value": "1,860 mm",
+     "source": "https://hyundai-nishat.com/sonata-n-line-specification/",
+     "official": true
+    },
+    "height": {
+     "value": "1,445 mm",
+     "source": "https://hyundai-nishat.com/sonata-n-line-specification/",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,840 mm",
+     "source": "https://hyundai-nishat.com/sonata-n-line-specification/",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "60 L",
+     "source": "https://hyundai-nishat.com/sonata-n-line-specification/",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 1,
+     "examples": [
+      {
+       "title": "Hyundai free gift with limited-time offer for car lovers - Pakistan Connect",
+       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5kTGxXUDZiYUsyeElsSms0R0wyX0QwT0lkeXZ0c29KOVdReElTS1lzSGJHbk5MZlFBMlEwVmZSaVYzZWQ0QWRkbDBDV0s1SlpaRkQ5RmlfVVZTYjUxZHUwb0VzYTNnZ3kwcXVoaXY0ajhFemM?oc=5",
+       "date": "Sun, 25 Oct 2026 07:00:00 GMT"
+      }
+     ],
+     "ids": [
+      "hyundai free gift with limited-time offer for car lovers"
+     ]
+    }
+   }
   },
   {
    "brand": "Hyundai",
@@ -1381,7 +3967,102 @@ const DATA = {
      "sourceName": "hyundai-nishat.com",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "engine": {
+     "value": "1,598 cc, 4-cylinder turbo petrol hybrid",
+     "source": "https://hyundai-nishat.com/tucson-hybrid-specification/",
+     "official": true
+    },
+    "power": {
+     "value": "232 hp combined",
+     "source": "https://hyundai-nishat.com/tucson-hybrid-specification/",
+     "official": true
+    },
+    "torque": {
+     "value": "367 Nm combined",
+     "source": "https://hyundai-nishat.com/tucson-hybrid-specification/",
+     "official": true
+    },
+    "transmission": {
+     "value": "6-speed automatic (Smart FWD / Signature AWD)",
+     "source": "https://hyundai-nishat.com/tucson-hybrid-specification/",
+     "official": true
+    },
+    "seats": {
+     "value": "5",
+     "source": "https://hyundai-nishat.com/tucson-hybrid-specification/",
+     "official": true
+    },
+    "length": {
+     "value": "4,640 mm",
+     "source": "https://hyundai-nishat.com/tucson-hybrid-specification/",
+     "official": true
+    },
+    "width": {
+     "value": "1,865 mm",
+     "source": "https://hyundai-nishat.com/tucson-hybrid-specification/",
+     "official": true
+    },
+    "height": {
+     "value": "1,665 mm",
+     "source": "https://hyundai-nishat.com/tucson-hybrid-specification/",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,755 mm",
+     "source": "https://hyundai-nishat.com/tucson-hybrid-specification/",
+     "official": true
+    },
+    "groundClearance": {
+     "value": "181 mm",
+     "source": "https://hyundai-nishat.com/tucson-hybrid-specification/",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "52 L",
+     "source": "https://hyundai-nishat.com/tucson-hybrid-specification/",
+     "official": true
+    },
+    "battery": {
+     "value": "1.49 kWh (lithium-ion)",
+     "source": "https://hyundai-nishat.com/tucson-hybrid-specification/",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 9,
+     "examples": [
+      {
+       "title": "Pakistan October 2026: Suzuki Alto and Swift at record highs, market up 40.9% - Best Selling Cars Blog",
+       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNZzR2WVY2aDBvenJKSmpFQWVPTTZ1YUZVQTBsWE53cUU1UTZEY05QTFoxTnkyV1FvV2xhWF95YllkRU1TaTAyOWEzcmh2a0xwYVBBVmdYbmJkM2ZqNVpOWkdCRlpSODUtNDFuSkRCUnFzaG82clFvbV9UZ1JfU2JPbE9ScGNtOGxXWnBCMjl6ckZiSW5Za3h3ZVlmMWxyZDdYc1ZpVlI0Znhtei16NEczRm44X0ZaZw?oc=5",
+       "date": "Fri, 13 Nov 2026 03:03:46 GMT"
+      },
+      {
+       "title": "Auto sales surge 60% YoY in October - Mettis Global",
+       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE03cGE4YVRTRmZxY3ZIWFNsOUdVQi1fSGFYSG1obDA3eUxWQTlxdHo1RmtNMGZhaXhIOEZrcHk1bG1JWUxCS1hoVm9jajNZaWpUMU5manBoa3g2WFdHclQ2N0dNX1A4QlNNNnE0Y21MQmJ2RERP?oc=5",
+       "date": "Thu, 12 Nov 2026 10:48:00 GMT"
+      },
+      {
+       "title": "Nishat Group Plans Two Major Car Launches in Pakistan - Bloom Pakistan",
+       "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQWE5HX29yeV9lYlE5bjYzaFAyY3luM1BWMkFNY2FVbXlVa0FQN29TT0RaSkJEZlVaMVpKeVYtbl85cUtjMHVISDhSdHFwU18yMnRYam9jNjNxUDVfcFFpUXk1Nk90NVMwWDJkM09YdEVfUGRpVHZydXEtTEpGMWdxcDRaU2VnVGJZVWFn?oc=5",
+       "date": "Mon, 19 Oct 2026 07:00:00 GMT"
+      }
+     ],
+     "ids": [
+      "10 phevs with the longest electric range in pakistan (2026)",
+      "auto sales surge 60% yoy in october",
+      "hyundai free gift with limited-time offer for car lovers",
+      "nishat group plans two major car launches in pakistan",
+      "pakistan auto sales jump 63%",
+      "pakistan car sales jump 63% in october 2026",
+      "pakistan october 2026: suzuki alto and swift at record highs, market up 40.9%",
+      "petrol cars could still dominate in 2035, sema report predicts",
+      "rs. 54,000 apart: two long-range electric scooters compared"
+     ]
+    }
+   }
   },
   {
    "brand": "Kia",
@@ -1405,7 +4086,84 @@ const DATA = {
      "sourceName": "kia-luckymotorcorp.com",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "engine": {
+     "value": "3,470 cc V6 petrol",
+     "source": "https://kia-luckymotorcorp.com/app/uploads/2024/12/Revised-Specsheet_KA4_V2.pdf",
+     "official": true
+    },
+    "power": {
+     "value": "272 PS @ 6,400 rpm",
+     "source": "https://kia-luckymotorcorp.com/app/uploads/2024/12/Revised-Specsheet_KA4_V2.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "331.5 Nm @ 5,000 rpm",
+     "source": "https://kia-luckymotorcorp.com/app/uploads/2024/12/Revised-Specsheet_KA4_V2.pdf",
+     "official": true
+    },
+    "transmission": {
+     "value": "8-speed automatic",
+     "source": "https://kia-luckymotorcorp.com/app/uploads/2024/12/Revised-Specsheet_KA4_V2.pdf",
+     "official": true
+    },
+    "seats": {
+     "value": "11",
+     "source": "https://kia-luckymotorcorp.com/app/uploads/2024/12/Revised-Specsheet_KA4_V2.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "5,155 mm",
+     "source": "https://kia-luckymotorcorp.com/app/uploads/2024/12/Revised-Specsheet_KA4_V2.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1,995 mm",
+     "source": "https://kia-luckymotorcorp.com/app/uploads/2024/12/Revised-Specsheet_KA4_V2.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1,740 mm",
+     "source": "https://kia-luckymotorcorp.com/app/uploads/2024/12/Revised-Specsheet_KA4_V2.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "3,090 mm",
+     "source": "https://kia-luckymotorcorp.com/app/uploads/2024/12/Revised-Specsheet_KA4_V2.pdf",
+     "official": true
+    },
+    "groundClearance": {
+     "value": "172 mm",
+     "source": "https://kia-luckymotorcorp.com/app/uploads/2024/12/Revised-Specsheet_KA4_V2.pdf",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "72 L",
+     "source": "https://kia-luckymotorcorp.com/app/uploads/2024/12/Revised-Specsheet_KA4_V2.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "8",
+     "source": "https://kia-luckymotorcorp.com/app/uploads/2024/12/Revised-Specsheet_KA4_V2.pdf",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 1,
+     "examples": [
+      {
+       "title": "Mercedes-Benz CLA 200 EV: Price, Specs and Features - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBYNVFiY29sMDR4YmlDVG1nUEp3U1I1c1g4c1VlT3RQSkZmbndVeEdZRTN2M3FCZ2Vfd0xmbDZUZXpJZXhzTjhmSEY2amkxNVd0UHRnNUJ2MW44WXhwSVh6R05MMkxuNXlvMnZUZ3pPZHZZWXowX0VCdzZhanRUdms?oc=5",
+       "date": "Sat, 07 Nov 2026 13:00:27 GMT"
+      }
+     ],
+     "ids": [
+      "mercedes-benz cla 200 ev: price, specs and features"
+     ]
+    }
+   }
   },
   {
    "brand": "Kia",
@@ -1441,7 +4199,75 @@ const DATA = {
      "sourceName": "Gari.pk",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "power": {
+     "value": "160 kW (Air, 2WD) / 230 kW (Earth, AWD)",
+     "source": "https://kia-luckymotorcorp.com/app/uploads/2025/11/EV5-Specification-sheet_Final.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "310 Nm (Air) / 480 Nm (Earth)",
+     "source": "https://kia-luckymotorcorp.com/app/uploads/2025/11/EV5-Specification-sheet_Final.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4,615 mm",
+     "source": "https://kia-luckymotorcorp.com/app/uploads/2025/11/EV5-Specification-sheet_Final.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1,875 mm",
+     "source": "https://kia-luckymotorcorp.com/app/uploads/2025/11/EV5-Specification-sheet_Final.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1,715 mm",
+     "source": "https://kia-luckymotorcorp.com/app/uploads/2025/11/EV5-Specification-sheet_Final.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,750 mm",
+     "source": "https://kia-luckymotorcorp.com/app/uploads/2025/11/EV5-Specification-sheet_Final.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "6",
+     "source": "https://kia-luckymotorcorp.com/app/uploads/2025/11/EV5-Specification-sheet_Final.pdf",
+     "official": true
+    },
+    "battery": {
+     "value": "64.2 kWh (Air) / 88.1 kWh (Earth), LFP",
+     "source": "https://kia-luckymotorcorp.com/app/uploads/2025/11/EV5-Specification-sheet_Final.pdf",
+     "official": true
+    },
+    "electricRange": {
+     "value": "400 km (Air) / 500 km (Earth), WLTP",
+     "source": "https://kia-luckymotorcorp.com/app/uploads/2025/11/EV5-Specification-sheet_Final.pdf",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 2,
+     "examples": [
+      {
+       "title": "10 EVs With the Biggest Batteries in Pakistan (2026) - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9xbElqQWxuVHl1X3pKUF96NFdsSkFVN3dKWlZxdWI1U0Vzb0VXSDZjVjB4ZWxhU0l3QmlTZFdkU2pHMlI1bmtESXBKal9YSmM4bThnbC1XWGFyODI3VzZlSjdGVWhieTZSWHBrS2Z6MA?oc=5",
+       "date": "Wed, 21 Oct 2026 07:00:00 GMT"
+      },
+      {
+       "title": "What Might Geely Be Bringing to Pakistan? - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBheC16N1NyTzJidWRpbWpnY0g2NmhMakFfeWpiaGd2RlpBdkprMnlUNTZ6SnY1Y09ZU2RvQUUtdDJyVkt1OXhnZzIzN1JOLXlBaUI5V1ZRanQ5N2tEQV8tWURFOV9GUG44dEpPNHdwUWJMdHMtYjVsRFUyVm0?oc=5",
+       "date": "Sat, 24 Oct 2026 07:00:00 GMT"
+      }
+     ],
+     "ids": [
+      "10 evs with the biggest batteries in pakistan (2026)",
+      "what might geely be bringing to pakistan?"
+     ]
+    }
+   }
   },
   {
    "brand": "Kia",
@@ -1465,7 +4291,79 @@ const DATA = {
      "sourceName": "Gari.pk",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "power": {
+     "value": "282.6 kW, dual motor AWD",
+     "source": "https://kia-luckymotorcorp.com/app/uploads/2025/11/EV9-Specification-sheet_Final.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "700 Nm",
+     "source": "https://kia-luckymotorcorp.com/app/uploads/2025/11/EV9-Specification-sheet_Final.pdf",
+     "official": true
+    },
+    "seats": {
+     "value": "6",
+     "source": "https://kia-luckymotorcorp.com/app/uploads/2025/11/EV9-Specification-sheet_Final.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "5,015 mm",
+     "source": "https://kia-luckymotorcorp.com/app/uploads/2025/11/EV9-Specification-sheet_Final.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1,980 mm",
+     "source": "https://kia-luckymotorcorp.com/app/uploads/2025/11/EV9-Specification-sheet_Final.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1,780 mm",
+     "source": "https://kia-luckymotorcorp.com/app/uploads/2025/11/EV9-Specification-sheet_Final.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "3,100 mm",
+     "source": "https://kia-luckymotorcorp.com/app/uploads/2025/11/EV9-Specification-sheet_Final.pdf",
+     "official": true
+    },
+    "groundClearance": {
+     "value": "177 mm",
+     "source": "https://kia-luckymotorcorp.com/app/uploads/2025/11/EV9-Specification-sheet_Final.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "7",
+     "source": "https://kia-luckymotorcorp.com/app/uploads/2025/11/EV9-Specification-sheet_Final.pdf",
+     "official": true
+    },
+    "battery": {
+     "value": "99.8 kWh (lithium-ion)",
+     "source": "https://kia-luckymotorcorp.com/app/uploads/2025/11/EV9-Specification-sheet_Final.pdf",
+     "official": true
+    },
+    "electricRange": {
+     "value": "505 km (WLTP)",
+     "source": "https://kia-luckymotorcorp.com/app/uploads/2025/11/EV9-Specification-sheet_Final.pdf",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 1,
+     "examples": [
+      {
+       "title": "10 EVs With the Biggest Batteries in Pakistan (2026) - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9xbElqQWxuVHl1X3pKUF96NFdsSkFVN3dKWlZxdWI1U0Vzb0VXSDZjVjB4ZWxhU0l3QmlTZFdkU2pHMlI1bmtESXBKal9YSmM4bThnbC1XWGFyODI3VzZlSjdGVWhieTZSWHBrS2Z6MA?oc=5",
+       "date": "Wed, 21 Oct 2026 07:00:00 GMT"
+      }
+     ],
+     "ids": [
+      "10 evs with the biggest batteries in pakistan (2026)"
+     ]
+    }
+   }
   },
   {
    "brand": "Kia",
@@ -1527,7 +4425,113 @@ const DATA = {
      "sourceName": "ProPakistani",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "engine": {
+     "value": "3,470 cc V6 petrol / 1,598 cc turbo petrol hybrid and plug-in hybrid",
+     "source": "https://kia-luckymotorcorp.com/showroom/the-all-new-sorento/",
+     "official": true
+    },
+    "power": {
+     "value": "269 hp (V6) / 238 hp (HEV) / 249 hp (PHEV)",
+     "source": "https://kia-luckymotorcorp.com/showroom/the-all-new-sorento/",
+     "official": true
+    },
+    "torque": {
+     "value": "331 Nm (V6) / 367 Nm (HEV, PHEV)",
+     "source": "https://kia-luckymotorcorp.com/showroom/the-all-new-sorento/",
+     "official": true
+    },
+    "transmission": {
+     "value": "8-speed automatic (V6) / 6-speed automatic (HEV, PHEV)",
+     "source": "https://kia-luckymotorcorp.com/showroom/the-all-new-sorento/",
+     "official": true
+    },
+    "seats": {
+     "value": "7",
+     "source": "https://kia-luckymotorcorp.com/showroom/the-all-new-sorento/",
+     "official": true
+    },
+    "length": {
+     "value": "4,815 mm",
+     "source": "https://kia-luckymotorcorp.com/showroom/the-all-new-sorento/",
+     "official": true
+    },
+    "width": {
+     "value": "1,900 mm",
+     "source": "https://kia-luckymotorcorp.com/showroom/the-all-new-sorento/",
+     "official": true
+    },
+    "height": {
+     "value": "1,700 mm (V6, HEV) / 1,695 mm (PHEV)",
+     "source": "https://kia-luckymotorcorp.com/showroom/the-all-new-sorento/",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,815 mm",
+     "source": "https://kia-luckymotorcorp.com/showroom/the-all-new-sorento/",
+     "official": true
+    },
+    "groundClearance": {
+     "value": "174–176 mm",
+     "source": "https://kia-luckymotorcorp.com/showroom/the-all-new-sorento/",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "67 L (V6, HEV) / 47 L (PHEV)",
+     "source": "https://kia-luckymotorcorp.com/showroom/the-all-new-sorento/",
+     "official": true
+    },
+    "airbags": {
+     "value": "6",
+     "source": "https://kia-luckymotorcorp.com/showroom/the-all-new-sorento/",
+     "official": true
+    },
+    "battery": {
+     "value": "1.49 kWh (HEV) / 13.8 kWh (PHEV)",
+     "source": "https://kia-luckymotorcorp.com/showroom/the-all-new-sorento/",
+     "official": true
+    },
+    "electricRange": {
+     "value": "66 km (PHEV, test cycle not stated)",
+     "source": "https://kia-luckymotorcorp.com/showroom/the-all-new-sorento-phev/",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 10,
+     "examples": [
+      {
+       "title": "Kia Sorento gets Price Cut of Rs2.5 Million in Pakistan; Check New Rates - Daily Pakistan",
+       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNY29CNUhTakEwS05Yb3doeUp1anlURUw0N1NoTjExQ1lobWp6UmdjV0FmeFl5T2FnR0x5Ti1aWUV4RVAtTU9CeVNYa1YwcFY3VjFBclQ2ekNPNV9MV2lxZjdXMkUzaHJNdDhfc3FublJvQXJCeFluLWxQcDc0N0JrSFlVOFdEX2RScEdCLW1CUUFvaEpnVGVQYjdUUUs2N2w3U2h5bVhHUHlXTlhRQ1ZBQmptSEJvdw?oc=5",
+       "date": "Tue, 03 Nov 2026 08:00:00 GMT"
+      },
+      {
+       "title": "Kia Pakistan Announces Rs. 2.5 Million Discount on Sorento - Bloom Pakistan",
+       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5iSFZQN2ppQ2t6eUF1YjRBVVZ4ZTB6TzRXeUpOSnpfdkVTR1hsRjVmVWw0ejd6VkszUExyVk9mSHY1U1g4NHJmUklQcjNMSHY2RVViMXpscGhRU0pTZlM0UHlGbHZyQUp4cEtkOUZ2dFMxSUZsSkdhTktYSlVRQQ?oc=5",
+       "date": "Sun, 15 Nov 2026 08:48:25 GMT"
+      },
+      {
+       "title": "Kia slashes Sorento Hybrid prices in Pakistan by up to Rs2.5 million - Pakistan Connect",
+       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5YLVBXazlkVnNJZGdPSGluVFRFbE1qd3BMTmlQVFRrNTFVa3hQdF9aOFlxVk1uZE53SmpLbGI2bkVwTnQ3Z2VtWnRXanlQc1FwSXN2Q2prWHZza1RWeUxCMldMWWM0eGVhMkZNSDRR?oc=5",
+       "date": "Tue, 03 Nov 2026 12:28:57 GMT"
+      }
+     ],
+     "ids": [
+      "air purifier prices in pakistan amid smog – november 2026",
+      "car prices expected to drop for alto, haval h6, kia sorento, evs under auto policy 2026–31",
+      "chery tiggo 9 phev owner review: 920 nm in a family suv",
+      "haval h6, suzuki alto, kia sorento prices in pakistan amid new auto policy 2026-2031",
+      "kia pakistan announces rs. 2.5 million discount on sorento",
+      "kia slashes sorento hybrid prices in pakistan by up to rs2.5 million",
+      "kia sorento gets price cut of rs2.5 million in pakistan; check new rates",
+      "kia sportage l hybrid prices reduced by up to rs800,000 in pakistan",
+      "plug-in hybrid cars in pakistan 2026: prices & specs",
+      "suzuki alto, haval h6 expected prices in pakistan after new auto policy 2026–2031"
+     ]
+    }
+   }
   },
   {
    "brand": "Kia",
@@ -1576,7 +4580,104 @@ const DATA = {
      "sourceName": "ProPakistani",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "engine": {
+     "value": "1,598 cc turbo petrol hybrid (1.6T GDI)",
+     "source": "https://kia-luckymotorcorp.com/showroom/the-all-new-sportage-l/",
+     "official": true
+    },
+    "power": {
+     "value": "235 hp combined",
+     "source": "https://kia-luckymotorcorp.com/showroom/the-all-new-sportage-l/",
+     "official": true
+    },
+    "torque": {
+     "value": "368 Nm combined",
+     "source": "https://kia-luckymotorcorp.com/showroom/the-all-new-sportage-l/",
+     "official": true
+    },
+    "transmission": {
+     "value": "6-speed automatic (FWD or AWD)",
+     "source": "https://kia-luckymotorcorp.com/showroom/the-all-new-sportage-l/",
+     "official": true
+    },
+    "length": {
+     "value": "4,685 mm",
+     "source": "https://kia-luckymotorcorp.com/showroom/the-all-new-sportage-l/",
+     "official": true
+    },
+    "width": {
+     "value": "1,865 mm",
+     "source": "https://kia-luckymotorcorp.com/showroom/the-all-new-sportage-l/",
+     "official": true
+    },
+    "height": {
+     "value": "1,660 mm",
+     "source": "https://kia-luckymotorcorp.com/showroom/the-all-new-sportage-l/",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,755 mm",
+     "source": "https://kia-luckymotorcorp.com/showroom/the-all-new-sportage-l/",
+     "official": true
+    },
+    "groundClearance": {
+     "value": "181 mm",
+     "source": "https://kia-luckymotorcorp.com/showroom/the-all-new-sportage-l/",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "52 L",
+     "source": "https://kia-luckymotorcorp.com/showroom/the-all-new-sportage-l/",
+     "official": true
+    },
+    "airbags": {
+     "value": "6",
+     "source": "https://kia-luckymotorcorp.com/showroom/the-all-new-sportage-l/",
+     "official": true
+    },
+    "battery": {
+     "value": "1.49 kWh (lithium-ion)",
+     "source": "https://kia-luckymotorcorp.com/showroom/the-all-new-sportage-l/",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 11,
+     "examples": [
+      {
+       "title": "Kia Sportage L hybrid prices slashed by up to Rs800,000 in limited-time offer - Investify",
+       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOREdIZ2tFLVMzWk9JZy04aFRiTTR2dWNoNXQzTmtJd1RENlZZRmw3X0E4Sm1lMy0xTmsySHFHczMwWUdHazFyMVJsQUNIYUVfNDdvd3dwZmNnczlmdkFYdWtZWWtMU09odU9zRGY5SXNKdFpKbWlPSFhPRDBHSTZsSkQ0VV9sSG8wbmhLOWNiVmVLb2JnSVRQb2FMcFlEOEx6dzJqTGx2SXFSbnBTdzZIWm1QaEx1cDhGNk5fWg?oc=5",
+       "date": "Tue, 03 Nov 2026 08:00:00 GMT"
+      },
+      {
+       "title": "Lucky Motor cuts Kia Sportage L prices by up to Rs800,000 - Investify",
+       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNUEZsUm0wTlp2STYtS2kxcnVhZUhZOGVUazk5dHBacjg2bHpMSHY5TlZGQnllT0ZFdHJoeXNyOFNmQlJMdkN4YVptY2UzamhmYnk2MGFheENkY1FDeDVMODhoMmZPbFFYRm9fd01hQzZiUHQ4RDZvWmdCQS1wZFRoM0lMdXh4X0pGOXh6dXppWlo2TXk5aEU2dFBlWVozRm5xSWc?oc=5",
+       "date": "Tue, 03 Nov 2026 09:50:01 GMT"
+      },
+      {
+       "title": "Kia Sportage L Gets Up to Rs 8 Lakh Price Cut - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOSzNBd1NkMW82b2VjSHdVQ0htenFuVC1MSDhWTzZoOVBPZHJabExnZzAzVVlhZUxzTERfMGM3Yk4zaE9RMUJBYWVOMlp1aUQ4akN5em5oT1JnU0dKTjQ1TGxkWVlld2V3OFlFSFlsS2p2TGt1X0hMb09kV2FqSDdMblpkYw?oc=5",
+       "date": "Tue, 03 Nov 2026 07:05:39 GMT"
+      }
+     ],
+     "ids": [
+      "kia pakistan announces deadline for sportage l promotional offer",
+      "kia pakistan slashes sportage prices by up to rs800,000 under promotional offer",
+      "kia sportage l gets up to rs 8 lakh price cut",
+      "kia sportage l hev launches new two-tone color variants",
+      "kia sportage l hybrid prices reduced by up to rs800,000 in pakistan",
+      "kia sportage l hybrid prices slashed by up to rs800,000 in limited-time offer",
+      "kia sportage named ‘best family suv of the year for the fourth consecutive year at the what car? awards 2026’",
+      "kia sportage on easy installment plans in 2026",
+      "kia sportage wins 'best family suv of the year award by what car?' for the 4th consecutive year",
+      "kia sportage: an award-winning ‘best family suv by what car?’",
+      "lucky motor cuts kia sportage l prices by up to rs800,000"
+     ]
+    }
+   }
   },
   {
    "brand": "Kia",
@@ -1612,7 +4713,102 @@ const DATA = {
      "sourceName": "ProPakistani",
      "effectiveFrom": "2026-10-01"
     }
-   ]
+   ],
+   "specs": {
+    "engine": {
+     "value": "998 cc turbo petrol (1.0L T-GDI)",
+     "source": "https://kia-luckymotorcorp.com/showroom/all-new-stonic/",
+     "official": true
+    },
+    "power": {
+     "value": "100 PS @ 6,000 rpm",
+     "source": "https://kia-luckymotorcorp.com/showroom/all-new-stonic/",
+     "official": true
+    },
+    "torque": {
+     "value": "172 Nm @ 1,500–3,500 rpm",
+     "source": "https://kia-luckymotorcorp.com/showroom/all-new-stonic/",
+     "official": true
+    },
+    "transmission": {
+     "value": "7-speed dual-clutch",
+     "source": "https://kia-luckymotorcorp.com/showroom/all-new-stonic/",
+     "official": true
+    },
+    "seats": {
+     "value": "5",
+     "source": "https://kia-luckymotorcorp.com/showroom/all-new-stonic/",
+     "official": true
+    },
+    "length": {
+     "value": "4,165 mm",
+     "source": "https://kia-luckymotorcorp.com/showroom/all-new-stonic/",
+     "official": true
+    },
+    "width": {
+     "value": "1,760 mm",
+     "source": "https://kia-luckymotorcorp.com/showroom/all-new-stonic/",
+     "official": true
+    },
+    "height": {
+     "value": "1,500 mm (Turbo X) / 1,520 mm (Turbo S)",
+     "source": "https://kia-luckymotorcorp.com/showroom/all-new-stonic/",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,580 mm",
+     "source": "https://kia-luckymotorcorp.com/showroom/all-new-stonic/",
+     "official": true
+    },
+    "groundClearance": {
+     "value": "165 mm (Turbo X) / 183 mm (Turbo S)",
+     "source": "https://kia-luckymotorcorp.com/showroom/all-new-stonic/",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "45 L",
+     "source": "https://kia-luckymotorcorp.com/showroom/all-new-stonic/",
+     "official": true
+    },
+    "airbags": {
+     "value": "6",
+     "source": "https://kia-luckymotorcorp.com/showroom/all-new-stonic/",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 9,
+     "examples": [
+      {
+       "title": "Alto, Cultus and Stonic Could Get Cheaper After FED Removal - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNRjFYTEN3eVowQU9oMHo4YlBfT21XcGt2ZjZ3QXphUXVDdXg3MTg4T00waTEzaXNJVkFORlN1WTVPRjV6YjBaU3BncFBhTUV3a0V1RkowVVBFcnY1b0ZXSmNVOUk3MDE3Qm5XWFJlLTBXaGQ1bkdrbDJ1WWJDeXd1Sg?oc=5",
+       "date": "Wed, 21 Oct 2026 07:00:00 GMT"
+      },
+      {
+       "title": "Suzuki Alto, Cultus, Kia Stonic Price Update under Auto Policy 2026-31 - Daily Pakistan",
+       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOMDFIcUhVMXJlSFVSZzBnVlhoWHFEbnhJQ0hubWNKQS16ODlsSkk1ak5QRWp4b0lhY3I1cG1SdFpvQXphY1pkeUMxTUlHM2ZiMHNyYk1tRlJ6TkdDcVhmMHc1enNVeXNpLUpIT196WEczNXRITFJrbFU4U3l6YlIyVjR0YWdkdFc2YTl1MldjMVNWdDREQnBacGdOeUFDNm42bHp2MkM5Tl9OTFFKaDdiYWVR?oc=5",
+       "date": "Thu, 22 Oct 2026 07:00:00 GMT"
+      },
+      {
+       "title": "Which Cars will become Cheaper with 2.5% FED cut under Pakistan's New Auto Policy 2026–31? - Pakistan Observer",
+       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPM0lRcUd1M1NxV1ZKVXkwR1M5TXJWWkZ1VUVjWG55dncxTVJiNDJZZ1JwNkNpTklxVWJlQU56dkJheUdFVk8wcnZQSkw5NTRZUFBhZm9Qa1dkVWFMdGJBdlV1bTNVYnlieWZOVDZyTTY0Y2xRZ2lqaUdMZGRTRFdHVUJfUkQyLTF1dWR1cjNQYmFJMlQzdkNoUDIwV2lDLVhxTU1PY1VBVV9qUkVWR095OGln?oc=5",
+       "date": "Thu, 22 Oct 2026 07:00:00 GMT"
+      }
+     ],
+     "ids": [
+      "alto, cultus and stonic could get cheaper after fed removal",
+      "car prices expected to drop for alto, haval h6, kia sorento, evs under auto policy 2026–31",
+      "haval h6, suzuki alto, kia sorento prices in pakistan amid new auto policy 2026-2031",
+      "kia sportage l hybrid prices reduced by up to rs800,000 in pakistan",
+      "lucky motor cuts kia sportage l prices by up to rs800,000",
+      "peugeot 2008 bookings suspended in pakistan despite massive rs1.3 million price cut",
+      "suzuki alto, cultus, kia stonic price update under auto policy 2026-31",
+      "suzuki alto, haval h6 expected prices in pakistan after new auto policy 2026–2031",
+      "which cars will become cheaper with 2.5% fed cut under pakistan's new auto policy 2026–31?"
+     ]
+    }
+   }
   },
   {
    "brand": "MG",
@@ -1636,7 +4832,74 @@ const DATA = {
      "sourceName": "mgmotors.com.pk",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "power": {
+     "value": "50 kW (drive motor)",
+     "source": "https://mgmotors.com.pk/assets/brochure/Binguo-Brochure.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "125 Nm",
+     "source": "https://mgmotors.com.pk/model/binguo",
+     "official": true
+    },
+    "transmission": {
+     "value": "Single Reduction Gear",
+     "source": "https://mgmotors.com.pk/assets/brochure/Binguo-Brochure.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "3950 mm",
+     "source": "https://mgmotors.com.pk/assets/brochure/Binguo-Brochure.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1708 mm",
+     "source": "https://mgmotors.com.pk/assets/brochure/Binguo-Brochure.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1580 mm",
+     "source": "https://mgmotors.com.pk/assets/brochure/Binguo-Brochure.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2560 mm",
+     "source": "https://mgmotors.com.pk/assets/brochure/Binguo-Brochure.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "Driver & Passenger",
+     "source": "https://mgmotors.com.pk/assets/brochure/Binguo-Brochure.pdf",
+     "official": true
+    },
+    "battery": {
+     "value": "31.9 kWh (LFP)",
+     "source": "https://mgmotors.com.pk/assets/brochure/Binguo-Brochure.pdf",
+     "official": true
+    },
+    "electricRange": {
+     "value": "Up to 333 km (CLTC)",
+     "source": "https://mgmotors.com.pk/assets/brochure/Binguo-Brochure.pdf",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 1,
+     "examples": [
+      {
+       "title": "What Might Geely Be Bringing to Pakistan? - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBheC16N1NyTzJidWRpbWpnY0g2NmhMakFfeWpiaGd2RlpBdkprMnlUNTZ6SnY1Y09ZU2RvQUUtdDJyVkt1OXhnZzIzN1JOLXlBaUI5V1ZRanQ5N2tEQV8tWURFOV9GUG44dEpPNHdwUWJMdHMtYjVsRFUyVm0?oc=5",
+       "date": "Sat, 24 Oct 2026 07:00:00 GMT"
+      }
+     ],
+     "ids": [
+      "what might geely be bringing to pakistan?"
+     ]
+    }
+   }
   },
   {
    "brand": "MG",
@@ -1686,7 +4949,104 @@ const DATA = {
      "sourceName": "mgmotors.com.pk",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "engine": {
+     "value": "1496 cc Turbo petrol (all three); RON 92 and above",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG-HS-petrol-Spec-Sheet-2026.pdf",
+     "official": true
+    },
+    "power": {
+     "value": "Petrol 123 kW; Hybrid+ 165 kW combined; Super Hybrid 220 kW combined (nominal)",
+     "source": "https://mgmotors.com.pk/assets/brochure/Hybrid-plus-Back-Updated.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "Petrol 250 Nm; Hybrid+ 340 Nm combined; Super Hybrid 350 Nm combined (nominal)",
+     "source": "https://mgmotors.com.pk/assets/brochure/Super-Hybrid-Updated.pdf",
+     "official": true
+    },
+    "transmission": {
+     "value": "Petrol 7-Speed DCT; Hybrid+ / Super Hybrid: Hybrid Transmission",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG-HS-petrol-Spec-Sheet-2026.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4655 mm (Petrol) / 4670 mm (Hybrid+, Super Hybrid)",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG-HS-petrol-Spec-Sheet-2026.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1890 mm",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG-HS-petrol-Spec-Sheet-2026.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1664 mm (Petrol) / 1663 mm (hybrids)",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG-HS-petrol-Spec-Sheet-2026.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2765 mm",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG-HS-petrol-Spec-Sheet-2026.pdf",
+     "official": true
+    },
+    "groundClearance": {
+     "value": "Petrol 180 mm (running); Hybrid+ 167 mm; Super Hybrid 176 mm",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG-HS-petrol-Spec-Sheet-2026.pdf",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "55 L (all)",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG-HS-petrol-Spec-Sheet-2026.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "Driver + Passenger, Two Side, Two Curtain, Far Side (count not stated)",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG-HS-petrol-Spec-Sheet-2026.pdf",
+     "official": true
+    },
+    "battery": {
+     "value": "Hybrid+ 1.83 kWh; Super Hybrid 24.7 kWh (nominal)",
+     "source": "https://mgmotors.com.pk/assets/brochure/Super-Hybrid-Updated.pdf",
+     "official": true
+    },
+    "electricRange": {
+     "value": "Super Hybrid: 135 km (NEDC)",
+     "source": "https://mgmotors.com.pk/assets/brochure/Super-Hybrid-Updated.pdf",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 6,
+     "examples": [
+      {
+       "title": "MG Motor launches customer engagement campaign for MG HS Super Hybrid owners, offering 07kW home chargers - The Nation (Pakistan )",
+       "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPamdNTW5vWkxjazFLb2o0dUJBWER0UFFfR1JGLU5xSWVZUGNKTUpXa21fbl90MGN6bGJIUTMzRDhDd0hzSThKNmEtT1Z3aU5hMktjQkN3c3QzQlg4WkpLQzNBMmhTU19OZ21yd2NWZXNiTV9oQnVRNVhNbmNrNzlpeVEyakhKWTFhRlpHVDVJUFdSYlpyVzRqZUNVd1NwRk9PczlFQ3NKaHA1UlpnQVVVdEhpTzFYR2lhRjdiU29hN1Zxek5NTGpCNkR5RElSSFZ1amUwLQ?oc=5",
+       "date": "Mon, 26 Oct 2026 07:00:00 GMT"
+      },
+      {
+       "title": "10 PHEVs With the Longest Electric Range in Pakistan (2026) - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQY0I1MFcxV3gzdnRfNnEybVpIeThGU3F2ekwwZ2t2TGU4UnZSdHlZQkZCM3Q5TEltLU00M3c5ZXNVZHFaTnN6Z0FrTGp0RndBSmZVNFdGNVJKVkdpQU9uVFhFSVZ6M01BMS0xTmxrR0tXdDYxUXpzblViZlQwZktzbWlR?oc=5",
+       "date": "Fri, 13 Nov 2026 12:58:05 GMT"
+      },
+      {
+       "title": "Which Cars will become Cheaper in Pakistan after New Auto Policy 2026–31? - Pakistan Observer",
+       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPbzliWkpSNzZzWEVaUXBJREdKX1pQVk55TkFXaXJNbC1QVUpNMTZKZXhXZFhSaWs5NkdDUW9neUkwQVhOb2NrVUxSRzl6ZkE2RXltX3ozQk8xQjFITWdqVXRLdjRxRl9HaEE4bnA4WUtOU2trcjBxMHlTNVk5SjVoenAwcFJfRGtmMEhSVm00ZmhlV2ZHNF9rLUpCVnZnQQ?oc=5",
+       "date": "Mon, 09 Nov 2026 12:54:02 GMT"
+      }
+     ],
+     "ids": [
+      "10 phevs with the longest electric range in pakistan (2026)",
+      "buy mg hs with special financing and free 7kw home charger from ubl",
+      "car brands and their countries of origin: full list",
+      "mg motor launches customer engagement campaign for mg hs super hybrid owners, offering 07kw home chargers",
+      "suzuki alto, haval h6 expected prices in pakistan after new auto policy 2026–2031",
+      "which cars will become cheaper in pakistan after new auto policy 2026–31?"
+     ]
+    }
+   }
   },
   {
    "brand": "MG",
@@ -1710,7 +5070,97 @@ const DATA = {
      "sourceName": "mgmotors.com.pk",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "engine": {
+     "value": "1.5 T, 15E4E + Motor",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG-HS-PHEV-corve.pdf",
+     "official": true
+    },
+    "power": {
+     "value": "119+90 (Motor) kW; 209 kW combined",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG-HS-PHEV-corve.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "250+230 (Motor) Nm; 480 Nm combined",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG-HS-PHEV-corve.pdf",
+     "official": true
+    },
+    "transmission": {
+     "value": "EDU2, FWD",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG-HS-PHEV-corve.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4610 mm",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG-HS-PHEV-corve.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1876 mm",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG-HS-PHEV-corve.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1685 mm",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG-HS-PHEV-corve.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2720 mm",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG-HS-PHEV-corve.pdf",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "37 L",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG-HS-PHEV-corve.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "6",
+     "source": "https://mgmotors.com.pk/model/phev",
+     "official": true
+    },
+    "battery": {
+     "value": "16.6 kWh (Ternary Lithium)",
+     "source": "https://mgmotors.com.pk/model/phev",
+     "official": true
+    },
+    "electricRange": {
+     "value": "52 km (WLTP)",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG-HS-PHEV-corve.pdf",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 4,
+     "examples": [
+      {
+       "title": "Plug-In Hybrids Hit 200 KM Range: PHEV vs EV - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBCM1J2RTR3dGRsNU45RFd0Uk14MnA4dVUtcTRYa2lwSS1PMlJPR3hkYXppc3NZS1RadVBQVFI3NUJLSmJRWFdQU09mRndZRUhNT0x2LVRCdG9TMWlxVUdjTTVOYzVvMFQxNWZUUlJyZk9zMVU?oc=5",
+       "date": "Wed, 21 Oct 2026 07:00:00 GMT"
+      },
+      {
+       "title": "Which Cars will become Cheaper in Pakistan after New Auto Policy 2026–31? - Pakistan Observer",
+       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPbzliWkpSNzZzWEVaUXBJREdKX1pQVk55TkFXaXJNbC1QVUpNMTZKZXhXZFhSaWs5NkdDUW9neUkwQVhOb2NrVUxSRzl6ZkE2RXltX3ozQk8xQjFITWdqVXRLdjRxRl9HaEE4bnA4WUtOU2trcjBxMHlTNVk5SjVoenAwcFJfRGtmMEhSVm00ZmhlV2ZHNF9rLUpCVnZnQQ?oc=5",
+       "date": "Mon, 09 Nov 2026 12:54:02 GMT"
+      },
+      {
+       "title": "Suzuki Alto, Haval H6 Expected Prices in Pakistan after New Auto Policy 2026–2031 - Daily Pakistan",
+       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQN0FiSG9yeVhDWlJlbnBzTERlc3A3eVkyYlhUZ3R4X3RMYjVuTkFvb0h1Uy12U1hPM1hBbjB1d3RTNkY1U0Q1TExETC1uZ21GZzU3WUVVVlVmOXNxU1VFNkRkWVF0RFNrNmw2b1hWbGVpcU9nTy01V1Jud1N6MGxrZ0Jpd3hBNEpUWnFfMGNkbW4waVJPdXl2X2QtbU94SW41QkZjNlhYUmJ3NDR5MS1lSFBILXRVNGwyeWc4WUU0YjhZdw?oc=5",
+       "date": "Sun, 08 Nov 2026 00:22:55 GMT"
+      }
+     ],
+     "ids": [
+      "haval h6, suzuki alto, kia sorento prices in pakistan amid new auto policy 2026-2031",
+      "plug-in hybrids hit 200 km range: phev vs ev",
+      "suzuki alto, haval h6 expected prices in pakistan after new auto policy 2026–2031",
+      "which cars will become cheaper in pakistan after new auto policy 2026–31?"
+     ]
+    }
+   }
   },
   {
    "brand": "MG",
@@ -1734,7 +5184,88 @@ const DATA = {
      "sourceName": "mgmotors.com.pk",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "power": {
+     "value": "110 kW",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG4_EV_Urban_Brochure.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "250 Nm",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG4_EV_Urban_Brochure.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4395 mm",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG4_EV_Urban_Brochure.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1842 mm",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG4_EV_Urban_Brochure.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1549 mm",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG4_EV_Urban_Brochure.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2750 mm",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG4_EV_Urban_Brochure.pdf",
+     "official": true
+    },
+    "groundClearance": {
+     "value": "130 mm (running clearance)",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG4_EV_Urban_Brochure.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "7 (seven airbags as standard)",
+     "source": "https://mgmotors.com.pk/model/mg4-ev-urban",
+     "official": true
+    },
+    "battery": {
+     "value": "43 kWh (LFP)",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG4_EV_Urban_Brochure.pdf",
+     "official": true
+    },
+    "electricRange": {
+     "value": "316 km (WLTP Combined)",
+     "source": "https://mgmotors.com.pk/assets/brochure/MG4_EV_Urban_Brochure.pdf",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 5,
+     "examples": [
+      {
+       "title": "JAECOO J5 EV vs MG4 Urban: Price & Specs in Pakistan - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE52TkVUemhCWkhOclo3dUl0UUNZMWxJSDNqZGRWc2VLRUlVOVVXRUUwSjBoemRQZ2RXWnN2YUZadVRZQUZqQXJHNUZUdFFMTElGMDNhelN4VXhIVHZiMDZ3YTdJMDJ5SkZiWXN6cVJLb3RiSl9HZl9V?oc=5",
+       "date": "Fri, 06 Nov 2026 08:00:00 GMT"
+      },
+      {
+       "title": "JAECOO J5 BEV Launches in Pakistan From Rs. 5.99 Million - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBpUUpTQS0zaWFNSkxDSHBJazB4cXRNa3pvZ25qVTc2RVdtUGhQN1hYMzZ3QWlGdm9RM0tEZ0QyZlhWQ0U2RWxrNE1EdzFXSDExb1M4cmpmX3ZyMzBjVDEta0FkUjFudW1ucHM2ZVZ1WDhBZUM3dzhjUnBvYUpGUQ?oc=5",
+       "date": "Fri, 06 Nov 2026 08:00:00 GMT"
+      },
+      {
+       "title": "Pakistan Adopts 45 UN-Backed Safety Standards in Auto Policy - NewzTodays",
+       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPOG9PNlZXNXN3NjJvNFh6bHFHTFhxSGdSREVWb21SM0dlNDNtbkJfN0MzU3ItNEk3eW9Mb2JKRGpvMXFXTWRDXzk0aWJtMFk2dkE5a0tmOTd6WUhTaVQ0eTZJMzB3c0ZNR3ZSNnhrNXpoNkU0a2NfNmZISWk2dUJzcG5Pa1lnemVEMGpuZw?oc=5",
+       "date": "Sun, 08 Nov 2026 08:11:39 GMT"
+      }
+     ],
+     "ids": [
+      "jaecoo j5 bev launches in pakistan from rs. 5.99 million",
+      "jaecoo j5 bev price, range and features revealed in pakistan",
+      "jaecoo j5 ev vs mg4 urban: price & specs in pakistan",
+      "pakistan adopts 45 un-backed safety standards in auto policy",
+      "petrol diesel prices see fresh drop as ogra updates rates"
+     ]
+    }
+   }
   },
   {
    "brand": "MG",
@@ -1771,7 +5302,76 @@ const DATA = {
      "sourceName": "mgmotors.com.pk",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "engine": {
+     "value": "Vibe (petrol): 1,495 cc; Hybrid+: 1498 cc; RON 92 and above",
+     "source": "https://mgmotors.com.pk/assets/brochure/mg-zs-spec-sheet.pdf",
+     "official": true
+    },
+    "power": {
+     "value": "80 kW (Vibe) / 158 kW combined (Hybrid+)",
+     "source": "https://mgmotors.com.pk/assets/brochure/mg-zs-spec-sheet.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "142 Nm (Vibe) / 465 Nm combined (Hybrid+)",
+     "source": "https://mgmotors.com.pk/assets/brochure/mg-zs-spec-sheet.pdf",
+     "official": true
+    },
+    "transmission": {
+     "value": "CVT (Vibe) / 3-Speed Hybrid Transmission (Hybrid+)",
+     "source": "https://mgmotors.com.pk/assets/brochure/mg-zs-spec-sheet.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4,430 mm",
+     "source": "https://mgmotors.com.pk/assets/brochure/mg-zs-spec-sheet.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1,818 mm",
+     "source": "https://mgmotors.com.pk/assets/brochure/mg-zs-spec-sheet.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1,635 mm",
+     "source": "https://mgmotors.com.pk/assets/brochure/mg-zs-spec-sheet.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,610 mm",
+     "source": "https://mgmotors.com.pk/assets/brochure/mg-zs-spec-sheet.pdf",
+     "official": true
+    },
+    "groundClearance": {
+     "value": "161 mm (running clearance)",
+     "source": "https://mgmotors.com.pk/assets/brochure/mg-zs-spec-sheet.pdf",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "55 L (Vibe) / 41 L (Hybrid+)",
+     "source": "https://mgmotors.com.pk/assets/brochure/mg-zs-spec-sheet.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "6",
+     "source": "https://mgmotors.com.pk/model/mg-zs",
+     "official": true
+    },
+    "battery": {
+     "value": "Hybrid+: 1.83 kWh",
+     "source": "https://mgmotors.com.pk/assets/brochure/mg-zs-spec-sheet.pdf",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 0,
+     "examples": [],
+     "ids": []
+    }
+   }
   },
   {
    "brand": "Peugeot",
@@ -1807,7 +5407,95 @@ const DATA = {
      "sourceName": "peugeot-luckymotorcorp.com",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "engine": {
+     "value": "1,199 cc turbo petrol (PureTech 1.2)",
+     "source": "https://www.peugeot-luckymotorcorp.com/app/uploads/2025/07/Peugeot-Main-brochure-24July25_compressed.pdf",
+     "official": true
+    },
+    "power": {
+     "value": "131 hp @ 5,500 rpm",
+     "source": "https://www.peugeot-luckymotorcorp.com/models/2008-active/",
+     "official": true
+    },
+    "torque": {
+     "value": "230 Nm @ 1,750 rpm",
+     "source": "https://www.peugeot-luckymotorcorp.com/models/2008-active/",
+     "official": true
+    },
+    "transmission": {
+     "value": "6-speed automatic",
+     "source": "https://www.peugeot-luckymotorcorp.com/models/2008-active/",
+     "official": true
+    },
+    "fuelEconomy": {
+     "value": "13–14 km/L city, 16–18 km/L highway (basis not stated)",
+     "source": "https://www.peugeot-luckymotorcorp.com/app/uploads/2025/07/Peugeot-Main-brochure-24July25_compressed.pdf",
+     "official": true
+    },
+    "seats": {
+     "value": "5",
+     "source": "https://www.peugeot-luckymotorcorp.com/app/uploads/2025/07/Peugeot-Main-brochure-24July25_compressed.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4,300 mm",
+     "source": "https://www.peugeot-luckymotorcorp.com/app/uploads/2025/07/Peugeot-Main-brochure-24July25_compressed.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1,770 mm",
+     "source": "https://www.peugeot-luckymotorcorp.com/app/uploads/2025/07/Peugeot-Main-brochure-24July25_compressed.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1,550 mm",
+     "source": "https://www.peugeot-luckymotorcorp.com/app/uploads/2025/07/Peugeot-Main-brochure-24July25_compressed.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,605 mm",
+     "source": "https://www.peugeot-luckymotorcorp.com/app/uploads/2025/07/Peugeot-Main-brochure-24July25_compressed.pdf",
+     "official": true
+    },
+    "groundClearance": {
+     "value": "170 mm",
+     "source": "https://www.peugeot-luckymotorcorp.com/app/uploads/2025/07/Peugeot-Main-brochure-24July25_compressed.pdf",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "45 L",
+     "source": "https://www.peugeot-luckymotorcorp.com/app/uploads/2025/07/Peugeot-Main-brochure-24July25_compressed.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "4 (Active) / 6 (Allure)",
+     "source": "https://www.peugeot-luckymotorcorp.com/app/uploads/2025/07/Peugeot-Main-brochure-24July25_compressed.pdf",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 2,
+     "examples": [
+      {
+       "title": "ANALYSIS: An unLucky bet - Dawn",
+       "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5US3ppOVNjRGJuUElPOUJLLXg3cE0xaUdmWEhYZVBSWFQyc055aHhWZTZlWi1aWU9oM2xFaDljSmJEblQtb3o4dw?oc=5",
+       "date": "Sun, 15 Nov 2026 02:37:31 GMT"
+      },
+      {
+       "title": "Peugeot 2008 Bookings suspended in Pakistan despite Massive Rs1.3 Million Price Cut - Daily Pakistan",
+       "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNZngzV0ZqLUlZWDNENTAzMWhQUC1WeWgzaHJfNy1SWV9MZXNoY2FrX0U5V2pNM2J3S0N3SjNxbzd1UzZTUkU5aGxTM1NnaktpeUs0Qmw0QTM5dW05NGJtakV0ck1fUE5JS0JSOFVUN0Zqa0tSNlZqSG12WExpX3FTNjVFTkpMdnRxLWRUMFJMMExsWGR5d09NbUpBQndzcTN1aC1GSHo4Sjc3UklxeW1JQzdRWnZ0dnBTbndUX1VQc2RWVmhHREE?oc=5",
+       "date": "Sun, 15 Nov 2026 04:59:34 GMT"
+      }
+     ],
+     "ids": [
+      "analysis: an unlucky bet",
+      "peugeot 2008 bookings suspended in pakistan despite massive rs1.3 million price cut"
+     ]
+    }
+   }
   },
   {
    "brand": "Proton",
@@ -1855,7 +5543,56 @@ const DATA = {
      "sourceName": "proton.com.pk",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "engine": {
+     "value": "1,299 cc, 4-cylinder petrol",
+     "source": "https://proton.com.pk/blog/affordable_sedan_car_in_pakistan",
+     "official": true
+    },
+    "power": {
+     "value": "91–95 hp",
+     "source": "https://proton.com.pk/blog/affordable_sedan_car_in_pakistan",
+     "official": true
+    },
+    "torque": {
+     "value": "117–120 Nm",
+     "source": "https://proton.com.pk/blog/affordable_sedan_car_in_pakistan",
+     "official": true
+    },
+    "transmission": {
+     "value": "Manual (MT) / 4-speed automatic (AT, ACE)",
+     "source": "https://proton.com.pk/saga",
+     "official": true
+    },
+    "fuelEconomy": {
+     "value": "13–16 km/L (basis not stated)",
+     "source": "https://proton.com.pk/blog/affordable_sedan_car_in_pakistan",
+     "official": true
+    },
+    "seats": {
+     "value": "5",
+     "source": "https://proton.com.pk/blog/affordable_sedan_car_in_pakistan",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "40 L",
+     "source": "https://proton.com.pk/blog/affordable_sedan_car_in_pakistan",
+     "official": true
+    },
+    "airbags": {
+     "value": "Dual front airbags",
+     "source": "https://proton.com.pk/saga",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 0,
+     "examples": [],
+     "ids": []
+    }
+   }
   },
   {
    "brand": "Proton",
@@ -1891,7 +5628,46 @@ const DATA = {
      "sourceName": "proton.com.pk",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "engine": {
+     "value": "1.5 L turbo petrol, 3-cylinder",
+     "source": "https://propakistani.pk/2022/01/19/first-locally-assembled-proton-x70-rolls-out-in-pakistan/",
+     "official": false
+    },
+    "power": {
+     "value": "176 hp",
+     "source": "https://propakistani.pk/2022/01/19/first-locally-assembled-proton-x70-rolls-out-in-pakistan/",
+     "official": false
+    },
+    "torque": {
+     "value": "255 Nm",
+     "source": "https://propakistani.pk/2022/01/19/first-locally-assembled-proton-x70-rolls-out-in-pakistan/",
+     "official": false
+    },
+    "transmission": {
+     "value": "7-speed dual-clutch (Premium FWD / Executive AWD)",
+     "source": "https://propakistani.pk/2022/01/19/first-locally-assembled-proton-x70-rolls-out-in-pakistan/",
+     "official": false
+    },
+    "fuelEconomy": {
+     "value": "12 km/L (ideal conditions)",
+     "source": "https://proton.com.pk/blog/a-reliable-and-fuel-efficient-SUV-in-pakistan-proton-X70",
+     "official": true
+    },
+    "airbags": {
+     "value": "6",
+     "source": "https://proton.com.pk/blog/proton-X70-the-best-SUV-in-pakistan",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 0,
+     "examples": [],
+     "ids": []
+    }
+   }
   },
   {
    "brand": "Suzuki",
@@ -1939,7 +5715,83 @@ const DATA = {
      "sourceName": "suzukipakistan.com",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "engine": {
+     "value": "660 cc, 3-cylinder petrol (R06A)",
+     "source": "https://suzukipakistan.com/api/media/file/All%20New%20Alto.pdf",
+     "official": true
+    },
+    "transmission": {
+     "value": "5-speed manual (VXR) / AGS (VXR-AGS, VXL-AGS)",
+     "source": "https://suzukipakistan.com/products/automobiles/alto",
+     "official": true
+    },
+    "height": {
+     "value": "1,490 mm",
+     "source": "https://suzukipakistan.com/api/media/file/All%20New%20Alto.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,460 mm",
+     "source": "https://suzukipakistan.com/api/media/file/All%20New%20Alto.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "Dual airbags",
+     "source": "https://suzukipakistan.com/products/automobiles/alto",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 25,
+     "examples": [
+      {
+       "title": "Pakistan October 2026: Suzuki Alto and Swift at record highs, market up 40.9% - Best Selling Cars Blog",
+       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNZzR2WVY2aDBvenJKSmpFQWVPTTZ1YUZVQTBsWE53cUU1UTZEY05QTFoxTnkyV1FvV2xhWF95YllkRU1TaTAyOWEzcmh2a0xwYVBBVmdYbmJkM2ZqNVpOWkdCRlpSODUtNDFuSkRCUnFzaG82clFvbV9UZ1JfU2JPbE9ScGNtOGxXWnBCMjl6ckZiSW5Za3h3ZVlmMWxyZDdYc1ZpVlI0Znhtei16NEczRm44X0ZaZw?oc=5",
+       "date": "Fri, 13 Nov 2026 03:03:46 GMT"
+      },
+      {
+       "title": "Small-car sales more than double in Pakistan amid Iran war fuel price shock - Arab News PK",
+       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQSy1uUHRaaGJfZnZlNlhhcHFpV18zZWZMMFczTm5mMkpOV2JQdHZtNHZUOE9wWWJ0WHZ2eENrZnQ3TW5oSWdxZTBzUWxvU1drZVJVdEpzX25tVjFicEtUejFpU3FMUUZMRzZFeHlYMnBYdjRyZS1XZUhuaEtFMkVRaGh4Q1BjcjR3WWx2VkNfa25PM3dHVmJpdWI0aE1TRGsxTDJrXzg0SHE5VmxtbWRjR0xXMG1nZXM?oc=5",
+       "date": "Sat, 14 Nov 2026 03:41:30 GMT"
+      },
+      {
+       "title": "Alto leads as Pakistan’s car sales jump 60pc - Minute Mirror",
+       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQZkRDQ3FvNG43MWlTcmlMUkRBUWdoRTB0TThqeXhkYjdsUjFnUzhkV1JJWFp4ZVY1Z3dLQVFyWjNway1CQVM4U1ZiUUUyMVY2c3ktZzlqaU1CaHF3MzkxLS03amZoUHBjd1NEQnRqcEdoSnREUXZuVU9ZVkdrbDJWdndaX1U0QQ?oc=5",
+       "date": "Fri, 13 Nov 2026 11:52:12 GMT"
+      }
+     ],
+     "ids": [
+      "alto leads as pakistan’s car sales jump 60pc",
+      "alto, cultus and stonic could get cheaper after fed removal",
+      "auto policy draft proposes removing fed on cars up to 1000cc",
+      "car inspection cost in pakistan: what’s include",
+      "car prices expected to drop for alto, haval h6, kia sorento, evs under auto policy 2026–31",
+      "draft auto policy 2026 proposes 20% car booking cap, price lock",
+      "haval h6, suzuki alto, kia sorento prices in pakistan amid new auto policy 2026-2031",
+      "is suzuki alto now rs460,000 cheaper: check here",
+      "nora metro vs suzuki alto: price, specs and running cost compared",
+      "nora neo and metro bring budget ev mobility to pakistan",
+      "pakistan auto policy reportedly approved with focus on cheaper cars and evs",
+      "pakistan auto sales jump 63%",
+      "pakistan car sales jump 63% in october 2026",
+      "pakistan october 2026: suzuki alto and swift at record highs, market up 40.9%",
+      "seven japanese imported cars under rs 30 lakh in pakistan (2026)",
+      "small-car sales more than double in pakistan amid iran war fuel price shock",
+      "suzuki alto price could fall under new auto-policy 2026-31",
+      "suzuki alto price expected to drop under new auto policy",
+      "suzuki alto price to fall below rs2.8 million under proposed auto policy?",
+      "suzuki alto to get rs3.5lac cheaper in pakistan amid auto tax shake-up?",
+      "suzuki alto, cultus, kia stonic price update under auto policy 2026-31",
+      "suzuki alto, haval h6 expected prices in pakistan after new auto policy 2026–2031",
+      "suzuki alto’s rs. 460,000 price cut claim goes viral",
+      "what if your suzuki mehran gets in an accident? here’s what parts cost",
+      "which cars will become cheaper with 2.5% fed cut under pakistan's new auto policy 2026–31?"
+     ]
+    }
+   }
   },
   {
    "brand": "Suzuki",
@@ -1987,7 +5839,102 @@ const DATA = {
      "sourceName": "suzukipakistan.com",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "engine": {
+     "value": "998 cc, 3-cylinder petrol (K10B)",
+     "source": "https://suzukipakistan.com/api/media/file/Cultus.pdf",
+     "official": true
+    },
+    "power": {
+     "value": "50 kW @ 6,000 rpm",
+     "source": "https://suzukipakistan.com/api/media/file/Cultus.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "90 Nm @ 3,500 rpm",
+     "source": "https://suzukipakistan.com/api/media/file/Cultus.pdf",
+     "official": true
+    },
+    "transmission": {
+     "value": "5-speed manual (VXR, VXL) / AGS (VXL-AGS)",
+     "source": "https://suzukipakistan.com/products/automobiles/cultus",
+     "official": true
+    },
+    "seats": {
+     "value": "5",
+     "source": "https://suzukipakistan.com/api/media/file/Cultus.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "3,600 mm",
+     "source": "https://suzukipakistan.com/api/media/file/Cultus.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1,600 mm",
+     "source": "https://suzukipakistan.com/api/media/file/Cultus.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1,540 mm",
+     "source": "https://suzukipakistan.com/api/media/file/Cultus.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,425 mm",
+     "source": "https://suzukipakistan.com/api/media/file/Cultus.pdf",
+     "official": true
+    },
+    "groundClearance": {
+     "value": "145 mm",
+     "source": "https://suzukipakistan.com/api/media/file/Cultus.pdf",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "35 L",
+     "source": "https://suzukipakistan.com/api/media/file/Cultus.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "Dual front airbags",
+     "source": "https://suzukipakistan.com/products/automobiles/cultus",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 9,
+     "examples": [
+      {
+       "title": "Alto, Cultus and Stonic Could Get Cheaper After FED Removal - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNRjFYTEN3eVowQU9oMHo4YlBfT21XcGt2ZjZ3QXphUXVDdXg3MTg4T00waTEzaXNJVkFORlN1WTVPRjV6YjBaU3BncFBhTUV3a0V1RkowVVBFcnY1b0ZXSmNVOUk3MDE3Qm5XWFJlLTBXaGQ1bkdrbDJ1WWJDeXd1Sg?oc=5",
+       "date": "Wed, 21 Oct 2026 07:00:00 GMT"
+      },
+      {
+       "title": "Suzuki Cultus Among Cars Expected to Get Cheaper Under New Policy - ProPakistani",
+       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPenN6LW5NeG01MnFCT0hCTW1yTGh3WHFHZXhTclRDbGF4cU9DdWxWU1B3dEg2TFh1RVlTcV9VT0Q0cUtfQjY5b2NWYU40b2R4Sk5KMWgtZTNRbWlkejZWVWxLdmZMTG13NEJHQjNtOVF5RlR5akVKclZmVGRaVVJPdlJOLXdiRjFGSk1QLVdFak9xX0w1bnlDTlN3NnZ6VU40LUZF0gGoAUFVX3lxTE5kMjRxZU90aTVmUzB5cFlIQktJNFJPWHMzcS1oR21iek5hNkZHT3NMdTlveDE3X1EzdURXVUxEbENUNk9QeVdJbW1vMkE1dVo5YldqdXFlM1FabW5tVmUxYmVQZlcxbjRkWnNuTm9wZDM3bUtvclV5TS1EWGZWckZabE5XY2xwUGtqbXpxN21mT2dEc3Y0dktGX2tQbWVMQUdEY3ZZMXRXWg?oc=5",
+       "date": "Wed, 21 Oct 2026 07:00:00 GMT"
+      },
+      {
+       "title": "Suzuki Alto, Cultus, Kia Stonic Price Update under Auto Policy 2026-31 - Daily Pakistan",
+       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOMDFIcUhVMXJlSFVSZzBnVlhoWHFEbnhJQ0hubWNKQS16ODlsSkk1ak5QRWp4b0lhY3I1cG1SdFpvQXphY1pkeUMxTUlHM2ZiMHNyYk1tRlJ6TkdDcVhmMHc1enNVeXNpLUpIT196WEczNXRITFJrbFU4U3l6YlIyVjR0YWdkdFc2YTl1MldjMVNWdDREQnBacGdOeUFDNm42bHp2MkM5Tl9OTFFKaDdiYWVR?oc=5",
+       "date": "Thu, 22 Oct 2026 07:00:00 GMT"
+      }
+     ],
+     "ids": [
+      "alto, cultus and stonic could get cheaper after fed removal",
+      "haval h6, suzuki alto, kia sorento prices in pakistan amid new auto policy 2026-2031",
+      "pakistan auto policy: suzuki, honda, toyota and kia cars new expected prices",
+      "suzuki alto, cultus, kia stonic price update under auto policy 2026-31",
+      "suzuki alto, haval h6 expected prices in pakistan after new auto policy 2026–2031",
+      "suzuki cultus among cars expected to get cheaper under new policy",
+      "vehicle prices may drop under proposed auto policy 2026–31",
+      "what if your suzuki mehran gets in an accident? here’s what parts cost",
+      "which cars will become cheaper in pakistan after new auto policy 2026–31?"
+     ]
+    }
+   }
   },
   {
    "brand": "Suzuki",
@@ -2072,7 +6019,108 @@ const DATA = {
      "sourceName": "suzukipakistan.com",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "engine": {
+     "value": "1,462 cc, 4-cylinder petrol: K15B (GL) / K15C (GLX)",
+     "source": "https://suzukipakistan.com/api/media/file/Fronx%20Brochure%2017%20Sept%2026%20LR.pdf",
+     "official": true
+    },
+    "power": {
+     "value": "77 kW @ 6,000 rpm (K15B) / 74 kW @ 6,000 rpm (K15C)",
+     "source": "https://suzukipakistan.com/api/media/file/Fronx%20Brochure%2017%20Sept%2026%20LR.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "138 Nm @ 4,400 rpm (K15B) / 135 Nm @ 4,400 rpm (K15C)",
+     "source": "https://suzukipakistan.com/api/media/file/Fronx%20Brochure%2017%20Sept%2026%20LR.pdf",
+     "official": true
+    },
+    "transmission": {
+     "value": "5-speed manual or 4-speed auto (GL) / 6-speed auto (GLX)",
+     "source": "https://suzukipakistan.com/api/media/file/Fronx%20Brochure%2017%20Sept%2026%20LR.pdf",
+     "official": true
+    },
+    "seats": {
+     "value": "5",
+     "source": "https://suzukipakistan.com/api/media/file/Fronx%20Brochure%2017%20Sept%2026%20LR.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "3,995 mm",
+     "source": "https://suzukipakistan.com/api/media/file/Fronx%20Brochure%2017%20Sept%2026%20LR.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1,765 mm",
+     "source": "https://suzukipakistan.com/api/media/file/Fronx%20Brochure%2017%20Sept%2026%20LR.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1,550 mm",
+     "source": "https://suzukipakistan.com/api/media/file/Fronx%20Brochure%2017%20Sept%2026%20LR.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,520 mm",
+     "source": "https://suzukipakistan.com/api/media/file/Fronx%20Brochure%2017%20Sept%2026%20LR.pdf",
+     "official": true
+    },
+    "groundClearance": {
+     "value": "170 mm",
+     "source": "https://suzukipakistan.com/api/media/file/Fronx%20Brochure%2017%20Sept%2026%20LR.pdf",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "37 L",
+     "source": "https://suzukipakistan.com/api/media/file/Fronx%20Brochure%2017%20Sept%2026%20LR.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "6 airbags",
+     "source": "https://suzukipakistan.com/products/automobiles/fronx",
+     "official": true
+    },
+    "battery": {
+     "value": "Mild hybrid: 12 V Li-ion, 10 Ah (GLX Hybrid)",
+     "source": "https://suzukipakistan.com/api/media/file/Fronx%20Brochure%2017%20Sept%2026%20LR.pdf",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 10,
+     "examples": [
+      {
+       "title": "Pakistan October 2026: Suzuki Alto and Swift at record highs, market up 40.9% - Best Selling Cars Blog",
+       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNZzR2WVY2aDBvenJKSmpFQWVPTTZ1YUZVQTBsWE53cUU1UTZEY05QTFoxTnkyV1FvV2xhWF95YllkRU1TaTAyOWEzcmh2a0xwYVBBVmdYbmJkM2ZqNVpOWkdCRlpSODUtNDFuSkRCUnFzaG82clFvbV9UZ1JfU2JPbE9ScGNtOGxXWnBCMjl6ckZiSW5Za3h3ZVlmMWxyZDdYc1ZpVlI0Znhtei16NEczRm44X0ZaZw?oc=5",
+       "date": "Fri, 13 Nov 2026 03:03:46 GMT"
+      },
+      {
+       "title": "Auto sales surge 60% YoY in October - Mettis Global",
+       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE03cGE4YVRTRmZxY3ZIWFNsOUdVQi1fSGFYSG1obDA3eUxWQTlxdHo1RmtNMGZhaXhIOEZrcHk1bG1JWUxCS1hoVm9jajNZaWpUMU5manBoa3g2WFdHclQ2N0dNX1A4QlNNNnE0Y21MQmJ2RERP?oc=5",
+       "date": "Thu, 12 Nov 2026 10:48:00 GMT"
+      },
+      {
+       "title": "Suzuki Fronx Launches in Pakistan With PKR 6.8M Price Tag: Think Twice Before Buying It - TechJuice",
+       "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQRGc0YUNMM2ZndmdBZE9jNzk0eFZxNGFaY3ZOazQ2U1UwLW4yR3cyb2hsTGdvZzZYWmtKMi1vZUhRNzFOUFB6cW1kdXlJcDNkeWJDWTRCUlBSd1hOY0E0YmtHNnc3NVBQRzk1TlFEbV9mNDF6a2Z4RDlJMlk3cXJGNUc2dUR1ejRPdWRxTjlLVjVlcXJXenNydnBEZmFoNzBzU2owQ0p6Yi1pMkpPSENWUXpzQldnMDFIc2UwdzNSZlExVkx0UGMyZ1RvMVJobGsxRVA5eVJzcw?oc=5",
+       "date": "Fri, 13 Nov 2026 15:35:42 GMT"
+      }
+     ],
+     "ids": [
+      "5 petrol suvs under rs 10 lakh to buy this diwali",
+      "auto sales surge 60% yoy in october",
+      "cda and dha to jointly develop three islamabad sectors",
+      "deaf reach golf event concludes",
+      "pakistan auto sales jump 63%",
+      "pakistan car sales jump 63% in october 2026",
+      "pakistan october 2026: suzuki alto and swift at record highs, market up 40.9%",
+      "suzuki fronx launches in pakistan with pkr 6.8m price tag: think twice before buying it",
+      "top 10 best-selling cars in october 2026: maruti suzuki wagon r, tata nexon and more",
+      "why do modern cars have 6, 7 or even 10 airbags"
+     ]
+    }
+   }
   },
   {
    "brand": "Suzuki",
@@ -2132,7 +6180,104 @@ const DATA = {
      "sourceName": "suzukipakistan.com",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "engine": {
+     "value": "1,197 cc petrol (K12M, DOHC 16-valve VVT)",
+     "source": "https://suzukipakistan.com/api/media/file/Swift%20Brochure.pdf",
+     "official": true
+    },
+    "power": {
+     "value": "61 kW @ 6,000 rpm",
+     "source": "https://suzukipakistan.com/api/media/file/Swift%20Brochure.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "113 Nm @ 4,200 rpm",
+     "source": "https://suzukipakistan.com/api/media/file/Swift%20Brochure.pdf",
+     "official": true
+    },
+    "transmission": {
+     "value": "5-speed manual (GL) / CVT (GL CVT, GLX CVT)",
+     "source": "https://suzukipakistan.com/api/media/file/Swift%20Brochure.pdf",
+     "official": true
+    },
+    "seats": {
+     "value": "5",
+     "source": "https://suzukipakistan.com/api/media/file/Swift%20Brochure.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "3,845 mm",
+     "source": "https://suzukipakistan.com/api/media/file/Swift%20Brochure.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1,735 mm",
+     "source": "https://suzukipakistan.com/api/media/file/Swift%20Brochure.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1,520 mm",
+     "source": "https://suzukipakistan.com/api/media/file/Swift%20Brochure.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,450 mm",
+     "source": "https://suzukipakistan.com/api/media/file/Swift%20Brochure.pdf",
+     "official": true
+    },
+    "groundClearance": {
+     "value": "160 mm",
+     "source": "https://suzukipakistan.com/api/media/file/Swift%20Brochure.pdf",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "37 L",
+     "source": "https://suzukipakistan.com/api/media/file/Swift%20Brochure.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "6 airbags",
+     "source": "https://suzukipakistan.com/api/media/file/Swift%20Brochure.pdf",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 11,
+     "examples": [
+      {
+       "title": "Pakistan October 2026: Suzuki Alto and Swift at record highs, market up 40.9% - Best Selling Cars Blog",
+       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNZzR2WVY2aDBvenJKSmpFQWVPTTZ1YUZVQTBsWE53cUU1UTZEY05QTFoxTnkyV1FvV2xhWF95YllkRU1TaTAyOWEzcmh2a0xwYVBBVmdYbmJkM2ZqNVpOWkdCRlpSODUtNDFuSkRCUnFzaG82clFvbV9UZ1JfU2JPbE9ScGNtOGxXWnBCMjl6ckZiSW5Za3h3ZVlmMWxyZDdYc1ZpVlI0Znhtei16NEczRm44X0ZaZw?oc=5",
+       "date": "Fri, 13 Nov 2026 03:03:46 GMT"
+      },
+      {
+       "title": "Small-car sales more than double in Pakistan amid Iran war fuel price shock - Arab News PK",
+       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQSy1uUHRaaGJfZnZlNlhhcHFpV18zZWZMMFczTm5mMkpOV2JQdHZtNHZUOE9wWWJ0WHZ2eENrZnQ3TW5oSWdxZTBzUWxvU1drZVJVdEpzX25tVjFicEtUejFpU3FMUUZMRzZFeHlYMnBYdjRyZS1XZUhuaEtFMkVRaGh4Q1BjcjR3WWx2VkNfa25PM3dHVmJpdWI0aE1TRGsxTDJrXzg0SHE5VmxtbWRjR0xXMG1nZXM?oc=5",
+       "date": "Sat, 14 Nov 2026 03:41:30 GMT"
+      },
+      {
+       "title": "Pakistan Auto Policy Reportedly Approved with Focus on Cheaper Cars and EVs - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE93RzlsZURyVFNMbzY2XzExcTZNSzE4WnYxay1hNjQxTjVNMnZ2MUFCOC05cHdkWjduT1VxMl9vLXNVQlNLWVdVeU1yOFdCS2prTlpZNjBJSUY1bG5hQThMcjFUWVFvS0Q3Z2p6M056bEphaWFNV1NQY192ZHAtZw?oc=5",
+       "date": "Sat, 07 Nov 2026 13:26:57 GMT"
+      }
+     ],
+     "ids": [
+      "chery q ev finally arrives in pakistan for deliveries",
+      "pakistan auto policy reportedly approved with focus on cheaper cars and evs",
+      "pakistan auto sales jump 63%",
+      "pakistan car sales jump 63% in october 2026",
+      "pakistan october 2026: suzuki alto and swift at record highs, market up 40.9%",
+      "small-car sales more than double in pakistan amid iran war fuel price shock",
+      "suzuki swift gl cvt three-year islamic installment plan for november 2026 unveiled",
+      "suzuki swift vs chery q: which has lower running costs?",
+      "suzuki swift vs chery q: which is cheaper to own?",
+      "why do modern cars have 6, 7 or even 10 airbags",
+      "why modern cars feature multiple airbags"
+     ]
+    }
+   }
   },
   {
    "brand": "Tank",
@@ -2156,7 +6301,111 @@ const DATA = {
      "sourceName": "gwm-pakistan.com",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "engine": {
+     "value": "2.0T HEV / 2.0T PHEV",
+     "source": "https://storage.googleapis.com/havalimages/images/Sazgarautos/Corporate%20Session/TANK%20500%20Brochure%20(1).pdf",
+     "official": true
+    },
+    "power": {
+     "value": "342 HP Combined (HEV) / 402 HP Combined (PHEV)",
+     "source": "https://storage.googleapis.com/havalimages/images/Sazgarautos/Corporate%20Session/TANK%20500%20Brochure%20(1).pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "648 NM Combined (HEV) / 750 NM Combined (PHEV)",
+     "source": "https://storage.googleapis.com/havalimages/images/Sazgarautos/Corporate%20Session/TANK%20500%20Brochure%20(1).pdf",
+     "official": true
+    },
+    "transmission": {
+     "value": "9-Speed Hybrid Automatic Transmission (9HAT); 4x4 (HEV) / Hi4-T 4x4 (PHEV)",
+     "source": "https://storage.googleapis.com/havalimages/images/Sazgarautos/Corporate%20Session/TANK%20500%20Brochure%20(1).pdf",
+     "official": true
+    },
+    "fuelEconomy": {
+     "value": "HEV 8.5L/100km (NEDC); PHEV 2.1L/100km (NEDC), low-charge 8.4L/100km (NEDC)",
+     "source": "https://storage.googleapis.com/havalimages/images/Sazgarautos/Corporate%20Session/TANK%20500%20Brochure%20(1).pdf",
+     "official": true
+    },
+    "seats": {
+     "value": "7 (HEV) / 5 (PHEV)",
+     "source": "https://storage.googleapis.com/havalimages/images/Sazgarautos/Corporate%20Session/TANK%20500%20Brochure%20(1).pdf",
+     "official": true
+    },
+    "length": {
+     "value": "5078 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/Sazgarautos/Corporate%20Session/TANK%20500%20Brochure%20(1).pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1934 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/Sazgarautos/Corporate%20Session/TANK%20500%20Brochure%20(1).pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1905 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/Sazgarautos/Corporate%20Session/TANK%20500%20Brochure%20(1).pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2850 mm",
+     "source": "https://storage.googleapis.com/havalimages/images/Sazgarautos/Corporate%20Session/TANK%20500%20Brochure%20(1).pdf",
+     "official": true
+    },
+    "groundClearance": {
+     "value": "224 mm (HEV) / 213 mm (PHEV)",
+     "source": "https://storage.googleapis.com/havalimages/images/Sazgarautos/Corporate%20Session/TANK%20500%20Brochure%20(1).pdf",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "80 L (HEV) / 70 L (PHEV)",
+     "source": "https://storage.googleapis.com/havalimages/images/Sazgarautos/Corporate%20Session/TANK%20500%20Brochure%20(1).pdf",
+     "official": true
+    },
+    "battery": {
+     "value": "1.76 kWh (HEV) / 37.11 kWh (PHEV)",
+     "source": "https://storage.googleapis.com/havalimages/images/Sazgarautos/Corporate%20Session/TANK%20500%20Brochure%20(1).pdf",
+     "official": true
+    },
+    "electricRange": {
+     "value": "PHEV 120 km (NEDC); combined 950 km",
+     "source": "https://storage.googleapis.com/havalimages/images/Sazgarautos/Corporate%20Session/TANK%20500%20Brochure%20(1).pdf",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 8,
+     "examples": [
+      {
+       "title": "What If Your TANK 500 PHEV Gets in an Accident? Here’s What Parts Cost - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPd0pXdjlYby1hT01FT1Q2WFlwYVpNb1czLU9fcHBaTGpVa2NneTFPQ3JsWkIxYzY2V1N6UVo5ZlY1Q0ExdWdYQmIzWHFqTVNNcFpncmRYeFVfeVphc3JyQ19qWTB2WVBZdUhvei04czd1dFl5YU5ielBidW94QnVuOXRYYlUtSDZkSl9tU0swS2FhNnlYYkVKOWJob2RsRUZfUFE?oc=5",
+       "date": "Tue, 10 Nov 2026 13:45:42 GMT"
+      },
+      {
+       "title": "GWM On Wheels Hits Islamabad Today: Here’s What You Can Experience - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1BdjRXQzI3UU5tRV9kcFQ1bGtianVKX1RUX05ONWMxUUZqUE00WkJvV1I2bzBNaWFDNkoyWER0YVk3djA2V1lUT015aEVtVDRueUtKcW11S0NQVGU0RFFvQ3cyUUllRzBGSTZRbA?oc=5",
+       "date": "Sun, 18 Oct 2026 07:00:00 GMT"
+      },
+      {
+       "title": "Pakistan Auto Sector Profit Rises 39% to Rs. 28.4 Billion - TechJuice",
+       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPZDM3el8yaHNab1Fpa2ZwSDdkQW5ncDkzTGM1MkR5MGgtc2dwTTdVUFlYVlgyX3pDNE1wd0dDd1FudHF1eFdtQ1VvVnJDRTZNdVRwOXlhM1dZYWY1VTMyd0tyYXlkVTJoTXhKTl9VZkpOOWdnMDBXLWZsM1R0Z1E2QnFTMFNUVW9i?oc=5",
+       "date": "Wed, 11 Nov 2026 13:56:19 GMT"
+      }
+     ],
+     "ids": [
+      "10 phevs with the longest electric range in pakistan (2026)",
+      "gwm on wheels hits islamabad today: here’s what you can experience",
+      "icaur v27 first drive: lc200 rival or just a lookalike?",
+      "pakistan auto sector profit rises 39% to rs. 28.4 billion",
+      "pakistan’s car investment bubble is facing a reality check",
+      "phev and reev sales tax set at 9% and 6% in presented auto policy, pending imf approval",
+      "plug-in hybrid cars in pakistan 2026: prices & specs",
+      "what if your tank 500 phev gets in an accident? here’s what parts cost"
+     ]
+    }
+   }
   },
   {
    "brand": "Toyota",
@@ -2180,7 +6429,84 @@ const DATA = {
      "sourceName": "toyota-indus.com",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "engine": {
+     "value": "2,487 cc, 4-cylinder petrol hybrid (A25A-FXS)",
+     "source": "https://toyota-indus.com/wp-content/uploads/2026/04/Camry-HEV-FMC-Spec-Sheet.pdf",
+     "official": true
+    },
+    "power": {
+     "value": "Engine 137 kW @ 6,000 rpm; motor 100 kW",
+     "source": "https://toyota-indus.com/wp-content/uploads/2026/04/Camry-HEV-FMC-Spec-Sheet.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "221 Nm @ 3,600 rpm (engine)",
+     "source": "https://toyota-indus.com/wp-content/uploads/2026/04/Camry-HEV-FMC-Spec-Sheet.pdf",
+     "official": true
+    },
+    "seats": {
+     "value": "5",
+     "source": "https://toyota-indus.com/wp-content/uploads/2026/04/Camry-HEV-FMC-Spec-Sheet.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4,920 mm",
+     "source": "https://toyota-indus.com/wp-content/uploads/2026/04/Camry-HEV-FMC-Spec-Sheet.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1,840 mm",
+     "source": "https://toyota-indus.com/wp-content/uploads/2026/04/Camry-HEV-FMC-Spec-Sheet.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1,455 mm",
+     "source": "https://toyota-indus.com/wp-content/uploads/2026/04/Camry-HEV-FMC-Spec-Sheet.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,825 mm",
+     "source": "https://toyota-indus.com/wp-content/uploads/2026/04/Camry-HEV-FMC-Spec-Sheet.pdf",
+     "official": true
+    },
+    "groundClearance": {
+     "value": "145 mm",
+     "source": "https://toyota-indus.com/wp-content/uploads/2026/04/Camry-HEV-FMC-Spec-Sheet.pdf",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "50 L",
+     "source": "https://toyota-indus.com/wp-content/uploads/2026/04/Camry-HEV-FMC-Spec-Sheet.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "6 airbags",
+     "source": "https://toyota-indus.com/wp-content/uploads/2026/04/Camry-HEV-FMC-Spec-Sheet.pdf",
+     "official": true
+    },
+    "battery": {
+     "value": "Lithium-ion, 251.6 V",
+     "source": "https://toyota-indus.com/wp-content/uploads/2026/04/Camry-HEV-FMC-Spec-Sheet.pdf",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 1,
+     "examples": [
+      {
+       "title": "Toyotas Family Cars See Strong Sales in October 2026 - Udaipur Kiran",
+       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOYk5JdmJjVnQ3Y3JCTE5jRko0SVpfTjhVRlh2Y2ZsMWZzdHVjMkRhNF9IZDBDd0pJVDhWZUlHS0JTRFE5OFduNC1LNDVVZEROTXI2ckF1WGNXRjdoRTgxQklvbFdudnQ1S2hxVm92bG0yMV9VY3UySF95amNjMDFSMlhqYTI?oc=5",
+       "date": "Sat, 14 Nov 2026 03:35:24 GMT"
+      }
+     ],
+     "ids": [
+      "toyotas family cars see strong sales in october 2026"
+     ]
+    }
+   }
   },
   {
    "brand": "Toyota",
@@ -2264,7 +6590,94 @@ const DATA = {
      "sourceName": "toyota-indus.com",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "engine": {
+     "value": "1,598 cc (1.6) / 1,798 cc (1.8), 4-cylinder petrol",
+     "source": "https://toyota-indus.com/wp-content/uploads/2026/10/Toyota-X-Brochure-New.pdf",
+     "official": true
+    },
+    "power": {
+     "value": "120 hp @ 6,000 rpm (1.6) / 138 hp @ 6,400 rpm (1.8)",
+     "source": "https://toyota-indus.com/corolla/",
+     "official": true
+    },
+    "torque": {
+     "value": "154 Nm @ 5,200 rpm (1.6) / 173 Nm @ 4,000 rpm (1.8)",
+     "source": "https://toyota-indus.com/corolla/",
+     "official": true
+    },
+    "transmission": {
+     "value": "6-speed manual (1.6 MT) / 7-speed CVT-i (other variants)",
+     "source": "https://toyota-indus.com/corolla/",
+     "official": true
+    },
+    "length": {
+     "value": "4,685 mm",
+     "source": "https://toyota-indus.com/wp-content/uploads/2026/10/Toyota-X-Brochure-New.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1,775 mm",
+     "source": "https://toyota-indus.com/wp-content/uploads/2026/10/Toyota-X-Brochure-New.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1,475 mm",
+     "source": "https://toyota-indus.com/wp-content/uploads/2026/10/Toyota-X-Brochure-New.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,700 mm",
+     "source": "https://toyota-indus.com/wp-content/uploads/2026/10/Toyota-X-Brochure-New.pdf",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "55 L",
+     "source": "https://toyota-indus.com/wp-content/uploads/2026/10/Toyota-X-Brochure-New.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "Dual front airbags",
+     "source": "https://toyota-indus.com/wp-content/uploads/2026/10/Toyota-X-Brochure-New.pdf",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 11,
+     "examples": [
+      {
+       "title": "Pakistan October 2026: Suzuki Alto and Swift at record highs, market up 40.9% - Best Selling Cars Blog",
+       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNZzR2WVY2aDBvenJKSmpFQWVPTTZ1YUZVQTBsWE53cUU1UTZEY05QTFoxTnkyV1FvV2xhWF95YllkRU1TaTAyOWEzcmh2a0xwYVBBVmdYbmJkM2ZqNVpOWkdCRlpSODUtNDFuSkRCUnFzaG82clFvbV9UZ1JfU2JPbE9ScGNtOGxXWnBCMjl6ckZiSW5Za3h3ZVlmMWxyZDdYc1ZpVlI0Znhtei16NEczRm44X0ZaZw?oc=5",
+       "date": "Fri, 13 Nov 2026 03:03:46 GMT"
+      },
+      {
+       "title": "Toyota Corolla emerges as the most popular car of Pakistan - Business Recorder",
+       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOZF9ScXZoa3I3NkFhVHJfYW0tUU1KeVVLMVlOdVNQWUU1ZXNZakdVQlRUYTBjOEdaWHN1NnhUZ3FtQVBmUmd4TGNLdVp2ekNvazJSVDB5VVpnVHA4eDVndnZfMUt5akVIQVpTV3JKTUNaOWxhM3dlc09uR1F4UXJyeUVNQ09nNHdudGZvU1VtYnlHQ3VXSWFXQ2Zva2vSAVNBVV95cUxNTVhnVTJKWjFJc1pKUHEtNWdISWQ2SzFreEdtMndnR25JNlBSYmtncUNCSElLZTB2aTVJODNOZmNjc1JuUk5wMnhNTmV1bGZDd1BmOA?oc=5",
+       "date": "Tue, 20 Oct 2026 07:00:00 GMT"
+      },
+      {
+       "title": "Toyota and Honda Sales Decline Despite 41% YoY Jump in Pakistan Car Market - ProPakistani",
+       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPUjdjWF9ZSm9mY1NYNHl0a3V6Q3k5OGxJMjF6MXpTX2pfMkdUSDRuamM4aE5VdmZjdmpPbUxHeXhLNzVrZERsOHJkWmxhd0JvUjI0dHh5dTk1Yl9zQmwyZllSYkg1aUg2VG41c0ZUdmViNy1weDJxWlo4c1pHRzN2aFp6azZWQjJqRW5seFVYU2Y4NmdxUWNLSHlVTXNIWUd5dzVDUU9BQjB4OGdBZFHSAbMBQVVfeXFMTjBDTGhNeFRkNXdXcHFrcS1WRWM1Sl9WNlhZN3A3VmlTZ2xPU1JtWkZVNU9uUVM1MzlxWDdfMFFkcFBpRzFQWnpSMWttM1M4VE1Ha3JrYTF3RnFpLWg0V0FVMVNocUc2UmRrdGhxbVZGV3hpZUlTQ1NUdzBGU3ozSDBxMExXYkZSaU8zblVYTFZlLVpNVmZsSU40ZldPTHBlV0l6Q044Wk5BQy1ZVzBfU3JjTFU?oc=5",
+       "date": "Thu, 12 Nov 2026 18:13:28 GMT"
+      }
+     ],
+     "ids": [
+      "auto policy draft proposes removing fed on cars up to 1000cc",
+      "pakistan auto policy 2026–31: evs vs hybrids",
+      "pakistan auto policy reportedly approved with focus on cheaper cars and evs",
+      "pakistan auto policy: suzuki, honda, toyota and kia cars new expected prices",
+      "pakistan car sales jump 63% in october 2026",
+      "pakistan october 2026: suzuki alto and swift at record highs, market up 40.9%",
+      "petrol cars could still dominate in 2035, sema report predicts",
+      "plug-in hybrid cars in pakistan 2026: prices & specs",
+      "street fighter, but every fighter is a pakistani car",
+      "toyota and honda sales decline despite 41% yoy jump in pakistan car market",
+      "toyota corolla emerges as the most popular car of pakistan"
+     ]
+    }
+   }
   },
   {
    "brand": "Toyota",
@@ -2325,7 +6738,96 @@ const DATA = {
      "sourceName": "toyota-indus.com",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "engine": {
+     "value": "1,798 cc petrol: hybrid (2ZR-FXE) on HEV, petrol (2ZR-FE) on 1.8",
+     "source": "https://toyota-indus.com/wp-content/uploads/2024/03/Specs-Sheet-Final-4-Variants-CP-YQ.pdf",
+     "official": true
+    },
+    "power": {
+     "value": "Engine 72 kW + motor 53 kW (HEV) / 103 kW @ 6,400 rpm (petrol)",
+     "source": "https://toyota-indus.com/wp-content/uploads/2024/03/Specs-Sheet-Final-4-Variants-CP-YQ.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "Engine 142 Nm + motor 163 Nm (HEV) / 172 Nm @ 4,000 rpm (petrol)",
+     "source": "https://toyota-indus.com/wp-content/uploads/2024/03/Specs-Sheet-Final-4-Variants-CP-YQ.pdf",
+     "official": true
+    },
+    "transmission": {
+     "value": "CVT",
+     "source": "https://toyota-indus.com/wp-content/uploads/2024/03/Specs-Sheet-Final-4-Variants-CP-YQ.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4,460 mm",
+     "source": "https://toyota-indus.com/wp-content/uploads/2024/03/Specs-Sheet-Final-4-Variants-CP-YQ.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1,825 mm",
+     "source": "https://toyota-indus.com/wp-content/uploads/2024/03/Specs-Sheet-Final-4-Variants-CP-YQ.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1,620 mm",
+     "source": "https://toyota-indus.com/wp-content/uploads/2024/03/Specs-Sheet-Final-4-Variants-CP-YQ.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,640 mm",
+     "source": "https://toyota-indus.com/wp-content/uploads/2024/03/Specs-Sheet-Final-4-Variants-CP-YQ.pdf",
+     "official": true
+    },
+    "groundClearance": {
+     "value": "161 mm",
+     "source": "https://toyota-indus.com/wp-content/uploads/2024/03/Specs-Sheet-Final-4-Variants-CP-YQ.pdf",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "36 L (HEV) / 47 L (petrol)",
+     "source": "https://toyota-indus.com/wp-content/uploads/2024/03/Specs-Sheet-Final-4-Variants-CP-YQ.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "7 airbags",
+     "source": "https://toyota-indus.com/wp-content/uploads/2024/03/Specs-Sheet-Final-4-Variants-CP-YQ.pdf",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 8,
+     "examples": [
+      {
+       "title": "Pakistan October 2026: Suzuki Alto and Swift at record highs, market up 40.9% - Best Selling Cars Blog",
+       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNZzR2WVY2aDBvenJKSmpFQWVPTTZ1YUZVQTBsWE53cUU1UTZEY05QTFoxTnkyV1FvV2xhWF95YllkRU1TaTAyOWEzcmh2a0xwYVBBVmdYbmJkM2ZqNVpOWkdCRlpSODUtNDFuSkRCUnFzaG82clFvbV9UZ1JfU2JPbE9ScGNtOGxXWnBCMjl6ckZiSW5Za3h3ZVlmMWxyZDdYc1ZpVlI0Znhtei16NEczRm44X0ZaZw?oc=5",
+       "date": "Fri, 13 Nov 2026 03:03:46 GMT"
+      },
+      {
+       "title": "Next-Gen 2028 Toyota Corolla Imagined Inside and Out, Is It an Upgrade or a Downgrade? - autoevolution",
+       "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQMlZFMkY2NU54T2hqUWFXVllXV3owZERRVVo5aldDMk5NQWhSOHMtZlItMkhtM2E5ZGVUSWpfajBpbVdpV1ZwNmRYaXRHRUlkTWZEZXM0bTA5c194MTl4NV81eDFZVHpneVlxRXJ2cjlQc2QtaXJtbTBDMHpTOFFzRnpsQWxpYmhKLURWOFNtOFo4Q19tLXFFSGFRVEwzOVVHOEp5UEFrbEpIZzdfZnFSdGlPZW0yaE1DSm9FUEVEajJLZmdBZlZtS3lycw?oc=5",
+       "date": "Sun, 15 Nov 2026 02:40:01 GMT"
+      },
+      {
+       "title": "Petrol Cars Could Still Dominate in 2035, SEMA Report Predicts - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9xaGtyMWJ4SGFUYzZSV04tQzlBcVBWNC1zcVRDX2l6SlNxdzNkbXJGRk9NVjBGU0JqNThhTzZzVDhTQ3Y1ZExxaHZTZzVIN1gzcGxnWU1EV1M4WktOd2ExR0hVQnhidWpaLWJTWGxDYw?oc=5",
+       "date": "Tue, 03 Nov 2026 08:01:55 GMT"
+      }
+     ],
+     "ids": [
+      "automart: car prices in karachi",
+      "next-gen 2028 toyota corolla imagined inside and out, is it an upgrade or a downgrade?",
+      "pakistan auto policy 2026–31: evs vs hybrids",
+      "pakistan october 2026: suzuki alto and swift at record highs, market up 40.9%",
+      "petrol cars could still dominate in 2035, sema report predicts",
+      "toyota builds one platform for hybrids, phevs and evs",
+      "toyota corolla cross: where space, pace and practicality meet",
+      "why do modern cars have 6, 7 or even 10 airbags"
+     ]
+    }
+   }
   },
   {
    "brand": "Toyota",
@@ -2398,7 +6900,97 @@ const DATA = {
      "sourceName": "toyota-indus.com",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "engine": {
+     "value": "2,755 cc 4-cyl diesel (GR-S, Legender, Sigma 4) / 2,694 cc 4-cyl petrol (V, G)",
+     "source": "https://toyota-indus.com/wp-content/uploads/2025/07/Frotuner-Specs-Sheet-v6-new.pdf",
+     "official": true
+    },
+    "power": {
+     "value": "150 kW @ 3,000–3,400 rpm (diesel) / 122 kW @ 5,200 rpm (petrol)",
+     "source": "https://toyota-indus.com/wp-content/uploads/2025/07/Frotuner-Specs-Sheet-v6-new.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "500 Nm @ 1,600–2,800 rpm (diesel) / 245 Nm @ 4,000 rpm (petrol)",
+     "source": "https://toyota-indus.com/wp-content/uploads/2025/07/Frotuner-Specs-Sheet-v6-new.pdf",
+     "official": true
+    },
+    "transmission": {
+     "value": "6-speed automatic with paddle shifters",
+     "source": "https://toyota-indus.com/wp-content/uploads/2025/07/Frotuner-Specs-Sheet-v6-new.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4,795 mm",
+     "source": "https://toyota-indus.com/wp-content/uploads/2025/07/Frotuner-Specs-Sheet-v6-new.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1,855 mm",
+     "source": "https://toyota-indus.com/wp-content/uploads/2025/07/Frotuner-Specs-Sheet-v6-new.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1,835 mm",
+     "source": "https://toyota-indus.com/wp-content/uploads/2025/07/Frotuner-Specs-Sheet-v6-new.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,745 mm",
+     "source": "https://toyota-indus.com/wp-content/uploads/2025/07/Frotuner-Specs-Sheet-v6-new.pdf",
+     "official": true
+    },
+    "groundClearance": {
+     "value": "279 mm",
+     "source": "https://toyota-indus.com/wp-content/uploads/2025/07/Frotuner-Specs-Sheet-v6-new.pdf",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "80 L",
+     "source": "https://toyota-indus.com/wp-content/uploads/2025/07/Frotuner-Specs-Sheet-v6-new.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "Dual front + driver knee",
+     "source": "https://toyota-indus.com/wp-content/uploads/2025/07/Frotuner-Specs-Sheet-v6-new.pdf",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 9,
+     "examples": [
+      {
+       "title": "Pakistan October 2026: Suzuki Alto and Swift at record highs, market up 40.9% - Best Selling Cars Blog",
+       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNZzR2WVY2aDBvenJKSmpFQWVPTTZ1YUZVQTBsWE53cUU1UTZEY05QTFoxTnkyV1FvV2xhWF95YllkRU1TaTAyOWEzcmh2a0xwYVBBVmdYbmJkM2ZqNVpOWkdCRlpSODUtNDFuSkRCUnFzaG82clFvbV9UZ1JfU2JPbE9ScGNtOGxXWnBCMjl6ckZiSW5Za3h3ZVlmMWxyZDdYc1ZpVlI0Znhtei16NEczRm44X0ZaZw?oc=5",
+       "date": "Fri, 13 Nov 2026 03:03:46 GMT"
+      },
+      {
+       "title": "2027 Toyota Fortuner Global Reveal Expected for December 1 - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNMEh5OUhOWXZWVy1pYVB4clFvSnh1OUdyX25SOS0xdHQ5V1U1ZXowX3FDUlNJQ0VZc0tuOFk0UjJYOHp6dFEyOUhRRHhaZmtRd05BekdKOEhOelZTNFFMVnVyRU5mQlEzT09Mb2tNcV9QT3RubXNTRlB4NUlaTlZsNTVIcw?oc=5",
+       "date": "Thu, 22 Oct 2026 07:00:00 GMT"
+      },
+      {
+       "title": "2027 Toyota Fortuner Could Get Major Hilux-Inspired Redesign - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB4dGRQeURRS0pkbUx6NUhRZjJRaG01RE5mUi1feWt0TFlPYXo5RWRxVDRlYVY0V0oyWmFqX0J1VWM0Y2hjSE1wWDZ1NzV1WWJ6aFNVYXVfSFlxM082cjlLenNRcVJPbU9iem1B?oc=5",
+       "date": "Tue, 20 Oct 2026 07:00:00 GMT"
+      }
+     ],
+     "ids": [
+      "2027 toyota fortuner could get major hilux-inspired redesign",
+      "2027 toyota fortuner global reveal expected for december 1",
+      "ducky bhai ditches fortuner for jetour t2 idm — here’s why",
+      "pakistan auto policy: suzuki, honda, toyota and kia cars new expected prices",
+      "pakistan october 2026: suzuki alto and swift at record highs, market up 40.9%",
+      "street fighter, but every fighter is a pakistani car",
+      "toyota announces toyota fortuner delivery in just 30 days with price rs.12,435,000",
+      "which cars will become cheaper in pakistan after new auto policy 2026–31?",
+      "your car might have 10 airbags. but why?"
+     ]
+    }
+   }
   },
   {
    "brand": "Toyota",
@@ -2422,7 +7014,71 @@ const DATA = {
      "sourceName": "toyota-indus.com",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "engine": {
+     "value": "3,445 cc V6 twin-turbo petrol (V35A-FTS)",
+     "source": "https://toyota-indus.com/wp-content/uploads/2025/11/LC-300-Spec-Sheet.pdf",
+     "official": true
+    },
+    "power": {
+     "value": "305 kW @ 5,200 rpm",
+     "source": "https://toyota-indus.com/wp-content/uploads/2025/11/LC-300-Spec-Sheet.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "650 Nm @ 2,000–3,600 rpm",
+     "source": "https://toyota-indus.com/wp-content/uploads/2025/11/LC-300-Spec-Sheet.pdf",
+     "official": true
+    },
+    "transmission": {
+     "value": "10-speed automatic",
+     "source": "https://toyota-indus.com/wp-content/uploads/2025/11/LC-300-Spec-Sheet.pdf",
+     "official": true
+    },
+    "seats": {
+     "value": "7",
+     "source": "https://toyota-indus.com/wp-content/uploads/2025/11/LC-300-Spec-Sheet.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "5,030 mm",
+     "source": "https://toyota-indus.com/wp-content/uploads/2025/11/LC-300-Spec-Sheet.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1,980 mm",
+     "source": "https://toyota-indus.com/wp-content/uploads/2025/11/LC-300-Spec-Sheet.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1,960 mm",
+     "source": "https://toyota-indus.com/wp-content/uploads/2025/11/LC-300-Spec-Sheet.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,850 mm",
+     "source": "https://toyota-indus.com/wp-content/uploads/2025/11/LC-300-Spec-Sheet.pdf",
+     "official": true
+    },
+    "groundClearance": {
+     "value": "240 mm",
+     "source": "https://toyota-indus.com/wp-content/uploads/2025/11/LC-300-Spec-Sheet.pdf",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "110 L",
+     "source": "https://toyota-indus.com/wp-content/uploads/2025/11/LC-300-Spec-Sheet.pdf",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 0,
+     "examples": [],
+     "ids": []
+    }
+   }
   },
   {
    "brand": "Toyota",
@@ -2471,7 +7127,85 @@ const DATA = {
      "sourceName": "toyota-indus.com",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "engine": {
+     "value": "2,755 cc 4-cyl diesel (2.8L) / 2,694 cc 4-cyl petrol (2.7L)",
+     "source": "https://toyota-indus.com/wp-content/uploads/2026/04/LC250-Spec-Sheet.pdf",
+     "official": true
+    },
+    "power": {
+     "value": "150 kW (diesel) / 122 kW @ 5,200 rpm (petrol)",
+     "source": "https://toyota-indus.com/wp-content/uploads/2026/04/LC250-Spec-Sheet.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "500 Nm (diesel) / 246 Nm @ 3,900 rpm (petrol)",
+     "source": "https://toyota-indus.com/wp-content/uploads/2026/04/LC250-Spec-Sheet.pdf",
+     "official": true
+    },
+    "transmission": {
+     "value": "8-speed automatic (diesel) / 6-speed automatic (petrol)",
+     "source": "https://toyota-indus.com/wp-content/uploads/2026/04/LC250-Spec-Sheet.pdf",
+     "official": true
+    },
+    "seats": {
+     "value": "7 (diesel, petrol 7-seater) / 5 (petrol 5-seater)",
+     "source": "https://toyota-indus.com/wp-content/uploads/2026/04/LC250-Spec-Sheet.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4,925 mm",
+     "source": "https://toyota-indus.com/wp-content/uploads/2026/04/LC250-Spec-Sheet.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1,980 mm (diesel) / 1,940 mm (petrol)",
+     "source": "https://toyota-indus.com/wp-content/uploads/2026/04/LC250-Spec-Sheet.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1,935 mm (diesel) / 1,925 mm (petrol)",
+     "source": "https://toyota-indus.com/wp-content/uploads/2026/04/LC250-Spec-Sheet.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,850 mm",
+     "source": "https://toyota-indus.com/wp-content/uploads/2026/04/LC250-Spec-Sheet.pdf",
+     "official": true
+    },
+    "groundClearance": {
+     "value": "215 mm (diesel) / 205 mm (petrol)",
+     "source": "https://toyota-indus.com/wp-content/uploads/2026/04/LC250-Spec-Sheet.pdf",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "80 L",
+     "source": "https://toyota-indus.com/wp-content/uploads/2026/04/LC250-Spec-Sheet.pdf",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 2,
+     "examples": [
+      {
+       "title": "Pakistan to receive J-35 - India will have to decide: wait for AMCA or take Su-57 - www1.ru",
+       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPb29PMWJwRXFXNUg4U3dhN1cwcmpoRVpldG5WclJLR2hsUXNqMnYtSU9YeWpuYnl1Mkh1NjB2NFcxdVJ0UTFaRjAzY1pwYnEwMXRaWHFlTGxVY3RQRVFFSDJGMWFpaTRySXZFSHhzZUVocVRpYjBfQUtjRF9UMFRCbDEtNWRMN0VIZmZyT042MUx5NFRCSF9leTF0VThLcFI1Y0xtYWZkX0tvdU9E0gGyAUFVX3lxTE9Bc1NjYUx3V2hJYmlCcVRXdmR2XzV0Y3NCTVN4b1QwUlRXdVo3U1BUWXhmVkdRekpOQ2Fvd3ZZaXpFZ3A2aDNwQlpxV3pjUDczQzF0RmVBdXVvaUQwVTU0TUdlN0FDOFQ2VE1aNTNfZWNXbnVHcHVaVndqV2g1a0w2djZyVHpDQXNPTzU2eklKQzRRb05BZG5XdWtkZ2R6SENvVlV1aWozSzNyZ1dOME5HdHc?oc=5",
+       "date": "Sun, 18 Oct 2026 07:00:00 GMT"
+      },
+      {
+       "title": "Maulana Fazlur Rehman’s Declared, and Benami Properties List Surfaces - Pakistan Observer",
+       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPUkVjdU1QRUJmTF9tNlFFNVMzNkRTR21NT29DcHJYOHRmN0NMMmpOeHBoMkJWZWdFNEk5aTByM1Q2SHBjYjRZMkNwSzNtZTA5MkdmNzNWTl8tT1k4S3dBNHRrWnlDNFkySDl0c09iTGJtWDhlS2t4Qy03dUhYRFkxVFlEcGFDbGJPc3hCQUl2MkNjSVEyb0xr?oc=5",
+       "date": "Sat, 31 Oct 2026 07:00:00 GMT"
+      }
+     ],
+     "ids": [
+      "maulana fazlur rehman’s declared, and benami properties list surfaces",
+      "pakistan to receive j-35 - india will have to decide: wait for amca or take su-57"
+     ]
+    }
+   }
   },
   {
    "brand": "Toyota",
@@ -2555,7 +7289,94 @@ const DATA = {
      "sourceName": "toyota-indus.com",
      "effectiveFrom": null
     }
-   ]
+   ],
+   "specs": {
+    "engine": {
+     "value": "1,329 cc (1.3L) / 1,496 cc (1.5L ATIV X), 4-cylinder petrol",
+     "source": "https://toyota-indus.com/yaris/",
+     "official": true
+    },
+    "power": {
+     "value": "98 hp @ 6,000 rpm (1.3L) / 106 hp @ 6,000 rpm (1.5L)",
+     "source": "https://toyota-indus.com/wp-content/uploads/2026/10/02-Yaris-Specs-Sheet-new.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "123 Nm @ 4,200 rpm (1.3L) / 140 Nm @ 4,200 rpm (1.5L)",
+     "source": "https://toyota-indus.com/wp-content/uploads/2026/10/02-Yaris-Specs-Sheet-new.pdf",
+     "official": true
+    },
+    "transmission": {
+     "value": "5-speed manual (MT variants) / 7-speed CVT (CVT variants)",
+     "source": "https://toyota-indus.com/wp-content/uploads/2026/10/02-Yaris-Specs-Sheet-new.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4,425 mm",
+     "source": "https://toyota-indus.com/wp-content/uploads/2026/10/02-Yaris-Specs-Sheet-new.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1,730 mm",
+     "source": "https://toyota-indus.com/wp-content/uploads/2026/10/02-Yaris-Specs-Sheet-new.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1,475 mm",
+     "source": "https://toyota-indus.com/wp-content/uploads/2026/10/02-Yaris-Specs-Sheet-new.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,550 mm",
+     "source": "https://toyota-indus.com/wp-content/uploads/2026/10/02-Yaris-Specs-Sheet-new.pdf",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "42 L",
+     "source": "https://toyota-indus.com/wp-content/uploads/2026/10/02-Yaris-Specs-Sheet-new.pdf",
+     "official": true
+    },
+    "airbags": {
+     "value": "3 airbags (driver, passenger, knee)",
+     "source": "https://toyota-indus.com/wp-content/uploads/2026/10/02-Yaris-Specs-Sheet-new.pdf",
+     "official": true
+    }
+   },
+   "buzz": {
+    "news": {
+     "count": 11,
+     "examples": [
+      {
+       "title": "Pakistan October 2026: Suzuki Alto and Swift at record highs, market up 40.9% - Best Selling Cars Blog",
+       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNZzR2WVY2aDBvenJKSmpFQWVPTTZ1YUZVQTBsWE53cUU1UTZEY05QTFoxTnkyV1FvV2xhWF95YllkRU1TaTAyOWEzcmh2a0xwYVBBVmdYbmJkM2ZqNVpOWkdCRlpSODUtNDFuSkRCUnFzaG82clFvbV9UZ1JfU2JPbE9ScGNtOGxXWnBCMjl6ckZiSW5Za3h3ZVlmMWxyZDdYc1ZpVlI0Znhtei16NEczRm44X0ZaZw?oc=5",
+       "date": "Fri, 13 Nov 2026 03:03:46 GMT"
+      },
+      {
+       "title": "Toyota Yaris Could Get Cheaper Under New Automotive Policy - ProPakistani",
+       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOUWkxdHJiRjVJU0M2TDMxSklHY1F6Z1VKRE9wN1l2alFKdmhUVHpZRDRsNTJidExwMmswWk91VUVRT2RPRmdSX3VENEw2T0pQdm8xQlM0SUxHQlpVMmFoNXc3YVJNVnZVdUZtLTZ0WklscEVWNVkyR21VVTl6MHRVbGE4MGNrYWtoV2FSTndNV3BuMXo0ZXdfd3dB0gG-AUFVX3lxTE9sZkdld1RUbUVXbzU3RzEtNlBCNi1HMm12bTNLRGpzM3VFeFR1WDZMenNwV25wOTJzTEtmYm54cldCLTFTNzZsbGVxWFFLS2Y5elAxOGdmcDZNanhVYlI4cmpuTTFWZENINjQxRklGZl9GN19NRFl5dkx4cTdMVVYxSGE3YW5BNEdSZGE2YmhyTUZfR1JwVFYxRjB0c3FEV3RoRy1RXzUtdDVDT0tXc2dYRjhyS3RLWGZaWG5kdVE?oc=5",
+       "date": "Wed, 21 Oct 2026 07:00:00 GMT"
+      },
+      {
+       "title": "Toyota Yaris vs Honda City: Which Saves More at Rs. 379.25 Petrol? - Pakwheels",
+       "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOcHV5RFI0RDJYOG9yNTVJaGpYOVZPVHFEUktfUzh4djNNVjZodnQtREdrbVJ0bXlWWHZiMk92Q2IyMWktZ0QtU0JfS3ZKbktfTFV4MGwyTElWY0EwZlJ4dWlYZU82aHdWQmpwcXhZNVZaVXhuWWpBdmdJM3FKSE0tN0RjeFp4ZWs?oc=5",
+       "date": "Tue, 27 Oct 2026 07:00:00 GMT"
+      }
+     ],
+     "ids": [
+      "buy toyota yaris old silicon key cover – protective key fob case | in pakistan",
+      "cars above 2000cc could face 10% levy under draft policy",
+      "draft auto policy 2026 proposes 20% car booking cap, price lock",
+      "here’s how much vehicle prices are expected to drop under new auto policy",
+      "pakistan auto policy: suzuki, honda, toyota and kia cars new expected prices",
+      "pakistan october 2026: suzuki alto and swift at record highs, market up 40.9%",
+      "pakistan’s new auto policy still awaits imf review",
+      "plug-in hybrid cars in pakistan 2026: prices & specs",
+      "toyota yaris could get cheaper under new automotive policy",
+      "toyota yaris vs honda city: which saves more at rs. 379.25 petrol?",
+      "which cars will become cheaper in pakistan after new auto policy 2026–31?"
+     ]
+    }
+   }
   }
  ]
 };

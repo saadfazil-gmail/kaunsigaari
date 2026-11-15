@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=DM+Sans:opsz,wght@9..40,400..700&display=swap">
-  <link rel="stylesheet" href="style.css?v=7">
+  <link rel="stylesheet" href="style.css?v=10">
 </head>
 <body>
 
@@ -50,7 +50,7 @@
       <div class="container stats4">
         <div><b id="d-sales">-</b><span id="d-sales-label">sold</span></div>
         <div><b id="d-change">-</b><span id="d-change-label">vs last month</span></div>
-        <div><b id="d-search">-</b><span>search interest</span></div>
+        <div><b id="d-search">-</b><span>buzz: mentions, last 30 days</span></div>
         <div><b id="d-variants-count">-</b><span>variants on sale</span></div>
       </div>
     </section>
@@ -71,7 +71,19 @@
           <p class="kicker">Hot Score</p>
           <div class="score-big"><b id="d-score">0</b><span>/ 100</span></div>
           <div class="meters" id="d-meters"></div>
-          <p class="panel__note">Each signal is scored 0–100, then mixed: sales 45%, growth 30%, search 25%. Signals we don’t have yet are left out and the rest scaled up. Growth counts from −30% (0) to +50% (100).</p>
+          <p class="panel__note">Each signal is scored 0–100, then mixed: sales 40%, growth 20%, search 20%, buzz 20%. Signals we don’t have yet are left out and the rest scaled up. Growth counts from −30% (0) to +50% (100).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- What people are talking about -->
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="panel">
+          <p class="kicker">Buzz · log kya keh rahe hain</p>
+          <h2 class="panel__title">What people are talking about</h2>
+          <ul class="buzz-list" id="d-buzz"></ul>
+          <p class="panel__note" id="d-buzz-src"></p>
         </div>
       </div>
     </section>
@@ -91,7 +103,7 @@
           <p class="kicker">Specs</p>
           <h2 class="panel__title">Key specs</h2>
           <dl class="specs" id="d-specs"></dl>
-          <p class="panel__note">Only what the official price list states. Fuel economy and seats are coming soon.</p>
+          <p class="panel__note" id="d-specs-src"></p>
         </div>
       </div>
     </section>
@@ -123,8 +135,8 @@
   </footer>
 
   <script src="photos.js?v=8"></script>
-  <script src="data/cars.js?v=7"></script>
-  <script src="data.js?v=7"></script>
-  <script src="car.js?v=7"></script>
+  <script src="data/cars.js?v=11"></script>
+  <script src="data.js?v=11"></script>
+  <script src="car.js?v=11"></script>
 </body>
 </html>

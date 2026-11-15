@@ -50,7 +50,14 @@ a new query string) to beat the browser cache.
 1. Get the new PAMA PDF from pama.org.pk; save its numbers as `data/raw/pama-YYYY-MM.json` (same shape
    as the last one: both months, `null` for "Awaited", `0` for "-").
 2. Re-check prices on the official sites; update or add `data/raw/prices-*.json`.
-3. Run `/usr/bin/python3 tools/build_data.py`, preview, check the numbers against the sources, commit.
+3. Refresh buzz: `/usr/bin/python3 tools/fetch_buzz.py` (writes `data/raw/buzz-YYYY-MM-DD.json`; weekly is fine).
+4. Run `/usr/bin/python3 tools/build_data.py`, preview, check the numbers against the sources, commit.
+   Ask before pushing: every push goes live.
+
+**Specs** live in `data/raw/specs-*.json`: one source URL per value, `"official": false` for the rare
+non-official one (shown as such). Only re-research when a model changes. honda.com.pk blocks automated
+tools: read it in the browser pane (its prices are on every model page; brochures open in its on-page
+"E-Catalog" viewer, never the direct PDF link, which triggers a download).
 
 **PAMA quirks:** some rows are combined (Toyota Corolla/Yaris/Corolla Cross, Honda City/Civic, Honda
 HR-V/BR-V, Toyota Fortuner/Hilux, Haval/Tank, Jetour). Sales and the Hot Score belong to the PAMA row
@@ -59,16 +66,20 @@ Changan, Deepal, Proton, Chery, Peugeot don't report to PAMA: they're listed but
 
 ## Hot Score
 
-`score = 45% sales + 30% growth + 25% search interest`, out of 100.
+`score = 40% sales + 20% growth + 20% search interest + 20% buzz`, out of 100 (Nov 2026).
 - **Sales:** units this month ÷ the month's best seller.
 - **Growth:** month-on-month change, mapped from −30% (0 points) to +50% (full points).
-- **Search:** Google Trends interest, 0–100.
+- **Search:** Google Trends interest, 0–100. Not built yet.
+- **Buzz:** how much the car is talked about in the last 30 days, log scale vs the most-talked-about car.
+  Now: Google News (Pakistan edition, "<car>" + Pakistan). YouTube switches on when `YOUTUBE_API_KEY` is in
+  `.env` (gitignored; `fetch_buzz.py` reads it). Reddit needs an approved Reddit app: not built.
+  Combined PAMA entries count each story once (`news.ids`). Car pages show the actual headlines.
 
 The weights live in `data.js`. If they change, also update the text on both pages that explains them.
 Missing signals (search, for now) are left out and the rest scaled up to 100. Growth only counts when
 last month had 50+ units. Entries with no published sales get no score and aren't ranked.
 
-## Where real data will come from
+## Where the data comes from
 
 | Data | Source | Notes |
 |---|---|---|
@@ -76,7 +87,7 @@ last month had 50+ units. Entries with no published sales get no score and aren'
 | Monthly sales | PAMA (Pakistan Automotive Manufacturers Association) monthly PDF | A script parses it. Some newer brands may not report to PAMA: show "not published", never guess |
 | Price changes | This month's brand prices vs last month's | Automatic once prices are tracked over time |
 | Search interest | Google Trends | Free `pytrends` library (unofficial, can break) or Google's official Trends API |
-| Reviews | YouTube Data API (official, free quota) | Show views and links to review videos. Don't copy review text |
+| Buzz | Google News (now), YouTube Data API (when a key is set) | Count mentions; link the stories. Don't copy their text |
 | Photos | Wikimedia Commons now | Brand press photos later, only with permission |
 
 **Rules:**

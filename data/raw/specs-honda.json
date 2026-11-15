@@ -1,0 +1,196 @@
+{
+ "collected": "2026-11-15",
+ "notes": [
+  "Honda Atlas Cars brochures on honda.com.pk, read in a browser (the site blocks automated tools). Image-only brochures read visually."
+ ],
+ "models": [
+  {
+   "brand": "Honda",
+   "model": "City",
+   "specs": {
+    "engine": {
+     "value": "1,199 cc (1.2LS) / 1,497 cc (1.5 Aspire), 4-cylinder petrol i-VTEC",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=City25-Brochure-14-4-26-S.pdf",
+     "official": true
+    },
+    "power": {
+     "value": "88 hp @ 6,000 rpm (1.2) / 118 hp @ 6,600 rpm (1.5)",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=City25-Brochure-14-4-26-S.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "110 Nm @ 4,800 rpm (1.2) / 145 Nm @ 4,600 rpm (1.5)",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=City25-Brochure-14-4-26-S.pdf",
+     "official": true
+    },
+    "transmission": {
+     "value": "CVT",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=City25-Brochure-14-4-26-S.pdf",
+     "official": true
+    },
+    "seats": {
+     "value": "5",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=City25-Brochure-14-4-26-S.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4,451 mm",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=City25-Brochure-14-4-26-S.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1,694 mm",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=City25-Brochure-14-4-26-S.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1,498 mm",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=City25-Brochure-14-4-26-S.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,600 mm",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=City25-Brochure-14-4-26-S.pdf",
+     "official": true
+    },
+    "groundClearance": {
+     "value": "172 mm",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=City25-Brochure-14-4-26-S.pdf",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "40 L",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=City25-Brochure-14-4-26-S.pdf",
+     "official": true
+    }
+   }
+  },
+  {
+   "brand": "Honda",
+   "model": "Civic",
+   "specs": {
+    "engine": {
+     "value": "1,498 cc turbo petrol (VTEC Turbo)",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=Civic26-Brochure.pdf",
+     "official": true
+    },
+    "power": {
+     "value": "127 hp (Standard, Oriel) / 176 hp (RS)",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=Civic26-Brochure.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "180 Nm (Standard, Oriel) / 220 Nm (RS)",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=Civic26-Brochure.pdf",
+     "official": true
+    },
+    "transmission": {
+     "value": "CVT",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=Civic26-Brochure.pdf",
+     "official": true
+    },
+    "seats": {
+     "value": "5",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=Civic26-Brochure.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4,695 mm",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=Civic26-Brochure.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1,802 mm",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=Civic26-Brochure.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1,432 mm",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=Civic26-Brochure.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,735 mm",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=Civic26-Brochure.pdf",
+     "official": true
+    },
+    "groundClearance": {
+     "value": "154 mm",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=Civic26-Brochure.pdf",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "47 L",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=Civic26-Brochure.pdf",
+     "official": true
+    }
+   }
+  },
+  {
+   "brand": "Honda",
+   "model": "HR-V",
+   "specs": {
+    "engine": {
+     "value": "1,498 cc petrol (VTi, VTi-S) / 1,498 cc petrol hybrid (e:HEV)",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=HR-V-ehev-25-Brochure.pdf",
+     "official": true
+    },
+    "power": {
+     "value": "119 hp @ 6,600 rpm (VTi, VTi-S) / e:HEV: engine 105 PS + motor 131 PS",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=HR-V-ehev-25-Brochure.pdf",
+     "official": true
+    },
+    "torque": {
+     "value": "145 Nm (VTi, VTi-S) / e:HEV motor 253 Nm",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=HR-V-ehev-25-Brochure.pdf",
+     "official": true
+    },
+    "transmission": {
+     "value": "CVT (VTi, VTi-S) / e-CVT (e:HEV)",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=HR-V-ehev-25-Brochure.pdf",
+     "official": true
+    },
+    "battery": {
+     "value": "Lithium-ion (e:HEV)",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=HR-V-ehev-25-Brochure.pdf",
+     "official": true
+    },
+    "seats": {
+     "value": "5",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=HR-V-ehev-25-Brochure.pdf",
+     "official": true
+    },
+    "length": {
+     "value": "4,361 mm",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=HR-V-ehev-25-Brochure.pdf",
+     "official": true
+    },
+    "width": {
+     "value": "1,790 mm",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=HR-V-ehev-25-Brochure.pdf",
+     "official": true
+    },
+    "height": {
+     "value": "1,591 mm",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=HR-V-ehev-25-Brochure.pdf",
+     "official": true
+    },
+    "wheelbase": {
+     "value": "2,610 mm",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=HR-V-ehev-25-Brochure.pdf",
+     "official": true
+    },
+    "groundClearance": {
+     "value": "196 mm",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=HR-V-ehev-25-Brochure.pdf",
+     "official": true
+    },
+    "fuelTank": {
+     "value": "40 L",
+     "source": "https://www.honda.com.pk/flipbook/index.html?pdffile=HR-V-ehev-25-Brochure.pdf",
+     "official": true
+    }
+   }
+  }
+ ]
+}

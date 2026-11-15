@@ -47,6 +47,13 @@ const cars = DATA.models.map(m => {
     price: prices.length ? [Math.min(...prices) / 1e5, Math.max(...prices) / 1e5] : null,
     search: null,                       // Google Trends: coming soon
   };
+  // Buzz: how much the car was talked about in the last 30 days (news now; YouTube when a key is set)
+  const b = m.buzz || {};
+  c.buzzNews = b.news ? b.news.count : null;
+  c.buzzVideos = b.youtube ? b.youtube.count : null;
+  c.buzzRaw = c.buzzNews == null && c.buzzVideos == null ? null : (c.buzzNews || 0) + (c.buzzVideos || 0);
+  c.buzzExamples = [...(b.youtube?.examples || []).map(x => ({ ...x, kind: 'video' })),
+                    ...(b.news?.examples || []).map(x => ({ ...x, kind: 'news' }))];
   c.slug = slugOf(c);
   return c;
 });
@@ -60,23 +67,34 @@ const entries = DATA.salesGroups.map(g => {
   e.history = g.sales.slice().sort((a, b) => a.month.localeCompare(b.month));
   e.change = e.sales != null && e.prev ? (e.sales - e.prev) / e.prev : null;
   e.combined = g.models.length > 1;
+  // Count each news story once, even if it mentions several models in this entry
+  const measured = e.cars.filter(c => c.buzzRaw != null);
+  const storyIds = new Set(measured.flatMap(c => (c.buzz?.news?.ids) || []));
+  const videos = measured.reduce((a, c) => a + (c.buzzVideos || 0), 0);
+  e.buzzRaw = measured.length ? storyIds.size + videos : null;
   const prices = e.cars.filter(c => c.price).flatMap(c => c.price);
   e.price = prices.length ? [Math.min(...prices), Math.max(...prices)] : null;
   return e;
 }).filter(e => e.cars.length);                        // only entries for cars on the site
 
 // ===== Hot Score =====
-// Weights: sales 45, growth 30, search 25. A signal we don't have yet is
-// left out and the others are scaled up, so the score is still out of 100.
+// Weights: sales 40, growth 20, search 20, buzz 20. A signal we don't have yet
+// is left out and the others are scaled up, so the score is still out of 100.
+// Buzz uses a log scale (100 mentions isn't 10x as hot as 10), compared with
+// the most-talked-about car on the site.
 // An entry with no published sales this month gets no score (not ranked).
 const maxSales = Math.max(...entries.map(e => e.sales || 0));
-const WEIGHTS = { sales: 45, growth: 30, search: 25 };
+const WEIGHTS = { sales: 40, growth: 20, search: 20, buzz: 20 };
+const maxBuzz = Math.max(...cars.map(c => c.buzzRaw || 0), ...entries.map(e => e.buzzRaw || 0));
+const buzzSignal = raw => raw == null || !maxBuzz ? null : Math.log1p(raw) / Math.log1p(maxBuzz);
+cars.forEach(c => (c.buzzSignal = buzzSignal(c.buzzRaw)));
 entries.forEach(e => {
   e.signals = {
     sales: e.sales != null ? e.sales / maxSales : null,
     // Growth: -30% or worse = 0, +50% or better = 1. Small bases (under 50 units) are too noisy to count.
     growth: e.change != null && e.prev >= 50 ? Math.min(Math.max((e.change + 0.3) / 0.8, 0), 1) : null,
     search: null,
+    buzz: buzzSignal(e.buzzRaw),
   };
   if (e.signals.sales == null) { e.score = null; return; }
   let sum = 0, wsum = 0;

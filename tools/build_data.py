@@ -108,8 +108,12 @@ def group_for(brand, model):
 
 # ---- Prices: every prices-*.json file ----
 variants = []
+price_dates = []
 for path in sorted(glob.glob(os.path.join(RAW, "prices-*.json"))):
-    variants += load(path)["variants"]
+    raw = load(path)
+    variants += raw["variants"]
+    if raw.get("collected"):
+        price_dates.append(raw["collected"])
 
 by_model = {}
 for v in variants:
@@ -142,9 +146,30 @@ for (brand, name), vs in by_model.items():
             "effectiveFrom": v.get("effectiveFrom"),
         } for v in vs],
     })
+# ---- Specs: every specs-*.json file (official brand sources, one source link per value) ----
+SPEC_ALIASES = {("Toyota", "Camry Hybrid"): ("Toyota", "Camry"), ("GWM Tank", "Tank 500"): ("Tank", "Tank 500"),
+                ("GWM Ora", "Ora 5"): ("GWM", "Ora 5")}
+specs_by_model = {}
+for path in sorted(glob.glob(os.path.join(RAW, "specs-*.json"))):
+    for entry in load(path)["models"]:
+        key = SPEC_ALIASES.get((entry["brand"], entry["model"]), (entry["brand"], entry["model"]))
+        clean = {k: v for k, v in (entry.get("specs") or {}).items()
+                 if isinstance(v, dict) and v.get("value") and v.get("source")}
+        specs_by_model.setdefault(key, {}).update(clean)
+for m in models:
+    m["specs"] = specs_by_model.get((m["brand"], m["name"]), {})
+
+# ---- Buzz: the newest buzz-*.json (talk in the last 30 days: news, later YouTube/Reddit) ----
+buzz_files = sorted(glob.glob(os.path.join(RAW, "buzz-*.json")))
+buzz = load(buzz_files[-1]) if buzz_files else None
+for m in models:
+    b = (buzz or {}).get("cars", {}).get(f"{m['brand']} {m['name']}")
+    m["buzz"] = None if not b else {k: b[k] for k in ("news", "youtube") if b.get(k)}
+
 models.sort(key=lambda m: (m["brand"], m["name"]))
 
-checked = date.today()
+# The date prices were actually checked (the oldest price file), not the day we rebuilt
+checked = date.fromisoformat(min(price_dates)) if price_dates else date.today()
 data = {
     "builtOn": checked.isoformat(),
     "salesMonth": pama["month"],
@@ -152,6 +177,8 @@ data = {
     "salesSource": pama["source"],
     "pricesChecked": checked.isoformat(),
     "pricesCheckedLabel": f"{checked.day} {checked.strftime('%b %Y')}",
+    "buzzCollected": buzz["collected"] if buzz else None,
+    "buzzSources": buzz["sources"] if buzz else [],
     "salesGroups": groups,
     "models": models,
 }
@@ -160,6 +187,8 @@ with open(OUT, "w") as f:
     f.write("const DATA = " + json.dumps(data, indent=1, ensure_ascii=False) + ";\n")
 
 linked = sum(1 for m in models if m["salesGroup"])
+with_specs = sum(1 for m in models if m["specs"])
+print(f"Specs for {with_specs} of {len(models)} models.")
 print(f"Wrote data/cars.js: {len(models)} models ({linked} with PAMA sales), {len(groups)} PAMA rows, sales month {pama['month']}.")
 for m in models:
     if not m["salesGroup"]:

@@ -49,7 +49,7 @@ function entryCard(e) {
         <div class="car__signals">
           <span class="signal"><b>${fmt(e.sales)}</b>sold in ${monthShort(SALES_MONTH)}</span>
           <span class="signal">${changeHtml(e)}</span>
-          <span class="signal"><b>Soon</b>search interest</span>
+          <span class="signal"><b>${e.buzzRaw != null ? fmt(e.buzzRaw) : '–'}</b>buzz, 30 days</span>
         </div>
       </div>
     </li>`;
@@ -74,7 +74,7 @@ function plainCard(c) {
         <div class="car__signals">
           <span class="signal"><b>–</b>${why}</span>
           <span class="signal"><b>–</b>vs last month</span>
-          <span class="signal"><b>Soon</b>search interest</span>
+          <span class="signal"><b>${c.buzzRaw != null ? fmt(c.buzzRaw) : '–'}</b>buzz, 30 days</span>
         </div>
       </div>
     </li>`;

@@ -42,7 +42,7 @@ if (!car) {
   $('d-change').innerHTML = e && e.change != null
     ? `<span class="${e.change >= 0 ? 'good' : 'bad'}">${e.change >= 0 ? '▲' : '▼'} ${pct(e.change)}</span>` : '–';
   $('d-change-label').textContent = `vs ${monthLabel(PREV_MONTH)}`;
-  $('d-search').textContent = 'Soon';
+  $('d-search').textContent = car.buzzRaw != null ? fmt(car.buzzRaw) : '–';
   $('d-variants-count').textContent = car.variants.length;
 
   // Sales by month: the months we have, one colour, latest in pink
@@ -88,6 +88,7 @@ if (!car) {
     const rows = [
       ['Sales', s.sales, `${fmt(e.sales)} sold, compared with the month’s best seller`],
       ['Growth', s.growth, e.change == null ? 'Needs two months of sales' : e.prev < 50 ? `${pct(e.change)}, but last month was too small to count` : `${pct(e.change)} vs last month`],
+      ['Buzz', s.buzz, e.buzzRaw != null ? `${fmt(e.buzzRaw)} news mentions in the last 30 days${e.combined ? ' (all models in this entry)' : ''}` : 'Not measured yet'],
       ['Search interest', s.search, 'Google Trends: coming soon'],
     ];
     $('d-meters').innerHTML = rows.map(([label, v, why]) => `
@@ -101,6 +102,17 @@ if (!car) {
     $('d-meters').innerHTML = `<p class="body-note">No Hot Score this month: ${e ? 'PAMA hasn’t published this month’s sales yet' : 'its sales aren’t published'}. We only rank cars with real sales numbers.</p>`;
   }
 
+  // What people are talking about: the articles (and videos) behind the buzz number
+  const talkBox = $('d-buzz');
+  if (car.buzzExamples.length) {
+    talkBox.innerHTML = car.buzzExamples.slice(0, 4).map(x => `<li><a href="${x.url}" target="_blank" rel="noopener">${x.title}</a>` +
+      `${x.kind === 'video' ? ` <span class="buzz-kind">video · ${fmt(x.views)} views</span>` : ''}</li>`).join('');
+  } else {
+    talkBox.outerHTML = `<p class="body-note">No news about the ${full} in Pakistan in the last 30 days.</p>`;
+  }
+  $('d-buzz-src').textContent = `${car.buzzRaw != null ? fmt(car.buzzRaw) : 'No'} mentions in the last 30 days, checked ${DATA.buzzCollected ? new Date(DATA.buzzCollected + 'T00:00:00').toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }) : '–'}. ` +
+    `From Google News (Pakistan)${DATA.buzzSources.includes('youtube') ? ' and YouTube' : ''}. We count how much people talk, not whether it’s good or bad, so read the stories.`;
+
   // Variants (real names and prices)
   $('d-variants').innerHTML = `<thead><tr><th>Variant</th><th>Engine / gearbox</th><th>Price</th></tr></thead><tbody>` +
     car.variants.slice().sort((a, b) => (a.price ?? 1e12) - (b.price ?? 1e12)).map(v => `<tr>
@@ -110,26 +122,51 @@ if (!car) {
   // Where the prices come from: official site, or a news report (labelled as such)
   const srcMap = new Map();
   car.variants.forEach(v => v.source && srcMap.set(v.source, v));
-  const srcLinks = [...srcMap.values()].map(v =>
-    `<a href="${v.source}" target="_blank" rel="noopener">${v.official ? `${car.brand}’s official website` : `a news report (${v.sourceName})`}</a>`);
+  // One phrase per kind of source, with numbered links when there are several pages
+  const offi = [...srcMap.values()].filter(v => v.official);
+  const news = [...srcMap.values()].filter(v => !v.official);
+  const numbered = list => list.length > 1 ? ' (' + list.map((v, i) => `<a href="${v.source}" target="_blank" rel="noopener">${i + 1}</a>`).join(', ') + ')' : '';
+  const srcLinks = [];
+  if (offi.length) srcLinks.push(offi.length === 1
+    ? `<a href="${offi[0].source}" target="_blank" rel="noopener">${car.brand}’s official website</a>`
+    : `${car.brand}’s official website${numbered(offi)}`);
+  news.forEach(v => srcLinks.push(`<a href="${v.source}" target="_blank" rel="noopener">a news report (${v.sourceName})</a>`));
   const anyNews = [...srcMap.values()].some(v => !v.official);
   const eff = [...new Set(car.variants.map(v => v.effectiveFrom).filter(Boolean))];
   $('d-variants-src').innerHTML = `Prices as listed by ${srcLinks.join(' and ') || 'the brand'}` +
     `${eff.length ? `, effective ${eff.join(', ')}` : ''}; checked ${DATA.pricesCheckedLabel}. Usually ex-factory: freight, tax and registration may be extra.` +
     (anyNews ? ` <b>We couldn’t get an official price list for this car, so some prices come from news reports and may be out of date.</b>` : '');
 
-  // Specs: only what the official price list says; the rest is "coming soon"
-  const ccs = [...new Set(car.variants.map(v => v.engineCc).filter(Boolean))].sort((a, b) => a - b);
-  const kwh = [...new Set(car.variants.map(v => v.batteryKwh).filter(Boolean))].sort((a, b) => a - b);
-  const gears = [...new Set(car.variants.map(v => v.transmission).filter(Boolean))];
-  const specs = [
-    ['Body', car.body], ['Fuel', car.fuel],
-    [kwh.length && !ccs.length ? 'Battery' : 'Engine', ccs.length ? ccs.map(x => `${fmt(x)} cc`).join(', ') : kwh.length ? kwh.map(x => `${x} kWh`).join(', ') : 'Coming soon'],
-    ['Transmission', gears.length ? gears.join(', ') : 'Coming soon'],
-    ['Fuel economy', 'Coming soon'], ['Seats', 'Coming soon'],
+  // Specs: researched from official brand sources (data/raw/specs-*.json), each with its source.
+  // Anything the brand doesn't publish says so; nothing is guessed.
+  const S = car.specs || {};
+  const isEV = car.fuels.length === 1 && car.fuels[0] === 'Electric';
+  const SPEC_ROWS = [
+    ['engine', 'Engine'], ['power', 'Power'], ['torque', 'Torque'], ['transmission', 'Transmission'],
+    ['fuelEconomy', 'Fuel economy'], ['battery', 'Battery'], ['electricRange', 'Electric range'],
+    ['seats', 'Seats'], ['airbags', 'Airbags'], ['length', 'Length'], ['width', 'Width'], ['height', 'Height'],
+    ['wheelbase', 'Wheelbase'], ['groundClearance', 'Ground clearance'], ['fuelTank', 'Fuel tank'],
   ];
-  $('d-specs').innerHTML = specs.map(([k, v]) =>
-    `<div><dt>${k}</dt><dd class="${v === 'Coming soon' ? 'soon' : ''}">${v}</dd></div>`).join('');
+  const plugIn = car.fuels.some(f => f === 'Electric' || f === 'Plug-in hybrid');
+  const rows = [['Body', { value: car.body }], ['Fuel', { value: car.fuel }]];
+  SPEC_ROWS.forEach(([key, label]) => {
+    if (S[key]) rows.push([label, S[key]]);
+    else if (['engine', 'power', 'transmission', 'seats'].includes(key) && !(isEV && key === 'engine')) rows.push([label, null]);
+    else if (plugIn && ['battery', 'electricRange'].includes(key)) rows.push([label, null]);
+  });
+  // Footnote numbers for each distinct source
+  const specSources = [];
+  rows.forEach(([, v]) => { if (v && v.source && !specSources.includes(v.source)) specSources.push(v.source); });
+  $('d-specs').innerHTML = rows.map(([k, v]) => {
+    if (!v) return `<div><dt>${k}</dt><dd class="soon">Not published</dd></div>`;
+    const n = v.source ? specSources.indexOf(v.source) + 1 : 0;
+    return `<div><dt>${k}</dt><dd>${v.value}${n ? `<sup><a href="${v.source}" target="_blank" rel="noopener" title="Source ${n}">${n}</a></sup>` : ''}</dd></div>`;
+  }).join('');
+  const anyUnofficial = rows.some(([, v]) => v && v.source && v.official === false);
+  $('d-specs-src').innerHTML = specSources.length
+    ? `Sources: ${specSources.map((u, i) => `<a href="${u}" target="_blank" rel="noopener">${i + 1}</a>`).join(' · ')} (official ${car.brand} pages and brochures` +
+      `${anyUnofficial ? ', plus launch reports where the official site was unreachable' : ''}). Specs can differ by variant.`
+    : `${car.brand} hasn’t published these specs on its Pakistani website yet. We don’t copy them from other sites.`;
 
   // Similar cars: same body type, closest starting price
   const similar = cars.filter(c => c !== car && c.body === car.body && c.price && car.price)
